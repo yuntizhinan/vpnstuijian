@@ -311,7 +311,7 @@ def get_left_sidebar_html(depth=0, toc_links_html="", cta_card_html="", article_
     for p in current_promos:
         link_path = f"articles/{p['slug']}.html" if depth == 0 else f"{p['slug']}.html"
         promo_cards_html += f"""
-            <a href="{prefix}{link_path}" class="sidebar-promo-card">
+            <a href="{link_path}" class="sidebar-promo-card">
               <div class="promo-card-left">
                 <h4 class="promo-card-title">{p['name']} 机场</h4>
                 <p class="promo-card-desc">{p['desc']}</p>
