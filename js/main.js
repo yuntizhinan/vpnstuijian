@@ -228,13 +228,11 @@ function initSearchAndFilter() {
   // 处理标签点击
   tagPills.forEach(pill => {
     pill.addEventListener('click', (e) => {
-      e.preventDefault();
       if (!isHomePage) {
-        // 子页面点击标签直接跳回主页
-        const tag = pill.getAttribute('data-tag') || pill.textContent.replace('#', '').trim();
-        window.location.href = `${window.location.protocol}//${window.location.host}/index.html?tag=${encodeURIComponent(tag)}`;
+        // 子页面点击标签直接走默认 HTML 相对路径跳转
         return;
       }
+      e.preventDefault();
       
       const clickedTag = pill.getAttribute('data-tag') || pill.textContent.replace('#', '').trim();
       
@@ -253,13 +251,13 @@ function initSearchAndFilter() {
   // 处理手风琴里的分类点击
   accordionItems.forEach(item => {
     item.addEventListener('click', (e) => {
-      e.preventDefault();
-      const cat = item.getAttribute('data-category');
       if (!isHomePage) {
-        window.location.href = `${window.location.protocol}//${window.location.host}/index.html?category=${encodeURIComponent(cat)}`;
+        // 子页面点击分类直接走默认 HTML 相对路径跳转
         return;
       }
-
+      e.preventDefault();
+      const cat = item.getAttribute('data-category');
+      
       if (activeCategory === cat) {
         activeCategory = null;
         item.style.backgroundColor = '';
