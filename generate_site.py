@@ -426,7 +426,7 @@ def get_left_sidebar_html(depth=0, toc_links_html="", cta_card_html="", article_
             <img src="{prefix}images/profile_avatar.png" alt="vpn推荐" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%; display: block;">
           </div>
           <h3 class="profile-name" style="font-size: 1.1rem;">vpn推荐</h3>
-          <p class="profile-motto" style="font-size: 0.76rem; margin-bottom: 12px;">vpnstuijian.net 物理专线与机场测评科普博客。</p>
+          <p class="profile-motto" style="font-size: 0.76rem; margin-bottom: 12px;">vpn推荐 专注于2026年最新、最稳的国际物理专线、BGP中继翻墙机场评测与科学上网客户端避坑科普。</p>
         </div>
         
         {toc_widget_html}
