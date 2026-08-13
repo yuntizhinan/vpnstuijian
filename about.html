@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关于我们 - vpn推荐</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="关于 vpn推荐 —— 我们的定位、测速准则、核心价值与联系方式。提供极连云、速界、边缘、快狸等高品质专线官网入口。">
+  <meta name="keywords" content="关于我们, vpn推荐, 机场评测, 极连云, 速界, 边缘, 快狸, vpnstuijian.net">
+  <meta name="robots" content="index, follow">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css?v=1786601827">
+  <link rel="icon" href="images/logo.png?v=2" type="image/png">
+</head>
+<body>
+  
+  <script>
+    (function() {
+      let savedTheme = null;
+      try {
+        savedTheme = localStorage.getItem('theme');
+      } catch (e) {}
+      const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const theme = savedTheme === 'dark' || (!savedTheme && systemPrefersDark) ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+  
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo" onclick="if(window.resetFilters) { window.resetFilters(); } else { return true; }">
+        <img class="logo-icon" src="images/logo.png?v=2" alt="vpn推荐" />
+        <span>vpn推荐</span>
+      </a>
+      
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">☰</button>
+      
+      <nav class="nav" id="nav-menu">
+        <a href="index.html" class="nav-link">主页</a>
+        
+        <!-- 机场推荐 (下拉式) -->
+        <div class="nav-item">
+          <a href="#" class="nav-link dropdown-toggle" onclick="return false;">机场推荐 <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg></a>
+          <div class="dropdown-menu">
+            <a href="articles/sujie-review.html" class="dropdown-item">速界 测评</a>
+<a href="articles/jilianyun-review.html" class="dropdown-item">极连云 测评</a>
+<a href="articles/edge-review.html" class="dropdown-item">边缘 (EdgeNova) 测评</a>
+<a href="articles/kuaili-review.html" class="dropdown-item">快狸 测评</a>
+<a href="articles/guangnianti-review.html" class="dropdown-item">光年梯 测评</a>
+<a href="articles/shunyun-review.html" class="dropdown-item">瞬云 测评</a>
+<a href="articles/huanyuyun-review.html" class="dropdown-item">寰宇云 测评</a>
+<a href="articles/naixi-review.html" class="dropdown-item">奶昔 测评</a>
+<a href="articles/huacloud-review.html" class="dropdown-item">花云 测评</a>
+
+          </div>
+        </div>
+        
+        <!-- 科普文章 (下拉式) -->
+        <div class="nav-item">
+          <a href="vpn-guide.html" class="nav-link dropdown-toggle">干货分享 <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg></a>
+          <div class="dropdown-menu">
+            <a href="articles/airport-guide-2026.html" class="dropdown-item">机场排行与评测</a>
+            <a href="articles/one-multiplier.html" class="dropdown-item">便宜月付推荐</a>
+            <a href="articles/shandian-warning.html" class="dropdown-item">⚠️ 避雷指南</a>
+            <a href="vpn-guide.html" class="dropdown-item">📚 全部干货科普 →</a>
+          </div>
+        </div>
+        
+        <!-- 更多 -->
+        <div class="nav-item">
+          <a href="#" class="nav-link dropdown-toggle" onclick="return false;">更多 <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg></a>
+          <div class="dropdown-menu">
+            <a href="archives.html" class="dropdown-item">文章归档</a>
+            <a href="about.html" class="dropdown-item">关于我们</a>
+          </div>
+        </div>
+        
+        <!-- 搜索框 -->
+        <div class="nav-search-container">
+          <svg class="nav-search-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="nav-search-input" class="nav-search-input" placeholder="输入关键字搜索...">
+          <div class="hot-search-popup">
+            <span class="hot-search-title">热门搜索：</span>
+            <div class="hot-search-tags">
+              <span class="hot-tag" onclick="performNavSearch('速界')">速界</span>
+              <span class="hot-tag" onclick="performNavSearch('极连云')">极连云</span>
+              <span class="hot-tag" onclick="performNavSearch('4K不卡顿')">4K不卡顿</span>
+              <span class="hot-tag" onclick="performNavSearch('便宜机场')">便宜机场</span>
+              <span class="hot-tag" onclick="performNavSearch('小火箭')">小火箭</span>
+              <span class="hot-tag" onclick="performNavSearch('Clash')">Clash</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 白天黑夜转换键 -->
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+  
+  
+  <main class="container article-page">
+    <div class="breadcrumbs">
+      <a href="index.html">首页</a>
+      <svg viewBox="0 0 24 24" style="width:12px; height:12px; fill:currentColor;"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+      <span>关于我们</span>
+    </div>
+    
+    <div class="main-layout article-page-layout">
+      <!-- Left Column -->
+      
+      <aside class="left-sidebar">
+        
+        <div class="sidebar-card profile-card">
+          <div class="profile-avatar" style="width: 86px; height: 86px; margin: 0 auto 14px; border-radius: 50%; overflow: hidden; border: 3px solid var(--accent-primary); box-shadow: 0 4px 16px rgba(15, 82, 186, 0.25); background: #ffffff; padding: 3px;">
+            <img src="images/profile_avatar.png" alt="vpn推荐" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%; display: block;">
+          </div>
+          <h3 class="profile-name">vpn推荐</h3>
+          <p class="profile-motto">vpn推荐 专注于2026年最新、最稳的国际物理专线、BGP中继翻墙机场评测与科学上网客户端避坑科普。</p>
+          <div class="profile-stats">
+            <div class="stat-item">
+              <span class="stat-value">40</span>
+              <span class="stat-label">文章数</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">31</span>
+              <span class="stat-label">标签数</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">99+</span>
+              <span class="stat-label">日访问量</span>
+            </div>
+          </div>
+          <div class="profile-buttons">
+            <a href="about.html" class="profile-btn profile-btn-primary">关于我们</a>
+            <a href="vpn-guide.html" class="profile-btn profile-btn-secondary">科普专栏</a>
+          </div>
+        </div>
+        
+        <div class="sidebar-card">
+          <h3 class="toc-title">分类目录</h3>
+          <div class="sidebar-category-list">
+  <a href="index.html" class="sidebar-cat-item">全部文章</a>
+  <a href="index.html?category=eval" class="sidebar-cat-item">机场评测</a>
+  <a href="index.html?category=guide" class="sidebar-cat-item">新手教程</a>
+  <a href="index.html?category=tech" class="sidebar-cat-item">技术进阶</a>
+  <a href="index.html?category=promo" class="sidebar-cat-item">优惠活动</a>
+</div>
+        </div>
+
+        
+        <div class="sidebar-card sidebar-banner-widget" style="padding: 12px; display: flex; flex-direction: column; gap: 12px; background: transparent; border: none; box-shadow: none;">
+          <a href="articles/airport-guide-2026.html" class="sidebar-banner-item" style="display: block; border-radius: var(--radius-md); overflow: hidden; transition: transform 0.25s ease, box-shadow 0.25s ease; border: 1px solid var(--border-color);">
+            <img src="images/sidebar_banner_airports.png" alt="翻墙机场推荐" style="width: 100%; height: auto; display: block; object-fit: cover;">
+          </a>
+          <a href="articles/clash-tutorial.html" class="sidebar-banner-item" style="display: block; border-radius: var(--radius-md); overflow: hidden; transition: transform 0.25s ease, box-shadow 0.25s ease; border: 1px solid var(--border-color);">
+            <img src="images/sidebar_banner_apps.png" alt="科学上网客户端教程" style="width: 100%; height: auto; display: block; object-fit: cover;">
+          </a>
+        </div>
+        
+      </aside>
+    
+      
+      <!-- Middle Column -->
+      <article class="article-content-container">
+        <div class="article-header">
+          <h1 class="article-title-large">关于“vpn推荐”独立评测博客</h1>
+        </div>
+        <div class="article-body">
+          <p>欢迎来到 <strong>vpn推荐</strong>。我们是一个专注于网络技术交流、网络连通优化、以及优质国际专线代理服务评测的第三方独立测评博客。</p>
+          
+          <h2>一、我们的核心准则</h2>
+          <p>海外学术资料查阅、跨境商务协同开发及跨国数据交互，是每一位极客和技术工作者的核心需求。然而，网络加速产品市场虚假宣传泛滥，很多质量极差、极易封锁直连中继打着“高带宽千兆物理专线”大肆圈钱并随时跑路，损害了消费者利益。我们的评测核心是：</p>
+          <ul>
+            <li><strong>真实晚高峰延迟监控：</strong> 拒绝在空闲时期截取测速图，所有连通和下行速度数据均在晚 20:30 至 22:30 的大负荷高峰期实测得到。</li>
+            <li><strong>防跑路风控预警：</strong> 主动揭露不良商家倍率陷阱，坚持新手上车先购买灵活月付进行测试。</li>
+            <li><strong>100% 连通与锁设备测试：</strong> 对各品牌同时在线的设备进行逐一测试，并对流媒体（如 Netflix、Disney+）与 AI 工具（ChatGPT、Claude）的住宅 IP 解锁质量进行全景监控。</li>
+          </ul>
+          
+          <h2>二、联系与合作</h2>
+          <p>如需向我们投稿您本地的网络测速日志，或者机场服务商寻求客观的晚高峰监测挂载，请发邮件至合作邮箱：</p>
+          <blockquote>
+            <strong>合作邮箱：</strong> <a href="mailto:1962952406@qq.com">1962952406@qq.com</a>
+          </blockquote>
+          
+          <h2>三、免责声明</h2>
+          <p>本站所有评测文章、网络协议及客户端配置教程仅供网络安全技术交流、学术研究与跨境合法商务往来使用。用户在使用任何第三方加速服务时，请严格遵守当地的相关政策法规，严禁利用网络工具进行非法网络活动。</p>
+        </div>
+      </article>
+      
+      <!-- Right Column -->
+      
+    </div>
+  </main>
+  
+  
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3 class="footer-brand-title">vpn推荐</h3>
+          <p>
+            我们是一个专注于高稳定性、安全保密以及极致下载速度科学上网机场评测的科技博客。致力于为商务外贸人士、学术科研留学生提供真实的主力官网订阅入口与教程。
+          </p>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-links-title">快捷导航</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">博客首页</a></li>
+            <li><a href="index.html?category=cheap" class="footer-link">便宜性价比机场</a></li>
+            <li><a href="index.html?category=premium" class="footer-link">专线高端推荐</a></li>
+            <li><a href="vpn-guide.html" class="footer-link">科普与配置专栏</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-links-title">友情推荐</h4>
+          <ul class="footer-links-list">
+            <li><a href="https://lqy001.speedworldaff.com/#/?code=C2v7kRVl" target="_blank" class="footer-link">速界官网 (不限速设备) ↗</a></li>
+            <li><a href="https://19629.jlyvipaff.com/#/?code=9ygBtCN8" target="_blank" class="footer-link">极连云官网 (IEPL物理专线) ↗</a></li>
+            <li><a href="https://asfeoasf.bianyuntztz2.cyou/#/?code=Y65i2kCU" target="_blank" class="footer-link">边缘官网 (零日志高安全) ↗</a></li>
+            <li><a href="https://19629.gntaff.com/#/?code=AixFrykO" target="_blank" class="footer-link">光年梯官网 (解锁流媒体) ↗</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-links-title">关于与申明</h4>
+          <ul class="footer-links-list">
+            <li><a href="about.html" class="footer-link">关于我们</a></li>
+            <li><span style="font-size: 0.8rem; line-height: 1.5; display:block;">声明：本站评测仅供跨境商务办公、外贸往来与学术检索学习使用，请遵守国家及地方相关法律。</span></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 vpn推荐 版权所有。</p>
+        <div class="footer-bottom-links">
+          <a href="sitemap.xml" target="_blank">Sitemap</a>
+          <span>|</span>
+          <a href="robots.txt" target="_blank">Robots.txt</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  
+</body>
+</html>
