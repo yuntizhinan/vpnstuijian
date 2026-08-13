@@ -232,6 +232,13 @@ function initSearchAndFilter() {
         // 子页面点击标签直接走默认 HTML 相对路径跳转
         return;
       }
+      
+      const href = pill.getAttribute('href');
+      if (href && (href.includes('articles/') || (href.endsWith('.html') && !href.includes('index.html')))) {
+        // 如果标签链接指向具体文章，不拦截跳转
+        return;
+      }
+      
       e.preventDefault();
       
       const clickedTag = pill.getAttribute('data-tag') || pill.textContent.replace('#', '').trim();
@@ -255,6 +262,13 @@ function initSearchAndFilter() {
         // 子页面点击分类直接走默认 HTML 相对路径跳转
         return;
       }
+      
+      const href = item.getAttribute('href');
+      if (href && (href.includes('articles/') || (href.endsWith('.html') && !href.includes('index.html')))) {
+        // 如果分类链接指向具体文章，不拦截跳转
+        return;
+      }
+      
       e.preventDefault();
       const cat = item.getAttribute('data-category');
       

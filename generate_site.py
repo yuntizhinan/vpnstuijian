@@ -207,6 +207,50 @@ hot_articles = merged_articles[:5]
 # 生成左侧边栏 (Left Sidebar) 的共用 HTML
 def get_left_sidebar_html(depth=0, toc_links_html="", cta_card_html="", article_tags=None, body_content="", page_name=""):
     prefix = "" if depth == 0 else "../"
+    
+    def get_tag_link(tag, curr_depth):
+        mapping = {
+            '机场评测': 'index.html?category=eval',
+            '科普专栏': 'vpn-guide.html',
+            'Clash配置': 'articles/clash-tutorial.html',
+            '小火箭': 'articles/shadowrocket-setup.html',
+            'Reality协议': 'articles/reality-protocol.html',
+            'Hysteria2': 'articles/hysteria2-vs-tuic.html',
+            '便宜机场': 'articles/one-multiplier.html',
+            'Netflix': 'articles/streaming-ai-guide.html',
+            'ChatGPT': 'articles/streaming-ai-guide.html',
+            '软路由': 'articles/openwrt-router.html',
+            'SSR机场推荐': 'articles/ssr-airport-guide.html',
+            'V2Ray节点': 'articles/ssr-airport-guide.html',
+            'Shadowsocks': 'articles/clash-subscription.html',
+            '免费翻墙VPN': 'articles/free-vpn-risks.html',
+            'Trojan协议': 'articles/trojan-protocol.html',
+            'iPhone翻墙': 'articles/shadowrocket-setup.html',
+            '安卓VPN': 'articles/android-vpn-guide.html',
+            'GLaDOS机场': 'articles/glados-review.html',
+            '付费机场': 'articles/airport-guide-2026.html',
+            '节点订阅': 'articles/clash-subscription.html',
+            '流媒体解锁': 'articles/streaming-unlock.html',
+            'Disney+': 'articles/streaming-unlock.html',
+            'TikTok加速': 'articles/streaming-ai-guide.html',
+            '国内电脑VPN': 'articles/lantern-alternative.html',
+            '低延迟': 'articles/iplc-guide.html',
+            '4K不卡顿': 'articles/iplc-guide.html',
+            '游戏专线': 'articles/tuic-latency.html',
+            '安全防护': 'articles/reality-protocol.html',
+            '按量付费': 'articles/one-multiplier.html',
+            '傻瓜一键翻墙': 'articles/clash-tutorial.html',
+            '月付': 'articles/one-multiplier.html'
+        }
+        raw_link = mapping.get(tag, 'index.html')
+        if curr_depth == 1:
+            if raw_link.startswith('articles/'):
+                return raw_link.replace('articles/', '')
+            else:
+                return f"../{raw_link}"
+        else:
+            return raw_link
+
     total_posts = len(science_articles) + len(airports)
     total_tags = 31
     daily_views = "99+"
@@ -227,10 +271,10 @@ def get_left_sidebar_html(depth=0, toc_links_html="", cta_card_html="", article_
     
     # 标签云
     tags = ['机场评测', '科普专栏', '低延迟', '4K不卡顿', 'Clash配置', '小火箭', 'Reality协议', 'Hysteria2', '便宜机场', '月付', '按量付费', 'Netflix', 'ChatGPT', '软路由', '游戏专线', '安全防护', 'SSR机场推荐', 'V2Ray节点', 'Shadowsocks', '免费翻墙VPN', 'Trojan协议', 'iPhone翻墙', '安卓VPN', '傻瓜一键翻墙', 'GLaDOS机场', '付费机场', '节点订阅', '流媒体解锁', 'Disney+', 'TikTok加速', '国内电脑VPN']
-    tags_html = "".join([f'<a href="{prefix}index.html?tag={urllib.parse.quote(t)}" class="tag-pill" data-tag="{t}">{t}</a>' for t in tags])
+    tags_html = "".join([f'<a href="{get_tag_link(t, depth)}" class="tag-pill" data-tag="{t}">{t}</a>' for t in tags])
     
     if article_tags:
-        article_tags_html = "".join([f'<a href="{prefix}index.html?tag={urllib.parse.quote(t)}" class="tag-pill" data-tag="{t}"># {t}</a>' for t in article_tags])
+        article_tags_html = "".join([f'<a href="{get_tag_link(t, depth)}" class="tag-pill" data-tag="{t}"># {t}</a>' for t in article_tags])
     else:
         article_tags_html = ""
 
