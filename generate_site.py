@@ -242,7 +242,7 @@ def get_left_sidebar_html(depth=0, toc_links_html="", cta_card_html="", article_
           <div class="mini-article-item">
             <span class="mini-article-index">{idx}</span>
             <div class="mini-article-content">
-              <a href="{prefix}{link_path}" class="mini-article-title">{ha['title']}</a>
+              <a href="{link_path}" class="mini-article-title">{ha['title']}</a>
               <span class="mini-article-date">📅 {ha['date']}</span>
             </div>
           </div>"""
@@ -262,10 +262,10 @@ def get_left_sidebar_html(depth=0, toc_links_html="", cta_card_html="", article_
 
     cta_widget_html = f"""
         <div class="sidebar-card sidebar-banner-widget" style="padding: 12px; display: flex; flex-direction: column; gap: 12px; background: transparent; border: none; box-shadow: none;">
-          <a href="{prefix}{airports_guide_path}" class="sidebar-banner-item" style="display: block; border-radius: var(--radius-md); overflow: hidden; transition: transform 0.25s ease, box-shadow 0.25s ease; border: 1px solid var(--border-color);">
+          <a href="{airports_guide_path}" class="sidebar-banner-item" style="display: block; border-radius: var(--radius-md); overflow: hidden; transition: transform 0.25s ease, box-shadow 0.25s ease; border: 1px solid var(--border-color);">
             <img src="{img_prefix}sidebar_banner_airports.png" alt="翻墙机场推荐" style="width: 100%; height: auto; display: block; object-fit: cover;">
           </a>
-          <a href="{prefix}{software_guide_path}" class="sidebar-banner-item" style="display: block; border-radius: var(--radius-md); overflow: hidden; transition: transform 0.25s ease, box-shadow 0.25s ease; border: 1px solid var(--border-color);">
+          <a href="{software_guide_path}" class="sidebar-banner-item" style="display: block; border-radius: var(--radius-md); overflow: hidden; transition: transform 0.25s ease, box-shadow 0.25s ease; border: 1px solid var(--border-color);">
             <img src="{img_prefix}sidebar_banner_apps.png" alt="科学上网客户端教程" style="width: 100%; height: auto; display: block; object-fit: cover;">
           </a>
         </div>"""
