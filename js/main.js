@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initSearchAndFilter();
   initAccordion();
   initScrollSpy();
+  initMailtoFallback();
 });
 
 /* ==========================================================================
@@ -753,3 +754,62 @@ function initCarousel() {
 }
 
 document.addEventListener('DOMContentLoaded', initCarousel);
+
+/* ==========================================================================
+   Mailto Link Fallback (Clipboard Copy)
+   ========================================================================== */
+function initMailtoFallback() {
+  const mailtoLinks = document.querySelectorAll('a[href^="mailto:"]');
+  mailtoLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      const email = link.getAttribute('href').replace('mailto:', '');
+      
+      // Copy email to clipboard
+      navigator.clipboard.writeText(email).then(() => {
+        showToast(`已成功复制邮箱地址：${email}`);
+      }).catch(err => {
+        console.error('Failed to copy text: ', err);
+      });
+    });
+  });
+
+  function showToast(message) {
+    let toast = document.getElementById('copy-toast');
+    if (!toast) {
+      toast = document.createElement('div');
+      toast.id = 'copy-toast';
+      toast.style.cssText = `
+        position: fixed;
+        bottom: 24px;
+        left: 50%;
+        transform: translateX(-50%) translateY(100px);
+        background: rgba(17, 24, 39, 0.95);
+        color: #ffffff;
+        padding: 12px 24px;
+        border-radius: 50px;
+        font-size: 0.9rem;
+        font-family: system-ui, -apple-system, sans-serif;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        z-index: 9999;
+        transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        pointer-events: none;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      `;
+      document.body.appendChild(toast);
+    }
+    toast.innerHTML = `<svg style="width:16px;height:16px;fill:#10b981;" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg> ${message}`;
+    
+    // Animate in
+    requestAnimationFrame(() => {
+      toast.style.transform = 'translateX(-50%) translateY(0)';
+    });
+
+    // Hide after 3 seconds
+    setTimeout(() => {
+      toast.style.transform = 'translateX(-50%) translateY(100px)';
+    }, 3000);
+  }
+}
