@@ -15,7 +15,7 @@ os.makedirs(os.path.join(dest_dir, "articles"), exist_ok=True)
 # 外部跳转链接
 links = {
     '极连云': 'https://19629.jlyvipaff.com/#/?code=9ygBtCN8',
-    '边缘节点': 'https://asfeoasf.bianyuntztz2.cyou/#/?code=Y65i2kCU',
+    '边缘节点': 'https://zoio.edgenovaaff.cc/#/?code=Y65i2kCU',
     '光年梯': 'https://19629.gntaff.com/#/?code=AixFrykO',
     '快狸': 'https://196295.kuailiaff.com/#/?code=tmUe2z1n',
     '速界': 'https://lqy001.speedworldaff.com/#/?code=C2v7kRVl',
