@@ -76,7 +76,7 @@ def get_template(title, description, keywords, category_name, category_link, dat
           <div class="dropdown-menu">
             <a href="airport-guide-2026.html" class="dropdown-item">机场排行与评测</a>
             <a href="one-multiplier.html" class="dropdown-item">便宜月付推荐</a>
-            <a href="shandian-warning.html" class="dropdown-item">⚠️ 避雷指南</a>
+            <a href="subscription-guide.html" class="dropdown-item">⚠️ 避雷指南</a>
             <a href="../vpn-guide.html" class="dropdown-item">📚 全部干货科普 →</a>
           </div>
         </div>
