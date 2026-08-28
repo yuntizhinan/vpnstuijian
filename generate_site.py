@@ -4,7 +4,7 @@ import re
 import urllib.parse
 
 # 目录定义
-src_dir = r"c:\Users\psyto\Desktop\jichangsped.biz"
+src_dir = r"c:\Users\psyto\Desktop\vpnstuijian.net"
 dest_dir = r"c:\Users\psyto\Desktop\vpnstuijian.net"
 
 # 确保目标子目录存在
@@ -736,7 +736,7 @@ def replace_site_wide_terms(html_content, is_subpage=False):
     prefix = "" if is_subpage else "articles/"
     
     # 替换域名和名字
-    html_content = html_content.replace("jichangspeed.biz", "vpnstuijian.net")
+    html_content = html_content.replace("vpnstuijian.net", "vpnstuijian.net")
     html_content = html_content.replace("机场速递", "vpn推荐")
     html_content = html_content.replace("jichangspeed", "vpnstuijian")
     
