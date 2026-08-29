@@ -515,14 +515,20 @@ def get_right_sidebar_html(depth=0, toc_links_html=""):
 
 # 清理正文中的未闭合/多余标签及AI提炼的图标
 def clean_body_content(body_content):
-    # 彻底清除截取正文时混入的重复页脚、FAQ、版权声明、底部导航与脚本地块
+    # 彻底清除截取正文时混入的重复页脚、FAQ、版权声明、底部导航卡片与脚本地块
     body_content = re.sub(r'<footer\s+class="footer">.*?</footer>', '', body_content, flags=re.DOTALL)
     body_content = re.sub(r'<div\s+class="geo-faq-section".*?</div>\s*</div>', '', body_content, flags=re.DOTALL)
     body_content = re.sub(r'<div\s+class="geo-faq-section".*?</div>', '', body_content, flags=re.DOTALL)
     body_content = re.sub(r'<script\s+type="application/ld\+json">.*?</script>', '', body_content, flags=re.DOTALL)
     body_content = re.sub(r'<div\s+class="article-copyright-box".*?</div>', '', body_content, flags=re.DOTALL)
     body_content = re.sub(r'<div\s+class="article-prev-next-nav".*?</div>', '', body_content, flags=re.DOTALL)
+    body_content = re.sub(r'<a\s+[^>]*class="[^"]*article-nav-card[^"]*"[^>]*>.*?</a>', '', body_content, flags=re.DOTALL)
     body_content = re.sub(r'<script\s+src="[^"]*main\.js"></script>', '', body_content, flags=re.DOTALL)
+
+    # 清理多余注释
+    body_content = re.sub(r'<!--\s*GEO 优化: FAQ 常见问题板块\s*-->', '', body_content)
+    body_content = re.sub(r'<!--\s*JSON-LD Schema \(SEO/GEO 自动抓取\)\s*-->', '', body_content)
+    body_content = re.sub(r'<!--\s*版权与阅读须知卡片\s*-->', '', body_content)
 
     # 移除多余的闭合 article, main, body, html 标签
     body_content = body_content.replace("</article>", "").replace("</main>", "").replace("</body>", "").replace("</html>", "")

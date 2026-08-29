@@ -266,11 +266,11 @@
         <div class="article-body">
           <p>在骨干网拥堵严重、国际公网出口频频出现高丢包的晚高峰（晚上 20:00 - 22:00），许多使用传统 TCP 协议（如 Trojan、VMess）的翻墙节点都会出现剧烈的网速下降，甚至连高清网页都难以加载。针对这一痛点，基于 UDP 并使用自定义拥塞控制的 <strong>Hysteria2（歇斯底里）</strong> 协议成为了大家口中的“提速神器”。今天我们为您带来 Hysteria2、Reality 与 VLESS 协议在真实拥堵环境下的横向测速与使用评测。</p>
 
-          <h2 id="heading-%E4%B8%80%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%20Hyst" id="heading-%E4%B8%80%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%20Hyst" id="heading-%E4%B8%80%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%20Hyst" id="heading-%E4%B8%80%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%20Hyst" id="heading-%E4%B8%80%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%20Hyst" id="heading-%E4%B8%80%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%20Hyst">一、什么是 Hysteria2 协议？</h2>
+          <h2 id="heading-%E4%B8%80%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%20Hyst" id="heading-%E4%B8%80%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%20Hyst" id="heading-%E4%B8%80%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%20Hyst" id="heading-%E4%B8%80%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%20Hyst" id="heading-%E4%B8%80%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%20Hyst" id="heading-%E4%B8%80%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%20Hyst" id="heading-%E4%B8%80%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%20Hyst">一、什么是 Hysteria2 协议？</h2>
 
           <p>Hysteria2 是基于 QUIC 协议修改而来的代理传输方案。在低宽带和高丢包（例如丢包率在 15% 以上）的公网线路上，TCP 会因为拥塞避免算法而减速。但 Hysteria2 却通过预估可用带宽、强行双向重传的方式，能最大化榨干服务器与用户本地的宽带资源，可以说是当前抗网络抖动、暴力破除网速限制的王牌协议。代表推荐配置机场：<strong>边缘节点</strong>、<strong>瞬云</strong>。</p>
 
-          <h2 id="heading-%E4%BA%8C%E3%80%81Hysteria" id="heading-%E4%BA%8C%E3%80%81Hysteria" id="heading-%E4%BA%8C%E3%80%81Hysteria" id="heading-%E4%BA%8C%E3%80%81Hysteria" id="heading-%E4%BA%8C%E3%80%81Hysteria" id="heading-%E4%BA%8C%E3%80%81Hysteria">二、Hysteria2、Reality、VLESS 晚高峰测速对比</h2>
+          <h2 id="heading-%E4%BA%8C%E3%80%81Hysteria" id="heading-%E4%BA%8C%E3%80%81Hysteria" id="heading-%E4%BA%8C%E3%80%81Hysteria" id="heading-%E4%BA%8C%E3%80%81Hysteria" id="heading-%E4%BA%8C%E3%80%81Hysteria" id="heading-%E4%BA%8C%E3%80%81Hysteria" id="heading-%E4%BA%8C%E3%80%81Hysteria">二、Hysteria2、Reality、VLESS 晚高峰测速对比</h2>
 
           <p>我们在南方移动 300M 宽带公网直连节点下进行了晚高峰实测，测试结果如下：</p>
 
@@ -346,7 +346,7 @@
 
           </table>
 
-          <h2 id="heading-%E4%B8%89%E3%80%81%E4%B8%89%E8%80%85%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%EF%BC%9F" id="heading-%E4%B8%89%E3%80%81%E4%B8%89%E8%80%85%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%EF%BC%9F" id="heading-%E4%B8%89%E3%80%81%E4%B8%89%E8%80%85%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%EF%BC%9F" id="heading-%E4%B8%89%E3%80%81%E4%B8%89%E8%80%85%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%EF%BC%9F" id="heading-%E4%B8%89%E3%80%81%E4%B8%89%E8%80%85%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%EF%BC%9F" id="heading-%E4%B8%89%E3%80%81%E4%B8%89%E8%80%85%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%EF%BC%9F">三、三者如何选择？</h2>
+          <h2 id="heading-%E4%B8%89%E3%80%81%E4%B8%89%E8%80%85%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%EF%BC%9F" id="heading-%E4%B8%89%E3%80%81%E4%B8%89%E8%80%85%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%EF%BC%9F" id="heading-%E4%B8%89%E3%80%81%E4%B8%89%E8%80%85%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%EF%BC%9F" id="heading-%E4%B8%89%E3%80%81%E4%B8%89%E8%80%85%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%EF%BC%9F" id="heading-%E4%B8%89%E3%80%81%E4%B8%89%E8%80%85%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%EF%BC%9F" id="heading-%E4%B8%89%E3%80%81%E4%B8%89%E8%80%85%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%EF%BC%9F" id="heading-%E4%B8%89%E3%80%81%E4%B8%89%E8%80%85%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9%EF%BC%9F">三、三者如何选择？</h2>
 
           <ul>
 
@@ -361,92 +361,6 @@
         
 
         </div>
-        
-        
-        <!-- GEO 优化: FAQ 常见问题板块 -->
-        
-        
-        <!-- JSON-LD Schema (SEO/GEO 自动抓取) -->
-        
-    
-        
-        <!-- 版权与阅读须知卡片 -->
-        
-        
-        
-      
-      
-      
-    
-  
-  
-  
-  
-  
-        
-        
-        <!-- GEO 优化: FAQ 常见问题板块 -->
-        
-        
-        <!-- JSON-LD Schema (SEO/GEO 自动抓取) -->
-        
-    
-        
-        <!-- 版权与阅读须知卡片 -->
-        
-        
-        
-      
-      
-      
-    
-  
-  
-  
-  
-  
-        
-        
-        <!-- GEO 优化: FAQ 常见问题板块 -->
-        
-        
-        <!-- JSON-LD Schema (SEO/GEO 自动抓取) -->
-        
-    
-        
-        <!-- 版权与阅读须知卡片 -->
-        
-        
-        
-      
-      
-      
-    
-  
-  
-  
-  
-  
-        
-        
-        <!-- GEO 优化: FAQ 常见问题板块 -->
-        
-        
-        <!-- JSON-LD Schema (SEO/GEO 自动抓取) -->
-        
-    
-        
-        <!-- 版权与阅读须知卡片 -->
-        
-        
-        <!-- GEO 优化: FAQ 常见问题板块 -->
-        
-        
-        <!-- JSON-LD Schema (SEO/GEO 自动抓取) -->
-        
-    
-        
-        <!-- 版权与阅读须知卡片 -->
         
         
         <!-- GEO 优化: FAQ 常见问题板块 -->

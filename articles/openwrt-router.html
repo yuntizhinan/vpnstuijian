@@ -269,7 +269,7 @@
         <div class="article-body">
           <p>在智能家居设备、电视盒子、投屏设备日益普及的今天，逐台在手机和电脑上配置翻墙软件不仅繁琐，而且容易受到局域网设备连通限制。解决这一问题的终极方案就是进行<strong>软路由系统部署</strong>。通过给搭载了 OpenWrt 系统的软路由安装科学上网固件插件，可以直接实现全家局域网流量的自动精细分流。今天我们就为带来一站式的 OpenWrt 科学上网配置与节点配置指南。</p>
 
-          <h2 id="heading-%E4%B8%80%E3%80%81%E4%B8%BB%E6%B5%81%20OpenW" id="heading-%E4%B8%80%E3%80%81%E4%B8%BB%E6%B5%81%20OpenW" id="heading-%E4%B8%80%E3%80%81%E4%B8%BB%E6%B5%81%20OpenW" id="heading-%E4%B8%80%E3%80%81%E4%B8%BB%E6%B5%81%20OpenW" id="heading-%E4%B8%80%E3%80%81%E4%B8%BB%E6%B5%81%20OpenW" id="heading-%E4%B8%80%E3%80%81%E4%B8%BB%E6%B5%81%20OpenW">一、主流 OpenWrt 科学上网软路由固件插件对比</h2>
+          <h2 id="heading-%E4%B8%80%E3%80%81%E4%B8%BB%E6%B5%81%20OpenW" id="heading-%E4%B8%80%E3%80%81%E4%B8%BB%E6%B5%81%20OpenW" id="heading-%E4%B8%80%E3%80%81%E4%B8%BB%E6%B5%81%20OpenW" id="heading-%E4%B8%80%E3%80%81%E4%B8%BB%E6%B5%81%20OpenW" id="heading-%E4%B8%80%E3%80%81%E4%B8%BB%E6%B5%81%20OpenW" id="heading-%E4%B8%80%E3%80%81%E4%B8%BB%E6%B5%81%20OpenW" id="heading-%E4%B8%80%E3%80%81%E4%B8%BB%E6%B5%81%20OpenW">一、主流 OpenWrt 科学上网软路由固件插件对比</h2>
 
           <p>在 OpenWrt 系统中，最为主流和稳定的科学上网软件插件有以下三款：</p>
 
@@ -283,23 +283,23 @@
 
           </ul>
 
-          <h2 id="heading-%E4%BA%8C%E3%80%81%E4%BB%A5%20OpenCl" id="heading-%E4%BA%8C%E3%80%81%E4%BB%A5%20OpenCl" id="heading-%E4%BA%8C%E3%80%81%E4%BB%A5%20OpenCl" id="heading-%E4%BA%8C%E3%80%81%E4%BB%A5%20OpenCl" id="heading-%E4%BA%8C%E3%80%81%E4%BB%A5%20OpenCl" id="heading-%E4%BA%8C%E3%80%81%E4%BB%A5%20OpenCl">二、以 OpenClash 为例配置 Clash 节点订阅</h2>
+          <h2 id="heading-%E4%BA%8C%E3%80%81%E4%BB%A5%20OpenCl" id="heading-%E4%BA%8C%E3%80%81%E4%BB%A5%20OpenCl" id="heading-%E4%BA%8C%E3%80%81%E4%BB%A5%20OpenCl" id="heading-%E4%BA%8C%E3%80%81%E4%BB%A5%20OpenCl" id="heading-%E4%BA%8C%E3%80%81%E4%BB%A5%20OpenCl" id="heading-%E4%BA%8C%E3%80%81%E4%BB%A5%20OpenCl" id="heading-%E4%BA%8C%E3%80%81%E4%BB%A5%20OpenCl">二、以 OpenClash 为例配置 Clash 节点订阅</h2>
 
-          <h3 id="heading-1.%20%E8%8E%B7%E5%8F%96%20Clas" id="heading-1.%20%E8%8E%B7%E5%8F%96%20Clas" id="heading-1.%20%E8%8E%B7%E5%8F%96%20Clas" id="heading-1.%20%E8%8E%B7%E5%8F%96%20Clas" id="heading-1.%20%E8%8E%B7%E5%8F%96%20Clas" id="heading-1.%20%E8%8E%B7%E5%8F%96%20Clas">1. 获取 Clash 订阅并复制链接</h3>
+          <h3 id="heading-1.%20%E8%8E%B7%E5%8F%96%20Clas" id="heading-1.%20%E8%8E%B7%E5%8F%96%20Clas" id="heading-1.%20%E8%8E%B7%E5%8F%96%20Clas" id="heading-1.%20%E8%8E%B7%E5%8F%96%20Clas" id="heading-1.%20%E8%8E%B7%E5%8F%96%20Clas" id="heading-1.%20%E8%8E%B7%E5%8F%96%20Clas" id="heading-1.%20%E8%8E%B7%E5%8F%96%20Clas">1. 获取 Clash 订阅并复制链接</h3>
 
           <p>由于软路由运行于底层，我们需要把机场的高速专线订阅导入其中。推荐使用不限设备数且支持一键订阅的 <strong>速界</strong> 或者是拥有多端配置优势的 <strong>极连云</strong>，登录后台复制您的 Clash 订阅链接。</p>
 
-          <h3 id="heading-2.%20%E5%9C%A8%20OpenC" id="heading-2.%20%E5%9C%A8%20OpenC" id="heading-2.%20%E5%9C%A8%20OpenC" id="heading-2.%20%E5%9C%A8%20OpenC" id="heading-2.%20%E5%9C%A8%20OpenC" id="heading-2.%20%E5%9C%A8%20OpenC">2. 在 OpenClash 中下载配置文件</h3>
+          <h3 id="heading-2.%20%E5%9C%A8%20OpenC" id="heading-2.%20%E5%9C%A8%20OpenC" id="heading-2.%20%E5%9C%A8%20OpenC" id="heading-2.%20%E5%9C%A8%20OpenC" id="heading-2.%20%E5%9C%A8%20OpenC" id="heading-2.%20%E5%9C%A8%20OpenC" id="heading-2.%20%E5%9C%A8%20OpenC">2. 在 OpenClash 中下载配置文件</h3>
 
           <p>进入 OpenWrt 后台面板，点击「服务」-「OpenClash」。点击「配置订阅」选项卡。点击「添加」按钮。在「配置文件名」处随便输入名称，在「订阅地址」处粘贴您复制的 Clash 配置订阅链接，点击保存。</p>
 
           <p>保存后回到配置页顶部，点击「更新配置」按钮，OpenClash 会自动通过公网下载拉取您的专线节点列表，直至看到主运行状态灯变为绿色即代表获取解析成功。</p>
 
-          <h3 id="heading-3.%20%E5%90%AF%E7%94%A8%E5%88%86%E6%B5%81%E5%B9%B6%E6%B5%8B%E8%AF%95" id="heading-3.%20%E5%90%AF%E7%94%A8%E5%88%86%E6%B5%81%E5%B9%B6%E6%B5%8B%E8%AF%95" id="heading-3.%20%E5%90%AF%E7%94%A8%E5%88%86%E6%B5%81%E5%B9%B6%E6%B5%8B%E8%AF%95" id="heading-3.%20%E5%90%AF%E7%94%A8%E5%88%86%E6%B5%81%E5%B9%B6%E6%B5%8B%E8%AF%95" id="heading-3.%20%E5%90%AF%E7%94%A8%E5%88%86%E6%B5%81%E5%B9%B6%E6%B5%8B%E8%AF%95" id="heading-3.%20%E5%90%AF%E7%94%A8%E5%88%86%E6%B5%81%E5%B9%B6%E6%B5%8B%E8%AF%95">3. 启用分流并测试连接</h3>
+          <h3 id="heading-3.%20%E5%90%AF%E7%94%A8%E5%88%86%E6%B5%81%E5%B9%B6%E6%B5%8B%E8%AF%95" id="heading-3.%20%E5%90%AF%E7%94%A8%E5%88%86%E6%B5%81%E5%B9%B6%E6%B5%8B%E8%AF%95" id="heading-3.%20%E5%90%AF%E7%94%A8%E5%88%86%E6%B5%81%E5%B9%B6%E6%B5%8B%E8%AF%95" id="heading-3.%20%E5%90%AF%E7%94%A8%E5%88%86%E6%B5%81%E5%B9%B6%E6%B5%8B%E8%AF%95" id="heading-3.%20%E5%90%AF%E7%94%A8%E5%88%86%E6%B5%81%E5%B9%B6%E6%B5%8B%E8%AF%95" id="heading-3.%20%E5%90%AF%E7%94%A8%E5%88%86%E6%B5%81%E5%B9%B6%E6%B5%8B%E8%AF%95" id="heading-3.%20%E5%90%AF%E7%94%A8%E5%88%86%E6%B5%81%E5%B9%B6%E6%B5%8B%E8%AF%95">3. 启用分流并测试连接</h3>
 
           <p>切换到「运行模式」，建议选择「Fake-IP 混合模式」或「Redir-Host 兼容模式」，代理选择「规则分流」，这样可以保证国内的流量直接走本地网络，而访问 Google、YouTube、ChatGPT 时才自动通过高速节点发送。最后开启系统运行开关即可。</p>
 
-          <h2 id="heading-%E4%B8%89%E3%80%81%E8%BD%AF%E8%B7%AF%E7%94%B1%E6%8A%80%E6%9C%AF%E7%9A%84%E4%BC%98%E5%8A%BF" id="heading-%E4%B8%89%E3%80%81%E8%BD%AF%E8%B7%AF%E7%94%B1%E6%8A%80%E6%9C%AF%E7%9A%84%E4%BC%98%E5%8A%BF" id="heading-%E4%B8%89%E3%80%81%E8%BD%AF%E8%B7%AF%E7%94%B1%E6%8A%80%E6%9C%AF%E7%9A%84%E4%BC%98%E5%8A%BF" id="heading-%E4%B8%89%E3%80%81%E8%BD%AF%E8%B7%AF%E7%94%B1%E6%8A%80%E6%9C%AF%E7%9A%84%E4%BC%98%E5%8A%BF" id="heading-%E4%B8%89%E3%80%81%E8%BD%AF%E8%B7%AF%E7%94%B1%E6%8A%80%E6%9C%AF%E7%9A%84%E4%BC%98%E5%8A%BF" id="heading-%E4%B8%89%E3%80%81%E8%BD%AF%E8%B7%AF%E7%94%B1%E6%8A%80%E6%9C%AF%E7%9A%84%E4%BC%98%E5%8A%BF">三、软路由技术的优势与防坑建议</h2>
+          <h2 id="heading-%E4%B8%89%E3%80%81%E8%BD%AF%E8%B7%AF%E7%94%B1%E6%8A%80%E6%9C%AF%E7%9A%84%E4%BC%98%E5%8A%BF" id="heading-%E4%B8%89%E3%80%81%E8%BD%AF%E8%B7%AF%E7%94%B1%E6%8A%80%E6%9C%AF%E7%9A%84%E4%BC%98%E5%8A%BF" id="heading-%E4%B8%89%E3%80%81%E8%BD%AF%E8%B7%AF%E7%94%B1%E6%8A%80%E6%9C%AF%E7%9A%84%E4%BC%98%E5%8A%BF" id="heading-%E4%B8%89%E3%80%81%E8%BD%AF%E8%B7%AF%E7%94%B1%E6%8A%80%E6%9C%AF%E7%9A%84%E4%BC%98%E5%8A%BF" id="heading-%E4%B8%89%E3%80%81%E8%BD%AF%E8%B7%AF%E7%94%B1%E6%8A%80%E6%9C%AF%E7%9A%84%E4%BC%98%E5%8A%BF" id="heading-%E4%B8%89%E3%80%81%E8%BD%AF%E8%B7%AF%E7%94%B1%E6%8A%80%E6%9C%AF%E7%9A%84%E4%BC%98%E5%8A%BF" id="heading-%E4%B8%89%E3%80%81%E8%BD%AF%E8%B7%AF%E7%94%B1%E6%8A%80%E6%9C%AF%E7%9A%84%E4%BC%98%E5%8A%BF">三、软路由技术的优势与防坑建议</h2>
 
           <div style="background: var(--bg-tertiary); border-left: 4px solid var(--accent-primary); padding: 15px; margin: 20px 0; border-radius: 4px;">
 
@@ -312,92 +312,6 @@
         
 
         </div>
-        
-        
-        <!-- GEO 优化: FAQ 常见问题板块 -->
-        
-        
-        <!-- JSON-LD Schema (SEO/GEO 自动抓取) -->
-        
-    
-        
-        <!-- 版权与阅读须知卡片 -->
-        
-        
-        
-      
-      
-      
-    
-  
-  
-  
-  
-  
-        
-        
-        <!-- GEO 优化: FAQ 常见问题板块 -->
-        
-        
-        <!-- JSON-LD Schema (SEO/GEO 自动抓取) -->
-        
-    
-        
-        <!-- 版权与阅读须知卡片 -->
-        
-        
-        
-      
-      
-      
-    
-  
-  
-  
-  
-  
-        
-        
-        <!-- GEO 优化: FAQ 常见问题板块 -->
-        
-        
-        <!-- JSON-LD Schema (SEO/GEO 自动抓取) -->
-        
-    
-        
-        <!-- 版权与阅读须知卡片 -->
-        
-        
-        
-      
-      
-      
-    
-  
-  
-  
-  
-  
-        
-        
-        <!-- GEO 优化: FAQ 常见问题板块 -->
-        
-        
-        <!-- JSON-LD Schema (SEO/GEO 自动抓取) -->
-        
-    
-        
-        <!-- 版权与阅读须知卡片 -->
-        
-        
-        <!-- GEO 优化: FAQ 常见问题板块 -->
-        
-        
-        <!-- JSON-LD Schema (SEO/GEO 自动抓取) -->
-        
-    
-        
-        <!-- 版权与阅读须知卡片 -->
         
         
         <!-- GEO 优化: FAQ 常见问题板块 -->
