@@ -4,8 +4,9 @@ import re
 import urllib.parse
 
 # 目录定义
-src_dir = r"c:\Users\psyto\Desktop\vpnstuijian.net"
-dest_dir = r"c:\Users\psyto\Desktop\vpnstuijian.net"
+base_dir = os.path.dirname(os.path.abspath(__file__))
+src_dir = base_dir
+dest_dir = base_dir
 
 # 确保目标子目录存在
 os.makedirs(os.path.join(dest_dir, "css"), exist_ok=True)
@@ -139,6 +140,13 @@ airports = [
 
 # 20篇科普文章列表
 science_articles = [
+    {'slug': 'pc-vpn-download-guide', 'title': '2026电脑VPN推荐：好用的梯子VPN排行榜与Windows/Mac客户端免费下载指南', 'date': '2026-08-29', 'cat': 'guide', 'views': 3420, 'excerpt': '2026年中国真正好用的电脑VPN与翻墙梯子软件推荐测评。提供Windows/Mac电脑端好用的VPN客户端官方免费下载入口、Clash Verge Rev一键导入教程与专线梯子节点推荐。'},
+    {'slug': '2026-august-airport-monthly-report', 'title': '2026年8月机场月报与选购指南：晚高峰专线连通率实测与防跑路避坑建议', 'date': '2026-08-28', 'cat': 'eval', 'views': 3120, 'excerpt': '2026年8月最新机场选购月报，汇总极连云、光年梯、边缘节点、速界等主力专线机场在晚高峰的网络连通率与吞吐量表现，提供防跑路避坑解析。'},
+    {'slug': 'ai-productivity-airport-guide', 'title': '2026 AI 生产力机场节点选择指南：解锁 ChatGPT 4o 与 Claude 3.5 的稳定节点推荐与配置教程', 'date': '2026-08-28', 'cat': 'tech', 'views': 2890, 'excerpt': '针对ChatGPT 4o、Claude 3.5、Midjourney等AI生产力工具防风控封号的节点选择及机场配置教程。'},
+    {'slug': 'hysteria2-vless-anytls-protocol-2026', 'title': '2026年翻墙协议科普：Hysteria2、VLESS-REALITY 与 anytls 协议特点解析与客户端选择', 'date': '2026-08-28', 'cat': 'tech', 'views': 2450, 'excerpt': '2026年主流代理协议深度拆解，对比基于UDP的Hysteria2、免证书指纹的VLESS-REALITY与anytls在抗封锁和高丢包环境下的提速优势。'},
+    {'slug': 'cost-per-gb-buying-guide-2026', 'title': '2026年机场选购指南：看懂流量倍率规则、算清真实单价与选择性价比套餐', 'date': '2026-08-27', 'cat': 'promo', 'views': 2980, 'excerpt': '教您如何在购买机场时算清真实性价比。解析节点扣费倍率陷阱、对比月付套餐与不限时流量包的划算程度，提供平价便宜机场选购技巧。'},
+    {'slug': 'airport-runaway-warning-2026', 'title': '2026年VPN机场跑路名单汇总 | 机场跑路黑名单、跑路原因与避坑指南', 'date': '2026-08-27', 'cat': 'warning', 'views': 3181, 'excerpt': '2026年最新VPN翻墙机场跑路黑名单与避坑指南。整理神速云、大麦云、星河云、闪电云等近期跑路机场名单，拆解低价圈钱与换皮洗库套路。'},
+    {'slug': 'subscription-guide', 'title': '网络订阅地址获取与客户端通用配置防跑路避坑常识', 'date': '2026-08-27', 'cat': 'warning', 'views': 3181, 'excerpt': '科普网络订阅地址获取流程，解析代理订阅泄露风险，并提供在机场遭遇攻击、跑路等风控事件下的高可用备用方案。'},
     {'slug': 'airport-guide-2026', 'title': '2026年机场排行榜：高性价比翻墙机场科普与横向评测推荐', 'date': '2026-07-24', 'cat': 'eval', 'views': 2540, 'excerpt': '2026年最新稳定高速且便宜高性价比的专线机场推荐合集，涵盖极连云、速界、边缘、光年梯等9大主流梯子深度横向评测。'},
     {'slug': 'iplc-guide', 'title': 'IPLC/IEPL专线科普：4K不卡顿、游戏加速与专线机场完全指南', 'date': '2026-07-23', 'cat': 'tech', 'views': 1890, 'excerpt': '深入科普什么是IPLC与IEPL物理专线，为什么专线机场能够做到晚高峰4K不卡顿与极低延迟游戏加速，并推荐性价比专线。'},
     {'slug': 'streaming-ai-guide', 'title': 'Netflix/ChatGPT/TikTok机场选择指南：流媒体与AI工具加速完全攻略', 'date': '2026-07-22', 'cat': 'tech', 'views': 2310, 'excerpt': '针对Netflix、Disney+流媒体解锁以及ChatGPT、Claude、TikTok等海外应用防风控封号的节点选择及机场配置教程。'},
@@ -1424,6 +1432,9 @@ def write_index():
     
     <!-- Middle Column: Main Feed -->
     <div class="middle-content">
+      <!-- Main SEO H1 Heading -->
+      <h1 class="main-page-h1" style="font-size: 1.35rem; font-weight: 700; color: var(--text-primary); margin: 0 0 16px 0; border-left: 4px solid var(--accent-primary); padding-left: 12px; line-height: 1.4;">2026年最新稳定高性价比机场与电脑VPN推荐</h1>
+
       <!-- Carousel Banner -->
       <div class="carousel-container">
         <div class="carousel-wrapper">

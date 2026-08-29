@@ -1,7 +1,7 @@
 import os
 import re
 
-base_dir = r"c:\Users\psyto\Desktop\vpnstuijian.net"
+base_dir = os.path.dirname(os.path.abspath(__file__))
 articles_dir = os.path.join(base_dir, "articles")
 
 def get_template(title, description, keywords, category_name, category_link, date, views, ai_summary, body_content, prev_link, prev_title, next_link, next_title, tags_list):
