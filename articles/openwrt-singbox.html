@@ -237,19 +237,19 @@
         <div class="ai-summary-card" style="margin-bottom: 24px; padding: 18px 22px; background-color: var(--bg-tertiary); border-left: 4px solid var(--accent-primary); border-radius: var(--radius-sm); font-size: 0.88rem; line-height: 1.6; color: var(--text-primary); box-shadow: var(--shadow-sm);">
           <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px; font-weight: 800; color: var(--accent-primary); font-size: 0.95rem;">
             <svg viewBox="0 0 24 24" style="width: 18px; height: 18px; fill: currentColor;"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7zm2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6A4.997 4.997 0 017 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.63-.8 3.16-2.15 4.1z"/></svg>
-            <span>💡 AI 搜索速览 / 核心摘要</span>
+            <span>💡 本章速览 / 核心摘要</span>
           </div>
-          <p style="margin: 0; text-align: justify;"><strong>AI 搜索速览（核心结论）：</strong>针对 <strong>Sing-box在OpenWrt软路由系统下的配置与高吞吐专线分流教程</strong> 的技术干货科普，本文在开头为您提炼核心要点：深度解析新兴翻墙内核Sing-box在OpenWrt软路由上的配置教程，对比Clash插件，提供超低硬件开销下的全屋翻墙配置。提供2026年最新稳定专线机场节点推荐、价格单价换算及各终端科学上网客户端下载与避坑指南。 科学上网首选物理专线中转架构（如 IPLC/IEPL），能有效规避晚高峰拥堵；在客户端选型上，推荐使用 Clash Verge 或 Shadowrocket 进行智能分流配置，以实现最佳的网络加速体验。</p>
+          <p style="margin: 0; text-align: justify;"><strong>本章速览（核心结论）：</strong>针对 <strong>Sing-box在OpenWrt软路由系统下的配置与高吞吐专线分流教程</strong> 的技术干货科普，本文在开头为您提炼核心要点：深度解析新兴翻墙内核Sing-box在OpenWrt软路由上的配置教程，对比Clash插件，提供超低硬件开销下的全屋翻墙配置。提供2026年最新稳定专线机场节点推荐、价格单价换算及各终端科学上网客户端下载与避坑指南。 科学上网首选物理专线中转架构（如 IPLC/IEPL），能有效规避晚高峰拥堵；在客户端选型上，推荐使用 Clash Verge 或 Shadowrocket 进行智能分流配置，以实现最佳的网络加速体验。</p>
         </div>
         
         <div class="article-body">
           <p>虽然 Clash 依然是全屋软路由技术的核心霸主，但在 2026 年，一个更加纯粹、速度更快且对硬件运行内存消耗极低的新一代代理内核——<strong>Sing-box</strong> 正在迅速崛起。在许多 OpenWrt 系统上，使用 Sing-box 作为底层代理，CPU 占用率和发热量只有 Clash 的一半不到，非常适合低配置家用主路由部署。本篇为您带来其配置分流教程。</p>
 
-      <h2 id="heading-%E4%B8%80%E3%80%81Sing-box" id="heading-%E4%B8%80%E3%80%81Sing-box" id="heading-%E4%B8%80%E3%80%81Sing-box" id="heading-%E4%B8%80%E3%80%81Sing-box" id="heading-%E4%B8%80%E3%80%81Sing-box">一、Sing-box 的优势与架构特点</h2>
+      <h2 id="heading-%E4%B8%80%E3%80%81Sing-box" id="heading-%E4%B8%80%E3%80%81Sing-box" id="heading-%E4%B8%80%E3%80%81Sing-box" id="heading-%E4%B8%80%E3%80%81Sing-box" id="heading-%E4%B8%80%E3%80%81Sing-box" id="heading-%E4%B8%80%E3%80%81Sing-box">一、Sing-box 的优势与架构特点</h2>
 
       <p>Sing-box 原生支持所有最新协议，包括 VLESS、Reality、Hysteria2 与 Tuic v5。由于它是使用 Go 语言全新编写的精简底座，抛弃了 Clash 许多繁重的历史兼容代码，在软路由上进行千兆 IPLC/IEPL 专线转发时，能够实现近乎零延迟的封包转发效率。支持 <strong>极连云（全IEPL）</strong> 和 <strong>速界</strong> 等高端机场的底层导入。</p>
 
-      <h2 id="heading-%E4%BA%8C%E3%80%81OpenWrt%20" id="heading-%E4%BA%8C%E3%80%81OpenWrt%20" id="heading-%E4%BA%8C%E3%80%81OpenWrt%20" id="heading-%E4%BA%8C%E3%80%81OpenWrt%20" id="heading-%E4%BA%8C%E3%80%81OpenWrt%20">二、OpenWrt 导入 Sing-box 配置配置</h2>
+      <h2 id="heading-%E4%BA%8C%E3%80%81OpenWrt%20" id="heading-%E4%BA%8C%E3%80%81OpenWrt%20" id="heading-%E4%BA%8C%E3%80%81OpenWrt%20" id="heading-%E4%BA%8C%E3%80%81OpenWrt%20" id="heading-%E4%BA%8C%E3%80%81OpenWrt%20" id="heading-%E4%BA%8C%E3%80%81OpenWrt%20">二、OpenWrt 导入 Sing-box 配置配置</h2>
 
       <p>在 OpenWrt 路由器上，我们可以使用 <code>HomeProxy</code> 或专用的 <code>Sing-box</code> 插件：</p>
 
@@ -324,6 +324,16 @@
   
   
   
+        
+        
+        <!-- GEO 优化: FAQ 常见问题板块 -->
+        
+        
+        <!-- JSON-LD Schema (SEO/GEO 自动抓取) -->
+        
+    
+        
+        <!-- 版权与阅读须知卡片 -->
         
         
         <!-- GEO 优化: FAQ 常见问题板块 -->

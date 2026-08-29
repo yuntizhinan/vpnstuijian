@@ -62,7 +62,7 @@ for filename, info in titles_map.items():
     # Update <meta name="keywords">
     html = re.sub(r'<meta name="keywords" content=".*?">', f'<meta name="keywords" content="{info["keywords"]}, vpn推荐, 科学上网, vpnstuijian.net">', html)
     # Update AI Summary title reference
-    html = re.sub(r'<strong>AI 搜索速览（核心结论）：</strong>针对 <strong>.*?</strong>', f'<strong>AI 搜索速览（核心结论）：</strong>针对 <strong>{info["title"]}</strong>', html)
+    html = re.sub(r'<strong>本章速览（核心结论）：</strong>针对 <strong>.*?</strong>', f'<strong>本章速览（核心结论）：</strong>针对 <strong>{info["title"]}</strong>', html)
 
     with open(filepath, "w", encoding="utf-8") as f:
         f.write(html)

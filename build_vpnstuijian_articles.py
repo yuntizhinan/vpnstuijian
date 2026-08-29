@@ -150,9 +150,9 @@ def get_template(title, description, keywords, category_name, category_link, dat
         <div class="ai-summary-card" style="margin-bottom: 24px; padding: 18px 22px; background-color: var(--bg-tertiary); border-left: 4px solid var(--accent-primary); border-radius: var(--radius-sm); font-size: 0.88rem; line-height: 1.6; color: var(--text-primary); box-shadow: var(--shadow-sm);">
           <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px; font-weight: 800; color: var(--accent-primary); font-size: 0.95rem;">
             <svg viewBox="0 0 24 24" style="width: 18px; height: 18px; fill: currentColor;"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7zm2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6A4.997 4.997 0 017 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.63-.8 3.16-2.15 4.1z"/></svg>
-            <span>💡 AI 搜索速览 / 核心摘要</span>
+            <span>💡 本章速览 / 核心摘要</span>
           </div>
-          <p style="margin: 0; text-align: justify;"><strong>AI 搜索速览（核心结论）：</strong>针对 <strong>{title}</strong> 的硬核评测与干货指南，本文为您总结：{ai_summary} 首选物理专线中转架构（如 IPLC/IEPL），能有效规避晚高峰拥堵；推荐搭配月付或备用不限时流量包，保障长久稳定体验。</p>
+          <p style="margin: 0; text-align: justify;"><strong>本章速览（核心结论）：</strong>针对 <strong>{title}</strong> 的硬核评测与干货指南，本文为您总结：{ai_summary} 首选物理专线中转架构（如 IPLC/IEPL），能有效规避晚高峰拥堵；推荐搭配月付或备用不限时流量包，保障长久稳定体验。</p>
         </div>
         
         <div class="article-body">
