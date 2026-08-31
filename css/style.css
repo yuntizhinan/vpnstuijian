@@ -201,6 +201,29 @@ button {
   background-color: var(--accent-soft);
 }
 
+.github-link {
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.github-link:hover {
+  color: var(--accent-primary);
+  background-color: var(--accent-soft);
+}
+
+.github-link svg {
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
 /* 下拉菜单结构 */
 .nav-item {
   position: relative;

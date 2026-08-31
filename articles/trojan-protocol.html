@@ -7,7 +7,7 @@
   
   <!-- SEO Meta Tags -->
   <meta name="description" content="深入剖析Trojan翻墙协议的TLS伪装原理，与V2Ray VMess/VLESS协议的安全防检测能力横向对比，并提供iOS、安卓、Windows主流客户端配置教程。">
-  <meta name="keywords" content="Trojan协议, Trojan翻墙, Trojan配置, Trojan VS V2Ray, Trojan科普, 翻墙协议对比, 稳定, 安全, 高速, 便宜, 性价比, 机场, Clash, Shadowrocket, V2RayNG, 科学上网, 翻墙, vpnstuijian.net, vpn推荐">
+  <meta name="keywords" content="Trojan协议, Trojan翻墙, Trojan配置, Trojan VS V2Ray, Trojan科普, 翻墙协议对比, 稳定, 安全, 高速, 便宜, 性价比, 机场, Clash, Shadowrocket, V2RayNG, 科学上网, 翻墙, vpnstuijian.net, vpn推荐, vpn推荐, 科学上网, vpnstuijian.net, vpn推荐, 科学上网, vpnstuijian.net, vpn推荐, 科学上网, vpnstuijian.net, vpn推荐, 科学上网, vpnstuijian.net">
   <meta name="robots" content="index, follow">
   
   <!-- GEO Tags -->
@@ -59,8 +59,6 @@
 <a href="huanyuyun-review.html" class="dropdown-item">寰宇云 测评</a>
 <a href="naixi-review.html" class="dropdown-item">奶昔 测评</a>
 <a href="huacloud-review.html" class="dropdown-item">花云 测评</a>
-<a href="yuntu-review.html" class="dropdown-item">云图 测评</a>
-<a href="kexincloud-review.html" class="dropdown-item">可信云 测评</a>
 
           </div>
         </div>
@@ -101,6 +99,14 @@
             </div>
           </div>
         </div>
+        
+        <!-- GitHub 按钮 -->
+        <a href="https://github.com/yuntizhinan/vpnstuijian#readme" target="_blank" rel="noopener noreferrer" class="github-link">
+          <svg height="20" width="20" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+          </svg>
+          <span>GitHub</span>
+        </a>
         
         <!-- 白天黑夜转换键 -->
         <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
@@ -273,18 +279,18 @@
         <div class="article-body">
           <p>Trojan 是近年来在翻墙圈子中迅速崛起的一种代理协议，以其极低的特征暴露风险和极高的抗深度包检测（DPI）能力而备受推崇。与 Shadowsocks、V2Ray 等协议相比，Trojan 的设计理念更加极简：通过将代理流量完全伪装成普通 HTTPS 网站流量，使防火长城难以区分正常 Web 浏览与翻墙代理行为。本文将深入剖析 Trojan 协议的工作原理，并与 V2Ray 进行全面横向对比。</p>
 
-<h2 id="heading-%E4%B8%80%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%20Troj" id="heading-%E4%B8%80%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%20Troj" id="heading-%E4%B8%80%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%20Troj" id="heading-%E4%B8%80%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%20Troj" id="heading-%E4%B8%80%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%20Troj" id="heading-%E4%B8%80%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%20Troj" id="heading-%E4%B8%80%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%20Troj">一、什么是 Trojan 协议？它的 TLS 流量伪装与防检测原理是什么？</h2>
+<h2 id="heading-%E4%B8%80%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%20Troj" id="heading-%E4%B8%80%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%20Troj" id="heading-%E4%B8%80%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%20Troj" id="heading-%E4%B8%80%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%20Troj" id="heading-%E4%B8%80%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%20Troj" id="heading-%E4%B8%80%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%20Troj" id="heading-%E4%B8%80%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%20Troj" id="heading-%E4%B8%80%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%20Troj" id="heading-%E4%B8%80%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%20Troj" id="heading-%E4%B8%80%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%20Troj" id="heading-%E4%B8%80%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%20Troj">一、什么是 Trojan 协议？它的 TLS 流量伪装与防检测原理是什么？</h2>
 <p>Trojan 的核心设计思路是"以真乱假"——它要求服务端必须运行一个真实的 HTTPS 网站，并在 443 端口（标准 HTTPS 端口）同时监听来自 Trojan 客户端的连接请求。当 GFW 对 443 端口的流量进行探测时，Trojan 服务端会将其当作普通 HTTPS 请求处理，返回正常的网页内容；而当合法的 Trojan 客户端连接时，服务端通过验证请求中内嵌的特殊密码（password），确认其身份后再建立代理通道。</p>
 <p>这种设计使得 Trojan 流量从外部看完全等同于正常的 TLS 1.3 HTTPS 流量，即便 GFW 进行主动探测（Active Probing），也只会看到一个"正常的 HTTPS 网站"，无法识别其为翻墙代理服务。</p>
 
-<h2 id="heading-%E4%BA%8C%E3%80%81%E7%9B%B8%E6%AF%94%E4%BA%8E%E4%BC%A0%E7%BB%9F%E5%8D%8F%E8%AE%AE%EF%BC%8C" id="heading-%E4%BA%8C%E3%80%81%E7%9B%B8%E6%AF%94%E4%BA%8E%E4%BC%A0%E7%BB%9F%E5%8D%8F%E8%AE%AE%EF%BC%8C" id="heading-%E4%BA%8C%E3%80%81%E7%9B%B8%E6%AF%94%E4%BA%8E%E4%BC%A0%E7%BB%9F%E5%8D%8F%E8%AE%AE%EF%BC%8C" id="heading-%E4%BA%8C%E3%80%81%E7%9B%B8%E6%AF%94%E4%BA%8E%E4%BC%A0%E7%BB%9F%E5%8D%8F%E8%AE%AE%EF%BC%8C" id="heading-%E4%BA%8C%E3%80%81%E7%9B%B8%E6%AF%94%E4%BA%8E%E4%BC%A0%E7%BB%9F%E5%8D%8F%E8%AE%AE%EF%BC%8C" id="heading-%E4%BA%8C%E3%80%81%E7%9B%B8%E6%AF%94%E4%BA%8E%E4%BC%A0%E7%BB%9F%E5%8D%8F%E8%AE%AE%EF%BC%8C" id="heading-%E4%BA%8C%E3%80%81%E7%9B%B8%E6%AF%94%E4%BA%8E%E4%BC%A0%E7%BB%9F%E5%8D%8F%E8%AE%AE%EF%BC%8C">二、相比于传统协议，Trojan 协议有哪些独特的核心安全优势？</h2>
+<h2 id="heading-%E4%BA%8C%E3%80%81%E7%9B%B8%E6%AF%94%E4%BA%8E%E4%BC%A0%E7%BB%9F%E5%8D%8F%E8%AE%AE%EF%BC%8C" id="heading-%E4%BA%8C%E3%80%81%E7%9B%B8%E6%AF%94%E4%BA%8E%E4%BC%A0%E7%BB%9F%E5%8D%8F%E8%AE%AE%EF%BC%8C" id="heading-%E4%BA%8C%E3%80%81%E7%9B%B8%E6%AF%94%E4%BA%8E%E4%BC%A0%E7%BB%9F%E5%8D%8F%E8%AE%AE%EF%BC%8C" id="heading-%E4%BA%8C%E3%80%81%E7%9B%B8%E6%AF%94%E4%BA%8E%E4%BC%A0%E7%BB%9F%E5%8D%8F%E8%AE%AE%EF%BC%8C" id="heading-%E4%BA%8C%E3%80%81%E7%9B%B8%E6%AF%94%E4%BA%8E%E4%BC%A0%E7%BB%9F%E5%8D%8F%E8%AE%AE%EF%BC%8C" id="heading-%E4%BA%8C%E3%80%81%E7%9B%B8%E6%AF%94%E4%BA%8E%E4%BC%A0%E7%BB%9F%E5%8D%8F%E8%AE%AE%EF%BC%8C" id="heading-%E4%BA%8C%E3%80%81%E7%9B%B8%E6%AF%94%E4%BA%8E%E4%BC%A0%E7%BB%9F%E5%8D%8F%E8%AE%AE%EF%BC%8C" id="heading-%E4%BA%8C%E3%80%81%E7%9B%B8%E6%AF%94%E4%BA%8E%E4%BC%A0%E7%BB%9F%E5%8D%8F%E8%AE%AE%EF%BC%8C" id="heading-%E4%BA%8C%E3%80%81%E7%9B%B8%E6%AF%94%E4%BA%8E%E4%BC%A0%E7%BB%9F%E5%8D%8F%E8%AE%AE%EF%BC%8C" id="heading-%E4%BA%8C%E3%80%81%E7%9B%B8%E6%AF%94%E4%BA%8E%E4%BC%A0%E7%BB%9F%E5%8D%8F%E8%AE%AE%EF%BC%8C" id="heading-%E4%BA%8C%E3%80%81%E7%9B%B8%E6%AF%94%E4%BA%8E%E4%BC%A0%E7%BB%9F%E5%8D%8F%E8%AE%AE%EF%BC%8C">二、相比于传统协议，Trojan 协议有哪些独特的核心安全优势？</h2>
 <ul>
   <li><strong>极低特征暴露：</strong>使用标准 443 端口，全程 TLS 1.3 加密，流量特征与普通 HTTPS 完全一致，极难被深度包检测（DPI）识别。</li>
   <li><strong>性能高效：</strong>相比 V2Ray 的 VMess 协议，Trojan 的加密层更轻量，CPU 占用更低，在相同节点配置下速度通常更快。</li>
   <li><strong>配置相对简单：</strong>服务端配置文件比 V2Ray 的 JSON 配置简洁，对 VPS 自建用户更友好。</li>
 </ul>
 
-<h2 id="heading-%E4%B8%89%E3%80%81Trojan%20%E4%B8%8E" id="heading-%E4%B8%89%E3%80%81Trojan%20%E4%B8%8E" id="heading-%E4%B8%89%E3%80%81Trojan%20%E4%B8%8E" id="heading-%E4%B8%89%E3%80%81Trojan%20%E4%B8%8E" id="heading-%E4%B8%89%E3%80%81Trojan%20%E4%B8%8E" id="heading-%E4%B8%89%E3%80%81Trojan%20%E4%B8%8E" id="heading-%E4%B8%89%E3%80%81Trojan%20%E4%B8%8E">三、Trojan 与 V2Ray 协议横向对比：哪个速度快、防封锁性能好？</h2>
+<h2 id="heading-%E4%B8%89%E3%80%81Trojan%20%E4%B8%8E" id="heading-%E4%B8%89%E3%80%81Trojan%20%E4%B8%8E" id="heading-%E4%B8%89%E3%80%81Trojan%20%E4%B8%8E" id="heading-%E4%B8%89%E3%80%81Trojan%20%E4%B8%8E" id="heading-%E4%B8%89%E3%80%81Trojan%20%E4%B8%8E" id="heading-%E4%B8%89%E3%80%81Trojan%20%E4%B8%8E" id="heading-%E4%B8%89%E3%80%81Trojan%20%E4%B8%8E" id="heading-%E4%B8%89%E3%80%81Trojan%20%E4%B8%8E" id="heading-%E4%B8%89%E3%80%81Trojan%20%E4%B8%8E" id="heading-%E4%B8%89%E3%80%81Trojan%20%E4%B8%8E" id="heading-%E4%B8%89%E3%80%81Trojan%20%E4%B8%8E">三、Trojan 与 V2Ray 协议横向对比：哪个速度快、防封锁性能好？</h2>
 <p>以下是 Trojan 与 V2Ray 两大主流协议的多维度横向对比：</p>
 <ul>
   <li><strong>抗封锁能力：</strong>Trojan ≈ V2Ray+TLS（均为 TLS 加密，特征极低）；明显优于 VMess+WebSocket（可被流量特征检测识别）。</li>
@@ -293,15 +299,15 @@
   <li><strong>客户端兼容性：</strong>两者均被 Clash、Shadowrocket、V2RayNG 等主流客户端广泛支持，兼容性相当。</li>
 </ul>
 
-<h2 id="heading-%E5%9B%9B%E3%80%81Clash%E3%80%81%E5%B0%8F%E7%81%AB" id="heading-%E5%9B%9B%E3%80%81Clash%E3%80%81%E5%B0%8F%E7%81%AB" id="heading-%E5%9B%9B%E3%80%81Clash%E3%80%81%E5%B0%8F%E7%81%AB" id="heading-%E5%9B%9B%E3%80%81Clash%E3%80%81%E5%B0%8F%E7%81%AB" id="heading-%E5%9B%9B%E3%80%81Clash%E3%80%81%E5%B0%8F%E7%81%AB" id="heading-%E5%9B%9B%E3%80%81Clash%E3%80%81%E5%B0%8F%E7%81%AB" id="heading-%E5%9B%9B%E3%80%81Clash%E3%80%81%E5%B0%8F%E7%81%AB">四、Clash、小火箭及 V2Ray 客户端中怎么导入和配置 Trojan 订阅？</h2>
-<h3 id="heading-Clash%EF%BC%88Wind" id="heading-Clash%EF%BC%88Wind" id="heading-Clash%EF%BC%88Wind" id="heading-Clash%EF%BC%88Wind" id="heading-Clash%EF%BC%88Wind" id="heading-Clash%EF%BC%88Wind" id="heading-Clash%EF%BC%88Wind">Clash（Windows/macOS）配置</h3>
+<h2 id="heading-%E5%9B%9B%E3%80%81Clash%E3%80%81%E5%B0%8F%E7%81%AB" id="heading-%E5%9B%9B%E3%80%81Clash%E3%80%81%E5%B0%8F%E7%81%AB" id="heading-%E5%9B%9B%E3%80%81Clash%E3%80%81%E5%B0%8F%E7%81%AB" id="heading-%E5%9B%9B%E3%80%81Clash%E3%80%81%E5%B0%8F%E7%81%AB" id="heading-%E5%9B%9B%E3%80%81Clash%E3%80%81%E5%B0%8F%E7%81%AB" id="heading-%E5%9B%9B%E3%80%81Clash%E3%80%81%E5%B0%8F%E7%81%AB" id="heading-%E5%9B%9B%E3%80%81Clash%E3%80%81%E5%B0%8F%E7%81%AB" id="heading-%E5%9B%9B%E3%80%81Clash%E3%80%81%E5%B0%8F%E7%81%AB" id="heading-%E5%9B%9B%E3%80%81Clash%E3%80%81%E5%B0%8F%E7%81%AB" id="heading-%E5%9B%9B%E3%80%81Clash%E3%80%81%E5%B0%8F%E7%81%AB" id="heading-%E5%9B%9B%E3%80%81Clash%E3%80%81%E5%B0%8F%E7%81%AB">四、Clash、小火箭及 V2Ray 客户端中怎么导入和配置 Trojan 订阅？</h2>
+<h3 id="heading-Clash%EF%BC%88Wind" id="heading-Clash%EF%BC%88Wind" id="heading-Clash%EF%BC%88Wind" id="heading-Clash%EF%BC%88Wind" id="heading-Clash%EF%BC%88Wind" id="heading-Clash%EF%BC%88Wind" id="heading-Clash%EF%BC%88Wind" id="heading-Clash%EF%BC%88Wind" id="heading-Clash%EF%BC%88Wind" id="heading-Clash%EF%BC%88Wind" id="heading-Clash%EF%BC%88Wind">Clash（Windows/macOS）配置</h3>
 <p>在 Clash 的 YAML 配置文件中，Trojan 节点的格式如下：</p>
 <p>将节点的服务器地址、端口（通常为 443）、密码填入对应字段，sni 填入服务端使用的域名，即可完成配置。Clash Verge Rev 支持直接导入机场提供的 Trojan 订阅链接，无需手动编辑 YAML 文件。</p>
 
-<h3 id="heading-Shadowrock" id="heading-Shadowrock" id="heading-Shadowrock" id="heading-Shadowrock" id="heading-Shadowrock" id="heading-Shadowrock" id="heading-Shadowrock">Shadowrocket（iOS）配置</h3>
+<h3 id="heading-Shadowrock" id="heading-Shadowrock" id="heading-Shadowrock" id="heading-Shadowrock" id="heading-Shadowrock" id="heading-Shadowrock" id="heading-Shadowrock" id="heading-Shadowrock" id="heading-Shadowrock" id="heading-Shadowrock" id="heading-Shadowrock">Shadowrocket（iOS）配置</h3>
 <p>在 Shadowrocket 中，点击右上角"+"，类型选择"Trojan"，依次填入服务器地址、端口（443）、密码，以及 Peer Name（即服务端域名/SNI）后保存即可。如果机场提供了 Shadowrocket 专用订阅链接，可直接一键导入，无需手动配置。</p>
 
-<h2 id="heading-%E4%BA%94%E3%80%81%E6%9C%89%E5%93%AA%E4%BA%9B%E7%A8%B3%E5%AE%9A%E8%BF%90%E8%90%A5%E4%B8%94" id="heading-%E4%BA%94%E3%80%81%E6%9C%89%E5%93%AA%E4%BA%9B%E7%A8%B3%E5%AE%9A%E8%BF%90%E8%90%A5%E4%B8%94" id="heading-%E4%BA%94%E3%80%81%E6%9C%89%E5%93%AA%E4%BA%9B%E7%A8%B3%E5%AE%9A%E8%BF%90%E8%90%A5%E4%B8%94" id="heading-%E4%BA%94%E3%80%81%E6%9C%89%E5%93%AA%E4%BA%9B%E7%A8%B3%E5%AE%9A%E8%BF%90%E8%90%A5%E4%B8%94" id="heading-%E4%BA%94%E3%80%81%E6%9C%89%E5%93%AA%E4%BA%9B%E7%A8%B3%E5%AE%9A%E8%BF%90%E8%90%A5%E4%B8%94" id="heading-%E4%BA%94%E3%80%81%E6%9C%89%E5%93%AA%E4%BA%9B%E7%A8%B3%E5%AE%9A%E8%BF%90%E8%90%A5%E4%B8%94" id="heading-%E4%BA%94%E3%80%81%E6%9C%89%E5%93%AA%E4%BA%9B%E7%A8%B3%E5%AE%9A%E8%BF%90%E8%90%A5%E4%B8%94">五、有哪些稳定运营且全面支持 Trojan 协议的推荐机场？</h2>
+<h2 id="heading-%E4%BA%94%E3%80%81%E6%9C%89%E5%93%AA%E4%BA%9B%E7%A8%B3%E5%AE%9A%E8%BF%90%E8%90%A5%E4%B8%94" id="heading-%E4%BA%94%E3%80%81%E6%9C%89%E5%93%AA%E4%BA%9B%E7%A8%B3%E5%AE%9A%E8%BF%90%E8%90%A5%E4%B8%94" id="heading-%E4%BA%94%E3%80%81%E6%9C%89%E5%93%AA%E4%BA%9B%E7%A8%B3%E5%AE%9A%E8%BF%90%E8%90%A5%E4%B8%94" id="heading-%E4%BA%94%E3%80%81%E6%9C%89%E5%93%AA%E4%BA%9B%E7%A8%B3%E5%AE%9A%E8%BF%90%E8%90%A5%E4%B8%94" id="heading-%E4%BA%94%E3%80%81%E6%9C%89%E5%93%AA%E4%BA%9B%E7%A8%B3%E5%AE%9A%E8%BF%90%E8%90%A5%E4%B8%94" id="heading-%E4%BA%94%E3%80%81%E6%9C%89%E5%93%AA%E4%BA%9B%E7%A8%B3%E5%AE%9A%E8%BF%90%E8%90%A5%E4%B8%94" id="heading-%E4%BA%94%E3%80%81%E6%9C%89%E5%93%AA%E4%BA%9B%E7%A8%B3%E5%AE%9A%E8%BF%90%E8%90%A5%E4%B8%94" id="heading-%E4%BA%94%E3%80%81%E6%9C%89%E5%93%AA%E4%BA%9B%E7%A8%B3%E5%AE%9A%E8%BF%90%E8%90%A5%E4%B8%94" id="heading-%E4%BA%94%E3%80%81%E6%9C%89%E5%93%AA%E4%BA%9B%E7%A8%B3%E5%AE%9A%E8%BF%90%E8%90%A5%E4%B8%94" id="heading-%E4%BA%94%E3%80%81%E6%9C%89%E5%93%AA%E4%BA%9B%E7%A8%B3%E5%AE%9A%E8%BF%90%E8%90%A5%E4%B8%94" id="heading-%E4%BA%94%E3%80%81%E6%9C%89%E5%93%AA%E4%BA%9B%E7%A8%B3%E5%AE%9A%E8%BF%90%E8%90%A5%E4%B8%94">五、有哪些稳定运营且全面支持 Trojan 协议的推荐机场？</h2>
 <p>以下机场均支持 Trojan 协议节点，订阅后可在 Clash 或 Shadowrocket 中直接使用：</p>
 <ul>
   <li><strong>极连云：</strong>全 IPLC 专线，支持多协议（Trojan/VLESS/Reality），晚高峰零丢包。</li>
@@ -309,7 +315,7 @@
   <li><strong>边缘节点：</strong>专为游戏与低延迟优化，支持 Trojan-Go 协议，适合对延迟敏感的用户。</li>
 </ul>
 
-<h2 id="heading-%E5%85%AD%E3%80%81%E5%B0%8F%E7%BB%93" id="heading-%E5%85%AD%E3%80%81%E5%B0%8F%E7%BB%93" id="heading-%E5%85%AD%E3%80%81%E5%B0%8F%E7%BB%93" id="heading-%E5%85%AD%E3%80%81%E5%B0%8F%E7%BB%93" id="heading-%E5%85%AD%E3%80%81%E5%B0%8F%E7%BB%93" id="heading-%E5%85%AD%E3%80%81%E5%B0%8F%E7%BB%93" id="heading-%E5%85%AD%E3%80%81%E5%B0%8F%E7%BB%93">六、小结</h2>
+<h2 id="heading-%E5%85%AD%E3%80%81%E5%B0%8F%E7%BB%93" id="heading-%E5%85%AD%E3%80%81%E5%B0%8F%E7%BB%93" id="heading-%E5%85%AD%E3%80%81%E5%B0%8F%E7%BB%93" id="heading-%E5%85%AD%E3%80%81%E5%B0%8F%E7%BB%93" id="heading-%E5%85%AD%E3%80%81%E5%B0%8F%E7%BB%93" id="heading-%E5%85%AD%E3%80%81%E5%B0%8F%E7%BB%93" id="heading-%E5%85%AD%E3%80%81%E5%B0%8F%E7%BB%93" id="heading-%E5%85%AD%E3%80%81%E5%B0%8F%E7%BB%93" id="heading-%E5%85%AD%E3%80%81%E5%B0%8F%E7%BB%93" id="heading-%E5%85%AD%E3%80%81%E5%B0%8F%E7%BB%93" id="heading-%E5%85%AD%E3%80%81%E5%B0%8F%E7%BB%93">六、小结</h2>
 <p>Trojan 协议以其极强的抗 GFW 检测能力和轻量高效的传输性能，已成为目前专线机场标配的核心协议之一。对于追求稳定性与安全性的科学上网用户，Trojan 协议配合优质专线机场，是目前综合评分最高的翻墙方案之一。</p>
 </div>
         
