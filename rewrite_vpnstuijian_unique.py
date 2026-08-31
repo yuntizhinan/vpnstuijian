@@ -68,6 +68,8 @@ def get_template(title, description, keywords, category_name, category_link, dat
             <a href="huanyuyun-review.html" class="dropdown-item">寰宇云 测评</a>
             <a href="naixi-review.html" class="dropdown-item">奶昔 测评</a>
             <a href="huacloud-review.html" class="dropdown-item">花云 测评</a>
+            <a href="yuntu-review.html" class="dropdown-item">云图 测评</a>
+            <a href="kexincloud-review.html" class="dropdown-item">可信云 测评</a>
           </div>
         </div>
         

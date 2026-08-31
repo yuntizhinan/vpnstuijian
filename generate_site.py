@@ -22,12 +22,38 @@ links = {
     '速界': 'https://lqy001.speedworldaff.com/#/?code=C2v7kRVl',
     '瞬云': 'https://aaa.jichang.best/#/register?code=ClNa0zPm',
     '寰宇云': 'https://vip3.huanyuyunbest.com/#/register?code=K6h5VWw2',
+    '云图': 'https://vip.ytjcok.org/#/register?code=nDsDjrfI',
+    '可信云': 'https://asfasf.kexintztz2.sbs/#/?code=BStg7pM7',
     '奶昔': '#', # 奶昔和花云用内部跳转或演示链接
     '花云': '#'
 }
 
-# 9大推荐机场列表
+# 11大推荐机场列表
 airports = [
+    {
+        'name': '云图',
+        'badge': '金融级专线',
+        'is_recommended': True,
+        'slug': 'yuntu-review',
+        'link': links['云图'],
+        'desc': ['全节点1倍率无陷阱', '金融级专线24H高速', '原生IP全解锁ChatGPT/奈飞'],
+        'chart': [98, 99, 98, 99, 99, 99, 100],
+        'speed': '380 Mbps',
+        'latency': '26ms',
+        'logo': 'https://i.ibb.co/KjF9cLRT/yuntulogo.png'
+    },
+    {
+        'name': '可信云',
+        'badge': '全IEPL物理专线',
+        'is_recommended': True,
+        'slug': 'kexincloud-review',
+        'link': links['可信云'],
+        'desc': ['60+顶级专线节点', '不限制在线设备数量', '三年付享受 7 折优惠'],
+        'chart': [99, 99, 98, 100, 99, 99, 100],
+        'speed': '420 Mbps',
+        'latency': '23ms',
+        'logo': 'https://i.ibb.co/k6KksRQN/20260723-124327-62e599.webp'
+    },
     {
         'name': '速界',
         'badge': '不限速设备',
