@@ -51,7 +51,7 @@
 
 | 服务商 | 线路类型 / 定位 | 核心优势 | 推荐指数 | 官网入口 |
 | :--- | :--- | :--- | :---: | :---: |
-| **极连云** | 全 IEPL 专线标杆 | 晚高峰零丢包、全节点 1 倍率扣费 | ⭐⭐⭐⭐⭐ | [点击直达](https://19629.jlyvipaff.com/#/?code=9ygBtCN8) |
+| **极连云** | 全 IEPL 专线标杆 | 晚高峰零丢包、全节点 1 倍率扣费 | ⭐⭐⭐⭐⭐ | [点击直达](https://19629.jlyvipaff.com/#/?code=zMHMPYDj) |
 | **速界** | 端到端 IEPL 专线 | 不限制在线设备数、自研一键客户端 | ⭐⭐⭐⭐⭐ | [点击直达](https://lqy001.speedworldaff.com/#/?code=C2v7kRVl) |
 | **边缘 (EdgeNova)** | 内存无日志专线 | 只读内存服务器、零日志隐私、自研客户端 | ⭐⭐⭐⭐⭐ | [点击直达](https://zoio.edgenovaaff.cc/#/?code=Y65i2kCU) |
 | **云图** | 金融级专线 | 全节点 1 倍率无陷阱、24H 高速、原生 IP 全解锁 | ⭐⭐⭐⭐⭐ | [点击直达](https://vip.ytjcok.org/#/register?code=nDsDjrfI) |
@@ -66,7 +66,7 @@
 ## 👑 高端 IEPL / 旗舰专线专区
 
 ### 1. 极连云
-🔗 **官网入口**：[https://19629.jlyvipaff.com/#/?code=9ygBtCN8](https://19629.jlyvipaff.com/#/?code=9ygBtCN8)
+🔗 **官网入口**：[https://19629.jlyvipaff.com/#/?code=zMHMPYDj](https://19629.jlyvipaff.com/#/?code=zMHMPYDj)
 
 | 项目 | 说明 |
 | :--- | :--- |

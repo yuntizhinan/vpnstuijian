@@ -269,10 +269,13 @@ def get_template(title, description, keywords, category_name, category_link, dat
         <div class="footer-links-col">
           <h4 class="footer-links-title">友情推荐</h4>
           <ul class="footer-links-list">
-            <li><a href="https://lqy001.speedworldaff.com/#/?code=C2v7kRVl" target="_blank" class="footer-link">速界官网 (不限速设备) ↗</a></li>
-            <li><a href="https://19629.jlyvipaff.com/#/?code=9ygBtCN8" target="_blank" class="footer-link">极连云官网 (IEPL物理专线) ↗</a></li>
-            <li><a href="https://zoio.edgenovaaff.cc/#/?code=Y65i2kCU" target="_blank" class="footer-link">边缘官网 (零日志高安全) ↗</a></li>
-            <li><a href="https://19629.gntaff.com/#/?code=AixFrykO" target="_blank" class="footer-link">光年梯官网 (解锁流媒体) ↗</a></li>
+            <li><a href="https://clash-jichang.com" target="_blank" class="footer-link">道一博客 ↗</a></li>
+            <li><a href="https://vpnstuijian.com" target="_blank" class="footer-link">机场速递 ↗</a></li>
+            <li><a href="https://clashmac.vip" target="_blank" class="footer-link">科学上网知识库 ↗</a></li>
+            <li><a href="https://nodehub168.com" target="_blank" class="footer-link">云梯指南 ↗</a></li>
+            <li><a href="https://jichang-go.com" target="_blank" class="footer-link">机场GO ↗</a></li>
+            <li><a href="https://yzrztop.com" target="_blank" class="footer-link">优质资源TOP ↗</a></li>
+            <li><a href="https://jichang365.com" target="_blank" class="footer-link">机场365 ↗</a></li>
           </ul>
         </div>
         <div class="footer-links-col">
@@ -321,7 +324,7 @@ vpn_art1_body = """
   <tbody>
     <tr>
       <td>极连云</td>
-      <td><a href="https://19629.jlyvipaff.com/#/?code=9ygBtCN8" target="_blank"><strong>极连云官网入口 ↗</strong></a></td>
+      <td><a href="https://19629.jlyvipaff.com/#/?code=zMHMPYDj" target="_blank"><strong>极连云官网入口 ↗</strong></a></td>
       <td>¥15.50/月</td>
       <td>480 Mbps (极致稳定)</td>
       <td>全绿完美解锁 (Netflix/ChatGPT)</td>
@@ -485,7 +488,7 @@ vpn_art3_body = """
 <h2>二、三种协议在不同网络环境下的抗丢包与跑速实测</h2>
 <p>针对不同的本地网络条件，三种协议的表现各有侧重：</p>
 <ul>
-  <li><strong>anytls 协议：</strong> 最适合用于极其敏感的网络环境。由于其动态握手伪装能让节点在遭遇主动扫描时表现得完全像一个标准 Web 官网，因此安全性与连通率最高（代表机场：<a href="https://19629.jlyvipaff.com/#/?code=9ygBtCN8" target="_blank">极连云 ↗</a>）。</li>
+  <li><strong>anytls 协议：</strong> 最适合用于极其敏感的网络环境。由于其动态握手伪装能让节点在遭遇主动扫描时表现得完全像一个标准 Web 官网，因此安全性与连通率最高（代表机场：<a href="https://19629.jlyvipaff.com/#/?code=zMHMPYDj" target="_blank">极连云 ↗</a>）。</li>
   <li><strong>VLESS-REALITY 协议：</strong> 彻底解决了传统代理必须购买域名、申请证书的繁琐流程。在中间人抓包看来，您的流量与访问微软或苹果官网完全相同（代表机场：<a href="https://zoio.edgenovaaff.cc/#/?code=Y65i2kCU" target="_blank">边缘节点 EdgeNova ↗</a>）。</li>
   <li><strong>Hysteria 2 协议：</strong> 在校园网、小宽带或骨干网丢包率高于 20% 时表现神勇。即使底层丢包严重，Hysteria 2 也能凭独特的 QUIC 算法瞬间榨干带宽（代表机场：<a href="https://aaa.jichang.best/#/register?code=ClNa0zPm" target="_blank">瞬云 ↗</a>）。</li>
 </ul>
@@ -512,7 +515,7 @@ vpn_art4_body = """
 <p style="background: rgba(0,0,0,0.04); padding: 12px; border-radius: var(--radius-sm); font-weight: 600; text-align: center;">
   实际单价 (元/GB) = 套餐售价 ÷ (标称流量 ÷ 常用节点平均倍率)
 </p>
-<p>例如：宣称 10 元给 300GB 但主力节点 3.0x 扣费的机场，实际可用只有 100GB，折合 <strong>0.1 元/GB</strong>。而 <a href="https://19629.jlyvipaff.com/#/?code=9ygBtCN8" target="_blank">极连云</a> 15.5 元给 100GB 全专线且全线 1.0x 扣费，且拥有 4K 不卡顿体验，其实际价值远优于前者。</p>
+<p>例如：宣称 10 元给 300GB 但主力节点 3.0x 扣费的机场，实际可用只有 100GB，折合 <strong>0.1 元/GB</strong>。而 <a href="https://19629.jlyvipaff.com/#/?code=zMHMPYDj" target="_blank">极连云</a> 15.5 元给 100GB 全专线且全线 1.0x 扣费，且拥有 4K 不卡顿体验，其实际价值远优于前者。</p>
 
 <h2>三、2026 高性价比平价专线与不限时流量包推荐</h2>
 
@@ -529,7 +532,7 @@ vpn_art4_body = """
   <tbody>
     <tr>
       <td>极连云</td>
-      <td><a href="https://19629.jlyvipaff.com/#/?code=9ygBtCN8" target="_blank"><strong>极连云官网 ↗</strong></a></td>
+      <td><a href="https://19629.jlyvipaff.com/#/?code=zMHMPYDj" target="_blank"><strong>极连云官网 ↗</strong></a></td>
       <td>¥15.50/月</td>
       <td>100GB/月 (IPLC专线)</td>
       <td>1.0x 真实不坑</td>

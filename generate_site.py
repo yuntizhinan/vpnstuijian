@@ -15,7 +15,7 @@ os.makedirs(os.path.join(dest_dir, "articles"), exist_ok=True)
 
 # 外部跳转链接
 links = {
-    '极连云': 'https://19629.jlyvipaff.com/#/?code=9ygBtCN8',
+    '极连云': 'https://19629.jlyvipaff.com/#/?code=zMHMPYDj',
     '边缘节点': 'https://zoio.edgenovaaff.cc/#/?code=Y65i2kCU',
     '光年梯': 'https://19629.gntaff.com/#/?code=AixFrykO',
     '快狸': 'https://196295.kuailiaff.com/#/?code=tmUe2z1n',
@@ -759,10 +759,13 @@ def get_footer_html(depth=0):
         <div class="footer-links-col">
           <h4 class="footer-links-title">友情推荐</h4>
           <ul class="footer-links-list">
-            <li><a href="{links['速界']}" target="_blank" class="footer-link">速界官网 (不限速设备) ↗</a></li>
-            <li><a href="{links['极连云']}" target="_blank" class="footer-link">极连云官网 (IEPL物理专线) ↗</a></li>
-            <li><a href="{links['边缘节点']}" target="_blank" class="footer-link">边缘官网 (零日志高安全) ↗</a></li>
-            <li><a href="{links['光年梯']}" target="_blank" class="footer-link">光年梯官网 (解锁流媒体) ↗</a></li>
+            <li><a href="https://clash-jichang.com" target="_blank" class="footer-link">道一博客 ↗</a></li>
+            <li><a href="https://vpnstuijian.com" target="_blank" class="footer-link">机场速递 ↗</a></li>
+            <li><a href="https://clashmac.vip" target="_blank" class="footer-link">科学上网知识库 ↗</a></li>
+            <li><a href="https://nodehub168.com" target="_blank" class="footer-link">云梯指南 ↗</a></li>
+            <li><a href="https://jichang-go.com" target="_blank" class="footer-link">机场GO ↗</a></li>
+            <li><a href="https://yzrztop.com" target="_blank" class="footer-link">优质资源TOP ↗</a></li>
+            <li><a href="https://jichang365.com" target="_blank" class="footer-link">机场365 ↗</a></li>
           </ul>
         </div>
         <div class="footer-links-col">

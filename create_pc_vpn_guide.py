@@ -49,7 +49,7 @@ body_html = """
         <td style="padding: 10px;">全IEPL端到端专线</td>
         <td style="padding: 10px; color:#10b981;">460 Mbps (22ms)</td>
         <td style="padding: 10px;">电脑高吞吐/4K8K/游戏加速</td>
-        <td style="padding: 10px;"><a href="https://19629.jlyvipaff.com/#/?code=9ygBtCN8" target="_blank" rel="nofollow" style="color:var(--accent-primary); font-weight:bold;">访问官网 →</a></td>
+        <td style="padding: 10px;"><a href="https://19629.jlyvipaff.com/#/?code=zMHMPYDj" target="_blank" rel="nofollow" style="color:var(--accent-primary); font-weight:bold;">访问官网 →</a></td>
       </tr>
       <tr style="border-bottom: 1px solid var(--border-color);">
         <td style="padding: 10px; font-weight: bold;">速界</td>

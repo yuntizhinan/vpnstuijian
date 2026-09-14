@@ -270,10 +270,13 @@ def get_template(title, description, keywords, category_name, category_link, dat
         <div class="footer-links-col">
           <h4 class="footer-links-title">友情推荐</h4>
           <ul class="footer-links-list">
-            <li><a href="https://lqy001.speedworldaff.com/#/?code=C2v7kRVl" target="_blank" class="footer-link">速界官网 (不限速设备) ↗</a></li>
-            <li><a href="https://19629.jlyvipaff.com/#/?code=9ygBtCN8" target="_blank" class="footer-link">极连云官网 (IEPL物理专线) ↗</a></li>
-            <li><a href="https://zoio.edgenovaaff.cc/#/?code=Y65i2kCU" target="_blank" class="footer-link">边缘官网 (零日志高安全) ↗</a></li>
-            <li><a href="https://19629.gntaff.com/#/?code=AixFrykO" target="_blank" class="footer-link">光年梯官网 (解锁流媒体) ↗</a></li>
+            <li><a href="https://clash-jichang.com" target="_blank" class="footer-link">道一博客 ↗</a></li>
+            <li><a href="https://vpnstuijian.com" target="_blank" class="footer-link">机场速递 ↗</a></li>
+            <li><a href="https://clashmac.vip" target="_blank" class="footer-link">科学上网知识库 ↗</a></li>
+            <li><a href="https://nodehub168.com" target="_blank" class="footer-link">云梯指南 ↗</a></li>
+            <li><a href="https://jichang-go.com" target="_blank" class="footer-link">机场GO ↗</a></li>
+            <li><a href="https://yzrztop.com" target="_blank" class="footer-link">优质资源TOP ↗</a></li>
+            <li><a href="https://jichang365.com" target="_blank" class="footer-link">机场365 ↗</a></li>
           </ul>
         </div>
         <div class="footer-links-col">
@@ -319,7 +322,7 @@ art1_body = """
   <tbody>
     <tr>
       <td>极连云</td>
-      <td><a href="https://19629.jlyvipaff.com/#/?code=9ygBtCN8" target="_blank"><strong>基础套餐 ↗</strong></a></td>
+      <td><a href="https://19629.jlyvipaff.com/#/?code=zMHMPYDj" target="_blank"><strong>基础套餐 ↗</strong></a></td>
       <td>¥15.50/月</td>
       <td>100GB/月</td>
       <td>全 IPLC 物理专线，设备数不限，晚高峰极稳</td>
@@ -413,7 +416,7 @@ art2_body = """
   <tbody>
     <tr>
       <td>极连云</td>
-      <td><a href="https://19629.jlyvipaff.com/#/?code=9ygBtCN8" target="_blank"><strong>基础套餐 ↗</strong></a></td>
+      <td><a href="https://19629.jlyvipaff.com/#/?code=zMHMPYDj" target="_blank"><strong>基础套餐 ↗</strong></a></td>
       <td>¥15.50/月</td>
       <td>全绿解锁 (ChatGPT/Claude)</td>
       <td>全 IPLC 专线，原生 IP 解锁，性价比极高</td>
@@ -491,7 +494,7 @@ art3_body = """
       <td>TCP / 动态伪装</td>
       <td>隐蔽性极高，防止防火墙主动探测</td>
       <td>网络敏感期、高防封锁环境</td>
-      <td><a href="https://19629.jlyvipaff.com/#/?code=9ygBtCN8" target="_blank">极连云 ↗</a></td>
+      <td><a href="https://19629.jlyvipaff.com/#/?code=zMHMPYDj" target="_blank">极连云 ↗</a></td>
     </tr>
     <tr>
       <td><strong>VLESS-REALITY</strong></td>
@@ -566,7 +569,7 @@ art4_body = """
   <tbody>
     <tr>
       <td>极连云</td>
-      <td><a href="https://19629.jlyvipaff.com/#/?code=9ygBtCN8" target="_blank"><strong>基础套餐 ↗</strong></a></td>
+      <td><a href="https://19629.jlyvipaff.com/#/?code=zMHMPYDj" target="_blank"><strong>基础套餐 ↗</strong></a></td>
       <td>¥15.50/月</td>
       <td>100GB/月</td>
       <td>1.0x (无扣费陷阱)</td>
@@ -694,7 +697,7 @@ art5_body = """
   <tbody>
     <tr>
       <td>极连云</td>
-      <td><a href="https://19629.jlyvipaff.com/#/?code=9ygBtCN8" target="_blank"><strong>基础月付 ↗</strong></a></td>
+      <td><a href="https://19629.jlyvipaff.com/#/?code=zMHMPYDj" target="_blank"><strong>基础月付 ↗</strong></a></td>
       <td>¥15.50/月 (100G)</td>
       <td>全 IPLC 专线中继，全 1.0x 真实扣费，月付极其安全</td>
     </tr>
