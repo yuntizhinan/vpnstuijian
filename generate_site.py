@@ -574,9 +574,13 @@ def clean_body_content(body_content):
     body_content = re.sub(r'<div\s+class="article-prev-next-nav".*?</div>', '', body_content, flags=re.DOTALL)
     body_content = re.sub(r'<a\s+[^>]*class="[^"]*article-nav-card[^"]*"[^>]*>.*?</a>', '', body_content, flags=re.DOTALL)
     body_content = re.sub(r'<script\s+src="[^"]*main\.js"></script>', '', body_content, flags=re.DOTALL)
+    body_content = re.sub(r'<div\s+class="ai-summary-card".*?</div>\s*</div>', '', body_content, flags=re.DOTALL)
+    body_content = re.sub(r'<div\s+class="ai-summary-card".*?</div>', '', body_content, flags=re.DOTALL)
+    body_content = re.sub(r'<p[^>]*>\s*<strong>本章速览（核心结论）：</strong>.*?</p>', '', body_content, flags=re.DOTALL)
 
     # 清理多余注释
     body_content = re.sub(r'<!--\s*GEO 优化: FAQ 常见问题板块\s*-->', '', body_content)
+    body_content = re.sub(r'<!--\s*GEO 优化: AI 搜索摘要卡片\s*-->', '', body_content)
     body_content = re.sub(r'<!--\s*JSON-LD Schema \(SEO/GEO 自动抓取\)\s*-->', '', body_content)
     body_content = re.sub(r'<!--\s*版权与阅读须知卡片\s*-->', '', body_content)
 
@@ -1272,18 +1276,11 @@ for ap in airports:
         end_idx = src_html.find('</article>')
 
     if start_idx != -1 and end_idx != -1 and start_idx < end_idx:
-        # 寻找 ai-summary-card 之后的内容
-        summary_card_pos = src_html.find('ai-summary-card', start_idx)
-        if summary_card_pos != -1 and summary_card_pos < end_idx:
-            closing_div = src_html.find('</div>', summary_card_pos)
+        header_pos = src_html.find('article-header', start_idx)
+        if header_pos != -1 and header_pos < end_idx:
+            closing_div = src_html.find('</div>', header_pos)
             if closing_div != -1 and closing_div < end_idx:
                 start_idx = closing_div + 6
-        else:
-            header_pos = src_html.find('article-header', start_idx)
-            if header_pos != -1 and header_pos < end_idx:
-                closing_div = src_html.find('</div>', header_pos)
-                if closing_div != -1 and closing_div < end_idx:
-                    start_idx = closing_div + 6
 
     extracted_tags = []
     if start_idx == -1 or end_idx == -1 or start_idx >= end_idx:
