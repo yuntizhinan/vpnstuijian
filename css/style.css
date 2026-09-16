@@ -739,17 +739,16 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   margin-bottom: 12px;
   gap: 6px;
-  min-width: 0;
 }
 
 .airport-name-wrap {
   display: flex;
   align-items: center;
   gap: 6px;
-  min-width: 0;
-  flex: 1;
+  white-space: nowrap;
 }
 
 .airport-card-logo {
@@ -775,12 +774,10 @@ button {
 }
 
 .airport-name {
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: 800;
   color: var(--text-primary);
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .airport-badge {
