@@ -587,33 +587,10 @@ def clean_body_content(body_content):
     # 移除多余的闭合 article, main, body, html 标签
     body_content = body_content.replace("</article>", "").replace("</main>", "").replace("</body>", "").replace("</html>", "")
     
-    # 移除 AI 提炼摘要框内的 SVG 信息图标
-    body_content = re.sub(
-        r'<div class="ai-summary-title">\s*<svg[^>]*>.*?</svg>\s*<span>',
-        '<div class="ai-summary-title"><span>',
-        body_content,
-        flags=re.DOTALL
-    )
+    # 移除末尾独立多余的闭合 </div>
+    body_content = re.sub(r'</div>\s*$', '', body_content)
     
-    # 纠正/清除在截取时可能多余的 </div>，防范它提前闭合了页面主栅格容器
-    tokens = re.split(r'(</?div[^>]*>)', body_content)
-    cleaned_tokens = []
-    depth = 0
-    for token in tokens:
-        if token.startswith('<div') and not token.endswith('/>'):
-            depth += 1
-            cleaned_tokens.append(token)
-        elif token.startswith('</div'):
-            if depth > 0:
-                depth -= 1
-                cleaned_tokens.append(token)
-            else:
-                # 抛弃多余/未匹配的闭合 div
-                pass
-        else:
-            cleaned_tokens.append(token)
-            
-    return "".join(cleaned_tokens).strip()
+    return body_content.strip()
 
 
 # 提取文章底部的相关标签并从正文中移除，以便将其渲染至右边栏
@@ -1259,11 +1236,30 @@ for ap in airports:
     kw_val = kw_match.group(1) if kw_match else f"{ap['name']}, 机场推荐, 科学上网, 梯子推荐"
     
     # 提取正文内容
-    start_idx = src_html.find('<article class="article-content-container">')
-    if start_idx == -1:
-        start_idx = src_html.find('<div class="article-body">')
-    if start_idx == -1:
-        start_idx = src_html.find('<article class="content-feed">')
+    body_wrapper_pos = src_html.find('<div class="article-body-content"')
+    if body_wrapper_pos != -1:
+        start_idx = src_html.find('>', body_wrapper_pos) + 1
+    else:
+        start_idx = src_html.find('<article class="article-content-container">')
+        if start_idx == -1:
+            start_idx = src_html.find('<div class="article-body">')
+        if start_idx == -1:
+            start_idx = src_html.find('<article class="content-feed">')
+
+        if start_idx != -1:
+            header_pos = src_html.find('article-header', start_idx)
+            if header_pos != -1:
+                meta_pos = src_html.find('article-detail-meta', header_pos)
+                if meta_pos != -1:
+                    closing_meta = src_html.find('</div>', meta_pos)
+                    if closing_meta != -1:
+                        closing_header = src_html.find('</div>', closing_meta + 6)
+                        if closing_header != -1:
+                            start_idx = closing_header + 6
+                else:
+                    closing_header = src_html.find('</div>', header_pos)
+                    if closing_header != -1:
+                        start_idx = closing_header + 6
 
     end_idx = src_html.find('<div class="geo-faq-section"')
     if end_idx == -1:
@@ -1274,13 +1270,6 @@ for ap in airports:
         end_idx = src_html.find('<aside class="sidebar">')
     if end_idx == -1:
         end_idx = src_html.find('</article>')
-
-    if start_idx != -1 and end_idx != -1 and start_idx < end_idx:
-        header_pos = src_html.find('article-header', start_idx)
-        if header_pos != -1 and header_pos < end_idx:
-            closing_div = src_html.find('</div>', header_pos)
-            if closing_div != -1 and closing_div < end_idx:
-                start_idx = closing_div + 6
 
     extracted_tags = []
     if start_idx == -1 or end_idx == -1 or start_idx >= end_idx:
