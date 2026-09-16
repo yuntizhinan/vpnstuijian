@@ -746,36 +746,40 @@ button {
   align-items: flex-start;
   gap: 10px;
   width: 100%;
+  flex-wrap: nowrap;
 }
 
 .airport-card-logo {
-  width: 32px;
-  height: 32px;
+  width: 44px;
+  height: 44px;
   object-fit: contain;
   flex-shrink: 0;
-  border-radius: 6px;
-  margin-top: 2px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background-color: #ffffff;
+  box-shadow: var(--shadow-sm);
 }
 
 .airport-card-logo-fallback {
-  width: 32px;
-  height: 32px;
+  width: 44px;
+  height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--accent-soft);
   color: var(--accent-primary);
   font-weight: 800;
-  font-size: 0.9rem;
-  border-radius: 6px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
   flex-shrink: 0;
-  margin-top: 2px;
 }
 
 .airport-title-group {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: flex-start;
   gap: 4px;
   min-width: 0;
   flex: 1;
@@ -790,9 +794,9 @@ button {
 }
 
 .airport-badge {
-  font-size: 0.7rem;
+  font-size: 0.72rem;
   font-weight: 700;
-  padding: 2px 7px;
+  padding: 2px 8px;
   border-radius: var(--radius-sm);
   background-color: var(--accent-soft);
   color: var(--accent-primary);
@@ -2659,13 +2663,15 @@ button {
 /* 卡片Logo样式 */
 .airport-name-wrap {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
+  flex-wrap: nowrap;
+  width: 100%;
 }
 
 .airport-card-logo {
-  width: 52px;
-  height: 52px;
+  width: 44px;
+  height: 44px;
   border-radius: 8px;
   object-fit: cover;
   border: 1px solid var(--border-color);
@@ -2675,8 +2681,8 @@ button {
 }
 
 .airport-card-logo-fallback {
-  width: 52px;
-  height: 52px;
+  width: 44px;
+  height: 44px;
   border-radius: 8px;
   background-color: var(--accent-soft);
   color: var(--accent-primary);
@@ -2684,7 +2690,7 @@ button {
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   border: 1px solid var(--border-color);
   flex-shrink: 0;
 }
