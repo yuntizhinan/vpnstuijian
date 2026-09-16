@@ -1231,15 +1231,40 @@ for ap in airports:
     kw_val = kw_match.group(1) if kw_match else f"{ap['name']}, 机场推荐, 科学上网, 梯子推荐"
     
     # 提取正文内容
-    start_idx = src_html.find('<div class="article-body">')
-    end_idx = src_html.find('<aside class="sidebar">')
-    
+    start_idx = src_html.find('<article class="article-content-container">')
+    if start_idx == -1:
+        start_idx = src_html.find('<div class="article-body">')
     if start_idx == -1:
         start_idx = src_html.find('<article class="content-feed">')
-        
+
+    end_idx = src_html.find('<div class="geo-faq-section"')
+    if end_idx == -1:
+        end_idx = src_html.find('<script type="application/ld+json">')
+    if end_idx == -1:
+        end_idx = src_html.find('<div class="article-copyright-box"')
+    if end_idx == -1:
+        end_idx = src_html.find('<aside class="sidebar">')
+    if end_idx == -1:
+        end_idx = src_html.find('</article>')
+
+    if start_idx != -1 and end_idx != -1 and start_idx < end_idx:
+        # 寻找 ai-summary-card 之后的内容
+        summary_card_pos = src_html.find('ai-summary-card', start_idx)
+        if summary_card_pos != -1 and summary_card_pos < end_idx:
+            closing_div = src_html.find('</div>', summary_card_pos)
+            if closing_div != -1 and closing_div < end_idx:
+                start_idx = closing_div + 6
+        else:
+            header_pos = src_html.find('article-header', start_idx)
+            if header_pos != -1 and header_pos < end_idx:
+                closing_div = src_html.find('</div>', header_pos)
+                if closing_div != -1 and closing_div < end_idx:
+                    start_idx = closing_div + 6
+
     extracted_tags = []
-    if start_idx == -1 or end_idx == -1:
-        body_content = f"<p>{ap['name']} 机场测评大纲与测速评析...</p>"
+    if start_idx == -1 or end_idx == -1 or start_idx >= end_idx:
+        print(f"Warning: Could not extract body for {slug}, keeping existing content if any.")
+        continue
     else:
         body_content = src_html[start_idx:end_idx].strip()
         body_content = clean_body_content(body_content)
