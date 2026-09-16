@@ -85,7 +85,7 @@ airports = [
     },
     {
         'name': '九云',
-        'badge': '平价极致性价比',
+        'badge': '极致性价比',
         'is_recommended': True,
         'slug': 'jiuyun-review',
         'custom_title': '九云 机场深度评测：轻量中转架构、高性价比定价与网络抗封锁能力硬核拆解',
@@ -98,7 +98,7 @@ airports = [
     },
     {
         'name': '可信云',
-        'badge': '全IEPL物理专线',
+        'badge': '全IEPL专线',
         'is_recommended': True,
         'slug': 'kexincloud-review',
         'custom_title': '可信云 机场评测：60+IEPL物理专线与多设备不限连通实测指南',
