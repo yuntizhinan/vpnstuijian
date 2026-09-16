@@ -45,19 +45,6 @@ airports = [
         'logo': 'https://i.ibb.co/KjF9cLRT/yuntulogo.png'
     },
     {
-        'name': '可信云',
-        'badge': '全IEPL物理专线',
-        'is_recommended': True,
-        'slug': 'kexincloud-review',
-        'custom_title': '可信云 机场评测：60+IEPL物理专线与多设备不限连通实测指南',
-        'link': links['可信云'],
-        'desc': ['60+顶级专线节点', '不限制在线设备数量', '三年付享受 7 折优惠'],
-        'chart': [99, 99, 98, 100, 99, 99, 100],
-        'speed': '420 Mbps',
-        'latency': '23ms',
-        'logo': 'https://i.ibb.co/k6KksRQN/20260723-124327-62e599.webp'
-    },
-    {
         'name': '速界',
         'badge': '不限速设备',
         'is_recommended': True,
@@ -108,6 +95,19 @@ airports = [
         'speed': '320 Mbps',
         'latency': '28ms',
         'logo': 'images/jiuyunlogo.png'
+    },
+    {
+        'name': '可信云',
+        'badge': '全IEPL物理专线',
+        'is_recommended': True,
+        'slug': 'kexincloud-review',
+        'custom_title': '可信云 机场评测：60+IEPL物理专线与多设备不限连通实测指南',
+        'link': links['可信云'],
+        'desc': ['60+顶级专线节点', '不限制在线设备数量', '三年付享受 7 折优惠'],
+        'chart': [99, 99, 98, 100, 99, 99, 100],
+        'speed': '420 Mbps',
+        'latency': '23ms',
+        'logo': 'https://i.ibb.co/k6KksRQN/20260723-124327-62e599.webp'
     },
     {
         'name': '快狸',
