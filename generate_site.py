@@ -1448,9 +1448,11 @@ def write_index():
           <div class="airport-card-header">
             <div class="airport-name-wrap">
               {logo_html}
-              <span class="airport-name">{rec_label}{ap['name']}</span>
+              <div class="airport-title-group">
+                <span class="airport-name">{rec_label}{ap['name']}</span>
+                <span class="airport-badge">{ap['badge']}</span>
+              </div>
             </div>
-            <span class="airport-badge">{ap['badge']}</span>
           </div>
           <div class="airport-features">
             {desc_bullets}
