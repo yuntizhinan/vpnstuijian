@@ -35,6 +35,7 @@ airports = [
         'badge': '金融级专线',
         'is_recommended': True,
         'slug': 'yuntu-review',
+        'custom_title': '云图 机场评测：金融级专线与全节点1.0x无陷阱扣费硬核测评',
         'link': links['云图'],
         'desc': ['全节点1倍率无陷阱', '金融级专线24H高速', '原生IP全解锁ChatGPT/奈飞'],
         'chart': [98, 99, 98, 99, 99, 99, 100],
@@ -47,6 +48,7 @@ airports = [
         'badge': '全IEPL物理专线',
         'is_recommended': True,
         'slug': 'kexincloud-review',
+        'custom_title': '可信云 机场评测：60+IEPL物理专线与多设备不限连通实测指南',
         'link': links['可信云'],
         'desc': ['60+顶级专线节点', '不限制在线设备数量', '三年付享受 7 折优惠'],
         'chart': [99, 99, 98, 100, 99, 99, 100],
@@ -59,6 +61,7 @@ airports = [
         'badge': '不限速设备',
         'is_recommended': True,
         'slug': 'sujie-review',
+        'custom_title': '速界 机场评测：端到端IEPL物理专线与不限连接数一键客户端推荐',
         'link': links['速界'],
         'desc': ['端到端 IEPL 专线', '不限制在线设备数', '提供自研一键客户端'],
         'chart': [98, 99, 97, 99, 98, 99, 100],
@@ -71,6 +74,7 @@ airports = [
         'badge': '全专线标杆',
         'is_recommended': True,
         'slug': 'jilianyun-review',
+        'custom_title': '极连云 机场评测：100% IPLC 2.5Gbps 物理专线与晚高峰零丢包实测',
         'link': links['极连云'],
         'desc': ['全IEPL专线覆盖', '晚高峰零丢包保障', '所有节点1倍率扣费'],
         'chart': [99, 100, 99, 100, 99, 100, 100],
@@ -83,6 +87,7 @@ airports = [
         'badge': '内存无日志',
         'is_recommended': True,
         'slug': 'edge-review',
+        'custom_title': '边缘 (EdgeNova) 机场评测：只读内存零日志架构与高隐私安全连接推荐',
         'link': links['边缘节点'],
         'desc': ['只读内存服务器', '零日志隐私保护', '自研一键连接软件'],
         'chart': [97, 98, 96, 99, 97, 98, 99],
@@ -95,6 +100,7 @@ airports = [
         'badge': '性价比备用',
         'is_recommended': False,
         'slug': 'kuaili-review',
+        'custom_title': '快狸 机场评测：15元/月起超低资费备用与不限制设备推荐',
         'link': links['快狸'],
         'desc': ['设备连接数不限', '老牌稳定Anycast', '超低资费15元/月起'],
         'chart': [96, 97, 96, 98, 97, 99, 98],
@@ -107,6 +113,7 @@ airports = [
         'badge': '高连通流媒体',
         'is_recommended': False,
         'slug': 'guangnianti-review',
+        'custom_title': '光年梯 机场评测：4K流媒体高连通解锁与低至7.4元/月性价比精算',
         'link': links['光年梯'],
         'desc': ['支持解锁 Netflix/Disney+', '稳定中继物理线路', '年付套餐每月低至7.4元'],
         'chart': [96, 98, 97, 99, 98, 99, 98],
@@ -119,6 +126,7 @@ airports = [
         'badge': '高吞吐Anycast',
         'is_recommended': False,
         'slug': 'shunyun-review',
+        'custom_title': '瞬云 机场评测：Anycast千兆大带宽端口与415Mbps高吞吐并发实测',
         'link': links['瞬云'],
         'desc': ['Anycast智能选路', '千兆大带宽端口', '三年付特惠折 25%'],
         'chart': [98, 99, 97, 99, 98, 99, 100],
@@ -131,6 +139,7 @@ airports = [
         'badge': '原生住宅IP',
         'is_recommended': False,
         'slug': 'huanyuyun-review',
+        'custom_title': '寰宇云 机场评测：原生住宅IP纯净出口与ChatGPT 1020解封指南',
         'link': links['寰宇云'],
         'desc': ['住宅广播原生IP', '完美解锁ChatGPT/奈飞', '设备连接锁完全放开'],
         'chart': [96, 97, 97, 98, 98, 99, 99],
@@ -143,6 +152,7 @@ airports = [
         'badge': '豪华顶级专线',
         'is_recommended': True,
         'slug': 'naixi-review',
+        'custom_title': '奶昔 (NaiXi) 机场评测：豪华骨干IPLC专线与18ms极低延迟天花板',
         'link': '#',
         'desc': ['一线骨干顶级IPLC', '极致抗封锁与丢包', '超大并发流媒体解锁'],
         'chart': [100, 100, 100, 100, 100, 100, 100],
@@ -1302,7 +1312,7 @@ for ap in airports:
           <p style="font-size: 0.83rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 16px;">一键同步订阅，晚高峰物理专线不限速，畅快享受跨境办公与流媒体。</p>
           <a href="{ap['link']}" target="_blank" style="display: block; width: 100%; text-align: center; background-color: #f59e0b; color: #1e293b; font-weight: 700; padding: 10px 0; border-radius: var(--radius-sm); text-decoration: none;">直达 {ap['name']} 官网 ↗</a>
         </div>"""
-    title_text = f"{ap['name']} 机场评测：稳定高速的官网订阅与测速推荐"
+    title_text = ap.get('custom_title', f"{ap['name']} 机场评测：稳定高速的官网订阅与测速推荐")
     
     # 组装 HTML
     new_html = f"""<!DOCTYPE html>
