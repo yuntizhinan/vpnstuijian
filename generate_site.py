@@ -24,12 +24,26 @@ links = {
     '寰宇云': 'https://vip3.huanyuyunbest.com/#/register?code=K6h5VWw2',
     '云图': 'https://vip.ytjcok.org/#/register?code=nDsDjrfI',
     '可信云': 'https://asfasf.kexintztz2.sbs/#/?code=BStg7pM7',
+    '九云': 'https://九云.com',
     '奶昔': '#', # 奶昔和花云用内部跳转或演示链接
     '花云': '#'
 }
 
-# 11大推荐机场列表
+# 12大推荐机场列表
 airports = [
+    {
+        'name': '九云',
+        'badge': '平价极致性价比',
+        'is_recommended': True,
+        'slug': 'jiuyun-review',
+        'custom_title': '九云 机场深度评测：轻量中转架构、高性价比定价与网络抗封锁能力硬核拆解',
+        'link': links['九云'],
+        'desc': ['月付6元起超低门槛', 'VLESS协议安全拟态', '提供不限时300G流量包'],
+        'chart': [97, 98, 97, 98, 98, 99, 99],
+        'speed': '320 Mbps',
+        'latency': '28ms',
+        'logo': 'images/jiuyunlogo.png'
+    },
     {
         'name': '云图',
         'badge': '金融级专线',
