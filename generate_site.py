@@ -32,19 +32,6 @@ links = {
 # 12大推荐机场列表
 airports = [
     {
-        'name': '九云',
-        'badge': '平价极致性价比',
-        'is_recommended': True,
-        'slug': 'jiuyun-review',
-        'custom_title': '九云 机场深度评测：轻量中转架构、高性价比定价与网络抗封锁能力硬核拆解',
-        'link': links['九云'],
-        'desc': ['月付6元起超低门槛', 'VLESS协议安全拟态', '提供不限时300G流量包'],
-        'chart': [97, 98, 97, 98, 98, 99, 99],
-        'speed': '320 Mbps',
-        'latency': '28ms',
-        'logo': 'images/jiuyunlogo.png'
-    },
-    {
         'name': '云图',
         'badge': '金融级专线',
         'is_recommended': True,
@@ -108,6 +95,19 @@ airports = [
         'speed': '280 Mbps',
         'latency': '35ms',
         'logo': 'https://i.ibb.co/C5P4QcfT/bianyuanjiedianlogo.webp'
+    },
+    {
+        'name': '九云',
+        'badge': '平价极致性价比',
+        'is_recommended': True,
+        'slug': 'jiuyun-review',
+        'custom_title': '九云 机场深度评测：轻量中转架构、高性价比定价与网络抗封锁能力硬核拆解',
+        'link': links['九云'],
+        'desc': ['月付6元起超低门槛', 'VLESS协议安全拟态', '提供不限时300G流量包'],
+        'chart': [97, 98, 97, 98, 98, 99, 99],
+        'speed': '320 Mbps',
+        'latency': '28ms',
+        'logo': 'images/jiuyunlogo.png'
     },
     {
         'name': '快狸',
