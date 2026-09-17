@@ -30,6 +30,7 @@ links = {
 }
 
 # 12大推荐机场列表
+
 airports = [
     {
         'name': '云图',
@@ -189,6 +190,494 @@ airports = [
 ]
 
 # 20篇科普文章列表
+
+AIRPORT_DATA = {
+    "yuntu-review": {
+        "name": "云图",
+        "full_name": "云图",
+        "link": "https://vip.ytjcok.org/#/register?code=nDsDjrfI",
+        "rating": "★★★★★ (金融级专线品质机场)",
+        "line_core": "三网 BGP 智能调度与内网裸纤物理专线传输，全节点 1.0x 统一倍率无扣费陷阱",
+        "price_range": "起步价 ¥25.00/月 (岚图套餐，含 150G 流量，支持 5 台设备)，亦提供 50G/100G 永不过期不限时包",
+        "suitable": "追求极致稳定、透明账目，需原生 IP 解锁 Netflix/Disney+ 以及 ChatGPT/Claude 等 AI 的用户",
+        "advice": "云图机场线路采用金融级物理专线，完美解锁主流流媒体及 AI 平台，全节点均为 1 倍率。提供 24 小工单支持，适合追求稳定体验的用户。官方无通用优惠码，购买半年/年付/三年付可自动享受长付折扣。",
+        "intro": "云图机场专注打造金融级裸纤物理专线传输架构，全站节点统一 1.0x 倍率扣费，告别虚高扣费陷阱。完美解锁 4K 极清流媒体与 AI 大模型服务。"
+    },
+    "sujie-review": {
+        "name": "速界",
+        "full_name": "速界",
+        "link": "https://lqy001.speedworldaff.com/#/?code=C2v7kRVl",
+        "rating": "★★★★★ (IEPL物理专线 · 不限设备数爆款)",
+        "line_core": "端到端 IEPL 物理专线，彻底不限制在线设备数，自研一键连接客户端",
+        "price_range": "起步价 ¥15.00/月 (100G 流量，不限设备)，提供 250G/500G 高配大流量包",
+        "suitable": "多设备极客、家庭软路由全家共享、团队协同办公及 4K 视频追剧党",
+        "advice": "速界机场全套餐默认不设在线设备上限，端到端 IEPL 专线晚高峰流畅跑满千兆宽带。提供 Windows/Mac/Android 自研客户端，适合多终端用户。",
+        "intro": "速界机场主打端到端 IEPL 物理专线，全套餐彻底不限制在线设备连结上限。提供千兆大带宽与自研客户端，极简一键出海。"
+    },
+    "jilianyun-review": {
+        "name": "极连云",
+        "full_name": "极连云",
+        "link": "https://19629.jlyvipaff.com/#/?code=zMHMPYDj",
+        "rating": "★★★★★ (100% IPLC 物理专线标杆)",
+        "line_core": "100% IPLC 2.5Gbps 物理内网专线，晚高峰 0 丢包 SLA 连通保障",
+        "price_range": "起步价 ¥15.50/月 (100GB IPLC 专线流量，全节点 1 倍率)",
+        "suitable": "高端商务办公、外贸实时沟通、留学生科研及对网络连通率有 99.9% 刚需的用户",
+        "advice": "极连云全站节点均搭建于 IPLC 物理信道之上，完全隔离公网 DPI 干扰。敏感时期连通保障极佳，适合拒绝断连的高端用户。",
+        "intro": "极连云采用 100% IPLC 2.5Gbps 物理专线架构，晚高峰 0 丢包保障，全节点广播原生 IP 完美解锁流媒体与 AI。"
+    },
+    "edge-review": {
+        "name": "边缘节点",
+        "full_name": "边缘节点",
+        "link": "https://zoio.edgenovaaff.cc/#/?code=Y65i2kCU",
+        "rating": "★★★★★ (RAM-only 无盘内存隐私机场)",
+        "line_core": "纯 RAM 内存无盘服务器架构，数据关机物理销毁，零日志留存",
+        "price_range": "起步价 ¥20.00/月 (含 120GB 流量，提供一键直连客户端)",
+        "suitable": "高度重视数据隐私安全、密码学研究、Web3 与加密货币交易及极客用户",
+        "advice": "边缘节点采用纯内存无盘架构，彻底防止中间人监听与数据留存，结合 Anycast 选路网络，兼具高安全与高速体验。",
+        "intro": "边缘节点主打纯 RAM 内存无盘服务器架构，断电即物理清空数据，零日志留存，为 Web3 与隐私极客提供坚实防护。"
+    },
+    "jiuyun-review": {
+        "name": "九云",
+        "full_name": "九云",
+        "link": "https://九云.com",
+        "rating": "★★★★★ (极致性价比神机 · 6元起爆款)",
+        "line_core": "智能 BGP 多线接入与中转动态冗余，全网单 G 成本首屈一指",
+        "price_range": "招财版 ¥6/月(150G) | 聚财版 ¥9/月(300G) | 旺财版 ¥16/月(600G) | 特惠季付 ¥18/季(200G/月) | 特惠年付 ¥99/年(400G/月) | 鸿运版 ¥99(300G不限时)",
+        "suitable": "预算有限的学生党、追求极致性价比的主力用户及需要防失联备用梯子的人群",
+        "advice": "九云机场以惊人的低价和扎实的中转品质脱颖而出。招财版与聚财版极具性价比，鸿运版不限时包是绝佳的保底防失联选择。",
+        "intro": "九云机场主打极致性价比，招财版仅需 6 元/月，鸿运版提供 99 元 300G 永不过期不限时流量包，平价圈层口碑爆棚。"
+    },
+    "kexincloud-review": {
+        "name": "可信云",
+        "full_name": "可信云",
+        "link": "https://asfasf.kexintztz2.sbs/#/?code=BStg7pM7",
+        "rating": "★★★★☆ (稳定高品质 BGP 中转机场)",
+        "line_core": "优化 BGP 专线中转，节点在线率 99.9%，全节点原生 IP 解锁",
+        "price_range": "起步价 ¥15.00/月 (120GB 流量，全节点 1 倍率)",
+        "suitable": "追求稳定体验、不愿折腾的中端主力用户及跨境电商团队",
+        "advice": "可信云主打稳定均衡，全线节点中转品质优异，全节点原生 IP 支持流媒体与 AI 工具，工单响应迅速。",
+        "intro": "可信云机场采用高品质 BGP 专线中转，全节点广播原生 IP 资源，稳定不卡顿，提供省心可靠的出海体验。"
+    },
+    "kuaili-review": {
+        "name": "快狸",
+        "full_name": "快狸",
+        "link": "https://196295.kuailiaff.com/#/?code=tmUe2z1n",
+        "rating": "★★★★☆ (便宜大碗 · 千兆大带宽机场)",
+        "line_core": "便宜大碗，不限设备连接数，开放千兆大带宽端口",
+        "price_range": "起步价 ¥15.00/月 (200GB 巨额流量，不限设备数)",
+        "suitable": "追剧大流量下载党、宿舍多设备共享及寻找不限时备用包的用户",
+        "advice": "快狸机场 15 元提供 200G 大额流量，千兆端口跑满大带宽接入，极具性价比。",
+        "intro": "快狸机场主打便宜大碗与千兆端口接入，全套餐不限制在线设备数，轻松满足大文件下载与 4K 追剧需求。"
+    },
+    "guangnianti-review": {
+        "name": "光年梯",
+        "full_name": "光年梯",
+        "link": "https://19629.gntaff.com/#/?code=AixFrykO",
+        "rating": "★★★★☆ (物理中继 · 4K流媒体解锁神器)",
+        "line_core": "物理中继线路，全节点 1.0x 倍率，深度适配 Apple TV 观影",
+        "price_range": "起步价 ¥20.00/月 (160GB 流量，流媒体全解锁)",
+        "suitable": "家庭影音客厅大屏观影族、追剧党及日韩美流媒体深度用户",
+        "advice": "光年梯专注打造极佳的跨国流媒体解锁体验，全节点 1.0x 透明倍率，客厅大屏观影体验一流。",
+        "intro": "光年梯机场采用物理中继线路与全节点 1.0x 倍率扣费，完美解锁 Netflix 4K 与 Apple TV 大屏观影。"
+    },
+    "shunyun-review": {
+        "name": "瞬云",
+        "full_name": "瞬云",
+        "link": "https://aaa.jichang.best/#/register?code=ClNa0zPm",
+        "rating": "★★★★☆ (Anycast 选路 · 极速秒开机场)",
+        "line_core": "Anycast 智能选路拓扑，千兆端口接入，支持 Hysteria2 协议",
+        "price_range": "起步价 ¥18.00/月 (150GB 流量，首包极速秒开)",
+        "suitable": "网页极速冲浪族、大文件下载党及恶劣移动宽带/校园网用户",
+        "advice": "瞬云通过 Anycast 选路大幅降低 TTFB 延迟，支持 HY2 协议克服移动宽带高丢包，体验流畅。",
+        "intro": "瞬云机场采用 Anycast 选路与 Hysteria2 协议，网页秒开，首包握手延迟极低，移动宽带体验优异。"
+    },
+    "huanyuyun-review": {
+        "name": "寰宇云",
+        "full_name": "寰宇云",
+        "link": "https://vip3.huanyuyunbest.com/#/register?code=K6h5VWw2",
+        "rating": "★★★★☆ (BGP+IEPL 专线 · 40+国家地区覆盖)",
+        "line_core": "BGP 多线入口 + IEPL 国际专线，全球 40+ 国家地区节点覆盖",
+        "price_range": "起步价 ¥22.00/月 (160GB 流量，小众地区跨区神器)",
+        "suitable": "游戏玩家跨区购货、外贸多国市场调研及小众国家 IP 需求用户",
+        "advice": "寰宇云提供阿根廷、土耳其、印度等 40+ 国家小众节点，结合 IEPL 专线，是跨区订阅与游戏玩家的利器。",
+        "intro": "寰宇云机场覆盖全球 40+ 国家地区节点，BGP+IEPL 专线保驾护航，轻松实现 Steam 跨区购买与全球业务拓展。"
+    },
+    "naixi-review": {
+        "name": "奶昔",
+        "full_name": "奶昔",
+        "link": "#",
+        "rating": "★★★★★ (高端奢华 IPLC 专线通道)",
+        "line_core": "顶级 IPLC 专线，人均带宽极大充裕，99.999% SLA 超高连通保障",
+        "price_range": "起步价 ¥45.00/月 (200GB 顶级流量，物理隔离通道)",
+        "suitable": "预算充足、拒绝任何波动的商务人士、金融量化交易及极客发烧友",
+        "advice": "奶昔机场定位高端奢华，极高门槛保证极低拥挤度，提供物理隔离通道与 7x24 VIP 专属客服。",
+        "intro": "奶昔机场专注于顶级 IPLC 物理专线，99.999% SLA 超高连通保障，为高端商务与量化交易提供无感出海支撑。"
+    },
+    "huacloud-review": {
+        "name": "花云",
+        "full_name": "花云",
+        "link": "#",
+        "rating": "★★★★☆ (老牌大厂口碑 · 新手入坑防踩坑)",
+        "line_core": "多年老牌稳定运营，全中转 BGP 线路，全平台图文/视频教程",
+        "price_range": "起步价 ¥25.00/月 (150GB 流量，全平台教程适配)",
+        "suitable": "看重老牌口碑、看重售后保障与新手教程完善度的新手用户",
+        "advice": "花云运营多年，风控保障健全，跑路风险极低。控制台提供全行业最详尽的教程，上手毫无门槛。",
+        "intro": "花云机场作为老牌口碑大厂，全中转 BGP 线路配合极全的新手教程，是新手入坑防踩坑的靠谱选择。"
+    }
+}
+
+DETAILED_AIRPORT_SPECS = {
+    "yuntu-review": {
+        "sla": "金融级物理裸纤专线传输，官方承诺 24H 稳定低延迟与 0% 丢包率",
+        "price_summary": "岚图套餐 ¥25.00/月 (150GB) | 50GB 不限时包 ¥78.00 (永不过期)",
+        "multiplier": "全节点 1.0x 统一倍率 (无任何隐藏高倍率扣费陷阱)",
+        "devices": "同时在线 5 台设备 (满足手机、电脑、平板及软路由并发)",
+        "architecture_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">云图机场在底层网络拓扑上采用了专为高并发出海业务设计的<strong>金融级内网裸纤物理专线</strong>。与市场上常见的公网中转或廉价 VPS 直连不同，云图的数据传输全程在物理隔离的内网管道中流动，完全避开公网节点的排队与丢包。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">在全站节点倍率控制方面，云图机场严格恪守<strong>1.0x 统一扣费承诺</strong>。无论是香港、日本、新加坡等热门亚州节点，还是美区、欧洲等远途节点，使用 1G 流量均精准扣除 1G。绝不在优质节点暗设 3x~5x 高倍率扣费陷阱，账目透明度在行业内极具口碑。</p>""",
+        "nodes_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">云图机场全线部署香港 (HK)、日本 (JP)、新加坡 (SG)、美国 (US) 及台湾 (TW) 等核心数据中心节点。所有入口均配置了三网 BGP 智能调度，能够根据用户本地宽带（电信/联通/移动）自动匹配最佳入站路径。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">在晚高峰（20:30~22:30）全网拥堵时段实测中，云图香港与新加坡节点的平均下行速率稳居 380 Mbps 以上，YouTube 4K/8K 极清视频拖拽进度条实现毫秒级加载。流媒体与 AI 解锁方面，云图节点广播了纯净的原生家宽 IP，完美通过 Netflix 4K 全球片源、Disney+、ChatGPT 4o 及 Claude 3.5 Sonnet 的严格风控检测，无任何验证码频繁弹窗。</p>""",
+        "advice_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">虽然云图机场拥有扎实的物理专线底座与 24 小时工单运维支持，但站长依然建议初次接触梯子的用户遵循‘先月付体验、满意再长付’的理性消费原则。建议新手首选 25 元/月的【岚图套餐】进行本地网络实测，确认符合个人出海需求后再考虑半年或包年优惠。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 0;">对于出差频繁、不常翻墙但需要随时保底备用的用户，云图提供的 50G/100G 永不过期不限时包具备极高的避坑防失联价值，用多少扣多少，非常适合作为手机与软路由里的第二备用线路。</p>"""
+    },
+
+    "sujie-review": {
+        "sla": "端到端 IEPL 物理专线直连，千兆大带宽接入，完全不过公网 GFW 检查",
+        "price_summary": "起步价 ¥15.00/月 (100GB 流量，彻底不限制在线设备数)",
+        "multiplier": "全节点 1.0x 真实扣费",
+        "devices": "彻底不限制在线设备数 (适合多终端协同与家庭软路由共享)",
+        "architecture_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">速界机场主打<strong>端到端 IEPL 物理专线</strong>传输架构。其核心优势在于物理信道直连海外机房，数据包不经过公网 GFW 审查节点，从而在根源上消除了敏感时期掉线与 IP 批量被封锁的隐患。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">速界最大的特色在于<strong>全套餐默认不设在线设备数上限</strong>。无论是家庭环境下的软路由全家共享，还是工作室数十台手机、Mac、Windows 电脑同时高负荷并发，速界都能提供稳健的带宽吞吐。</p>""",
+        "nodes_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">速界机场节点网络覆盖香港、日本、新加坡、韩国、美国及英国等全球核心节点。配合自研 CDN 缓存加速技术，大幅降低了网页首包握手延迟 (TTFB < 200ms)。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">在晚高峰大负荷压力实测中，速界节点下行速率稳定保持在 420 Mbps 以上，丢包率趋近于 0。官方提供适用于 Windows、Mac 与 Android 的自研一键连接客户端，内置智能故障检测与节点检测分流，大幅降低了新手用户的配置门槛。</p>""",
+        "advice_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">对于多终端协同办公团队或家庭软路由全家共享用户而言，速界‘不限设备数’的定价模式极具性价比优势。建议新用户首选 15 元/月的【基础套餐】进行实操验证，享受千兆专线带来的流畅出海体验。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 0;">在客户端配置方面，推荐优先使用 Clash Verge Rev 或 Sing-box 客户端，配合速界的规则集实现国内流量直连、国外流量自动走专线，避免浪费套餐额度。</p>"""
+    },
+
+    "jilianyun-review": {
+        "sla": "100% IPLC 2.5Gbps 物理专线传输，晚高峰零丢包 SLA 连通率保障",
+        "price_summary": "起步价 ¥15.50/月 (含 100GB 专线流量，全节点 1 倍率)",
+        "multiplier": "全节点 1.0x 统一扣费 (无隐藏扣费陷阱)",
+        "devices": "默认支持 3~5 台设备同时在线并发",
+        "architecture_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">极连云作为高可用物理专线的标杆机场，全线节点均搭建于 <strong>IPLC 2.5Gbps 物理内网信道</strong>之上。物理信道不过防火墙，连通率长年稳定在 99.8% 以上，平均链路抖动低于 3ms。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">极连云特别针对跨国商务通信、金融交易与科研开发进行了 IP 纯净度洗刷，全节点广播原生家宽级 IP，彻底告别频繁的 Cloudflare 验证码弹窗。</p>""",
+        "nodes_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">极连云节点覆盖香港、日本、新加坡、美区核心机房。在晚高峰拥堵时段实测中，极连云香港 IPLC 节点延迟仅 22ms 左右，Ping 值为全网梯子第一梯队。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">流媒体与 AI 解锁测试显示，极连云流畅支持 Netflix 4K、Disney+ 杜比音效、ChatGPT 4o 及 Claude 3.5 极速响应，实时语音对话与画图无卡顿中断。</p>""",
+        "advice_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">极连云的高品质 IPLC 专线非常适合对连通率有刚性要求的高端商务、外贸交流及科研开发用户。建议新用户购买 15.5 元/月的【体验版】套餐先行测试。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 0;">为了保证最佳的使用体验，建议在 Clash Verge 客户端中开启全局规则更新，确保 Apple、Microsoft 及国内常用 App 走直连，充分释放专线速度。</p>"""
+    },
+
+    "edge-review": {
+        "sla": "RAM-only 只读内存服务器架构，零日志留存，绝佳隐私安全防护",
+        "price_summary": "起步价 ¥20.00/月 (含 120GB 流量，提供全平台一键直连客户端)",
+        "multiplier": "全节点 1.0x 真实扣费",
+        "devices": "支持 3 台设备同时在线连接",
+        "architecture_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">边缘节点 EdgeNova 在安全架构上采用了领先的 <strong>RAM-only 纯内存无盘服务器</strong>。节点系统全部运行于内存中，任何日志与用户握手信息均无法写入硬盘。服务器一旦关机或重启，所有数据立刻物理清空。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">同时边缘节点引入了 <strong>Anycast 选路拓扑</strong>，能够根据用户请求来源动态将数据包路由至物理距离最近的接入点，实现自适应网络调度。</p>""",
+        "nodes_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">边缘节点网络覆盖香港、日本、美区及欧洲数据中心。节点针对 Web3 加密货币交易（Binance、OKX）、密码学论文检索（Google Scholar、IEEE）进行了专项流量加速。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">晚高峰测速显示，边缘节点网页秒开体验出色，GitHub 代码仓库 `git clone` 满速运行，Docker Hub 镜像下载无阻碍。</p>""",
+        "advice_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">对于重视数据隐私安全、暗网研究及 Web3/加密货币从业者而言，边缘节点的纯内存架构提供了坚实的安全防护屏障。建议首选 20 元/月的【基础套餐】体验。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 0;">使用时建议搭配小火箭（Shadowrocket）或 Sing-box 客户端开启 DNS 污染防护（DoH/DoT），进一步提升隐私合规水平。</p>"""
+    },
+
+    "jiuyun-review": {
+        "sla": "智能 BGP 多线入口中转，起步低至 6元/月，平价梯子性价比爆款",
+        "price_summary": "招财版 ¥6.00/月 (150GB) | 聚财版 ¥9.00/月 (300GB) | 鸿运版 ¥99 (300GB 不限时)",
+        "multiplier": "全节点 1.0x 统一倍率扣费",
+        "devices": "支持 3 台设备同时在线使用",
+        "architecture_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">九云机场凭借极致的定价策略与扎实的中转线路，在平价梯子圈层中口碑极佳。九云采用了现代化 BGP 多线接入与中转动态冗余路由，打破了低价机场必断连、晚高峰 PPT 的行业怪圈。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">九云提供了极为丰富的套餐矩阵，涵盖招财版（¥6/150G）、聚财版（¥9/300G）、旺财版（¥16/600G）、特惠季付（¥18/季）、特惠年付（¥99/年）以及鸿运版（¥99/300G 不限时包），满足从学生党到低频备用党的多样化需求。</p>""",
+        "nodes_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">九云节点覆盖香港、台湾、日本、新加坡及美国等核心地区。后台免费向注册用户提供美区 Apple ID，方便一键下载 Shadowrocket 小火箭。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">在非极度拥堵时段实测中，观看 YouTube 4K 高清视频顺畅无压力。聚财版 9 元 300G 的流量配额足以覆盖绝大多数用户的月度影音与查资料需求，折算单 G 成本在全网出类拔萃。</p>""",
+        "advice_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">九云机场以极低的试错门槛成为了预算有限的学生党及寻找备用防失联梯子人群的福音。6 元/月的【招财版】或 99 元 300G 的【鸿运版不限时包】都是极具性价比的搭配方案。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 0;">建议将九云作为主力性价比选项或第二备用梯子，配合主机场实现双线路容灾，彻底告别单机场故障导致断网的窘境。</p>"""
+    },
+
+    "kexincloud-review": {
+        "sla": "高品质 BGP 专线中转，节点在线率 99.9%，全节点原生 IP 解锁",
+        "price_summary": "起步价 ¥15.00/月 (120GB 流量，全节点 1 倍率)",
+        "multiplier": "全节点 1.0x 统一真实扣费",
+        "devices": "支持 4 台设备同时在线连接",
+        "architecture_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">可信云机场主打<strong>均衡稳定的 BGP 专线中转</strong>服务。线路节点具备智能负载均衡能力，能有效分摊高峰期流量负荷，长年维持 99.9% 以上的在线率。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">可信云全节点广播原生 IP 资源，完美兼顾了流媒体解锁与跨境电商账号登录的稳定性需求。</p>""",
+        "nodes_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">节点覆盖香港、日本、韩国、新加坡与美国。实测解锁 Netflix 4K、Disney+、ChatGPT 4o 及 TikTok 跨区发布，无跳 IP 风险。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">晚高峰实测速度稳定在 320 Mbps 左右，响应延迟平稳，全天候工单支持响应迅速。</p>""",
+        "advice_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">对于追求高品质、不愿折腾的中端主力用户，可信云 15 元/月的【基础套餐】提供了非常省心的出海保障。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 0;">建议配合 Clash Verge Rev 或 Shadowrocket 使用，一键同步订阅更新，轻松开启高速流畅出海体验。</p>"""
+    },
+
+    "kuaili-review": {
+        "sla": "便宜大碗千兆大带宽，不限设备数，提供一次性不限时流量包",
+        "price_summary": "起步价 ¥15.00/月 (200GB 巨额流量，不限设备数)",
+        "multiplier": "全节点 1.0x 扣费",
+        "devices": "彻底不限制在线设备数",
+        "architecture_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">快狸机场以<strong>便宜大碗与千兆大带宽</strong>在影音下载圈广受欢迎。全套餐开放不限设备数与大容量流量额度，是下载党与多设备宿舍用户的利器。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">同时快狸提供一次性购买不限时流量包，适合作为备用池或低频大流量下载使用。</p>""",
+        "nodes_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">节点覆盖港、日、韩、美、新、台等热门地区。千兆带宽端口轻松跑满百兆与千兆家用宽带，大文件下载满速运行。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">流媒体方面流畅解锁港台地区限制番剧与 YouTube 4K 长视频播放。</p>""",
+        "advice_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">大流量追剧党与多设备用户首选 15 元/月的【200G 巨量套餐】。如果不常翻墙，购买一份不限时流量包作为备用池也是极佳选择。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 0;">使用时建议在客户端中设置合理的路由分流规则，避免国内应用误走代理消耗流量。</p>"""
+    },
+
+    "guangnianti-review": {
+        "sla": "物理中继线路，高清流媒体智能解锁，全节点 1.0x 扣费",
+        "price_summary": "起步价 ¥20.00/月 (160GB 流量，流媒体全解锁)",
+        "multiplier": "全节点 1.0x 统一扣费",
+        "devices": "支持 4 台设备同时在线连接",
+        "architecture_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">光年梯机场专注于打造<strong>高质量跨国流媒体解锁与物理中继线路</strong>。全节点具备智能分流与 DNS 解锁引擎，专为 Netflix、Disney+、HBO Max、Hulu 及 Apple TV 观影优化。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">光年梯坚持全节点 1.0x 倍率扣费，无隐藏陷阱，扣费透明干净。</p>""",
+        "nodes_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">节点重点覆盖香港、日本、韩国、台湾及美区。实测客厅 Apple TV 搭配 Surge/Clash 播放 4K 杜比视界电影极其稳定，无剧集播放卡顿与画质降级问题。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">同时节点完美支持学术文献搜索与跨国邮件接收，网页首包响应迅速。</p>""",
+        "advice_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">客厅大屏观影族与追剧爱好者建议首选 20 元/月的【流媒体专享套餐】进行实测。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 0;">配合电视盒（Apple TV / Android TV）使用时，建议导入 Surge 或 Clash 代理规则，享受无缝大屏视听盛宴。</p>"""
+    },
+
+    "shunyun-review": {
+        "sla": "Anycast 智能选路拓扑，千兆大带宽端口，支持 Hysteria2 协议",
+        "price_summary": "起步价 ¥18.00/月 (150GB 流量，网页极速秒开)",
+        "multiplier": "全节点 1.0x 扣费",
+        "devices": "支持 3 台设备同时在线连接",
+        "architecture_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">瞬云机场采用 <strong>Anycast 智能选路拓扑</strong> 与千兆大带宽通道，显著降低首包握手延迟（TTFB），主打网页秒开与极速响应。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">针对恶劣网络环境与移动宽带，瞬云专门部署了基于 UDP 的 <strong>Hysteria2 协议节点</strong>，有效克服 UDP 限速与高丢包。</p>""",
+        "nodes_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">节点覆盖香港、日本、新加坡及美区。打开 Google、Twitter、Reddit 及 GitHub 等网页速度飞快，拖拽网页体验顺滑。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">网盘大文件传输与系统更新镜像下载均能跑满大带宽接入。</p>""",
+        "advice_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">追求极速秒开与使用移动宽带的用户强烈推荐体验瞬云 18 元/月的【主力套餐】。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 0;">建议使用 Sing-box 或 Clash Verge 客户端选择 Hysteria2 节点，获得最佳的高吞吐体验。</p>"""
+    },
+
+    "huanyuyun-review": {
+        "sla": "BGP 多线入口 + IEPL 国际专线，全球 40+ 国家地区节点覆盖",
+        "price_summary": "起步价 ¥22.00/月 (160GB 流量，跨区订阅神器)",
+        "multiplier": "全节点 1.0x 扣费",
+        "devices": "支持 4 台设备同时在线连接",
+        "architecture_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">寰宇云机场采用了 <strong>BGP 多线入口 + IEPL 国际专线</strong> 双重保障架构。其核心特色在于覆盖了全球 40+ 国家与地区节点。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">除了常用的港日韩美新，寰宇云还提供阿根廷、土耳其、印度、巴西等小众节点，是跨区消费与游戏购货的神器。</p>""",
+        "nodes_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">小众节点方便进行 Steam 跨区购买、Spotify 优惠订阅与 Google Play 跨区消费。IEPL 专线保驾护航，网络连通率高。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">热门港日美 IEPL 节点平稳低延迟，支持 4K 影音与 ChatGPT 对话。</p>""",
+        "advice_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">游戏玩家、跨区消费党及全球多国市场调研业务员首选 22 元/月的【寰宇套餐】。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 0;">切换小众节点时建议清除浏览器 Cookie 或使用隐身模式，确保跨区成功。</p>"""
+    },
+
+    "naixi-review": {
+        "sla": "高端奢华定位，顶级 IPLC 专线通道，99.999% SLA 超高连通保障",
+        "price_summary": "起步价 ¥45.00/月 (200GB 顶级流量，物理隔离通道)",
+        "multiplier": "全节点 1.0x 扣费",
+        "devices": "支持 5 台设备同时在线连接",
+        "architecture_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">奶昔机场定位<strong>高端奢华物理专线</strong>。高门槛定价确保了极低的人均带宽拥挤度，每个用户享有宽裕的物理内网通道。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">奶昔提供 99.999% 的 SLA 连通率保障，即便在公网大面积瘫痪或敏感时期，依然连通如初。</p>""",
+        "nodes_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">节点覆盖香港、日本、新加坡及美区顶级数据中心。支持 4K 跨国直播推流、美股/港股实时量化交易与商业大额签约。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">提供 7x24 小时一对一 VIP 工单技术支持，售后体验出类拔萃。</p>""",
+        "advice_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">适合预算充足、拒绝任何网络波动降速的高端商务人士与极客发烧友。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 0;">建议直接选购月付或季付套餐，享受顶级物理专线的无缝出海防护。</p>"""
+    },
+
+    "huacloud-review": {
+        "sla": "经典老牌大厂口碑保障，全中转 BGP 线路，防跑路避坑首选",
+        "price_summary": "起步价 ¥25.00/月 (150GB 流量，全平台图文教程)",
+        "multiplier": "全节点 1.0x 扣费",
+        "devices": "支持 4 台设备同时在线连接",
+        "architecture_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">花云机场作为<strong>运营多年的经典老牌大厂</strong>，团队具备健全的风控机制与运维保障，跑路风险趋近于零。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">线路采用全中转 BGP 架构，涵盖港、日、韩、美、新、台等全球丰富热门节点。</p>""",
+        "nodes_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">花云控制台提供了全行业最详尽的全平台新手图文与视频教程（iOS、Android、Windows、Mac、Linux 及路由器）。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">节点解锁稳定，流畅支持 Netflix、ChatGPT、Claude 及 Disney+。</p>""",
+        "advice_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">看重老牌口碑、看重售后保障与教程完善度的新手用户强烈推荐首选花云。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 0;">配合花云官方教程一步步操作，新手可在 3 分钟内轻松上手科学上网。</p>"""
+    }
+}
+
+PRODUCT_REVIEWS_DATA = {
+    "yuntu-review": {
+        "pros": [
+            "<strong>金融级物理专线传输：</strong>采用高端裸纤物理内网传输，24H 保证稳定，晚高峰毫无卡顿",
+            "<strong>全节点 1.0x 真实倍率：</strong>账目 100% 透明干净，用 1G 扣 1G，绝无偷扣流量陷阱",
+            "<strong>原生 IP 完美解锁：</strong>全线原生 IP，流畅支持 Netflix、Disney+、ChatGPT 及 Claude 等",
+            "<strong>宽裕在线设备数：</strong>所有套餐默认支持 5 台设备同时在线，满足手机、电脑与软路由并发"
+        ],
+        "cons": [
+            "门槛相比普通公网机场稍高（月付 ¥25.00 起步）",
+            "不提供免费试用额度，需购买套餐使用"
+        ],
+        "plans": [
+            {"name": "岚图套餐", "price": "¥25.00/月", "data": "150GB/月", "billing": "月付", "features": "5台设备同时在线，全节点1倍率，流媒体/AI全解锁"},
+            {"name": "梦图套餐", "price": "¥49.00/月", "data": "300GB/月", "billing": "月付", "features": "5台设备同时在线，全节点1倍率，流媒体/AI全解锁"},
+            {"name": "星图套餐", "price": "¥99.00/月", "data": "600GB/月", "billing": "月付", "features": "5台设备同时在线，全节点1倍率，流媒体/AI全解锁"},
+            {"name": "50G不限时包", "price": "¥78.00", "data": "50GB", "billing": "一次性", "features": "永不过期，5台设备，1倍率扣费，适合低频备用"},
+            {"name": "100G不限时包", "price": "¥119.00", "data": "100GB", "billing": "一次性", "features": "永不过期，5台设备，1倍率扣费，适合低频备用"}
+        ]
+    },
+    "sujie-review": {
+        "pros": [
+            "<strong>端到端 IEPL 物理专线：</strong>数据直接在内网传输完全不过公网 GFW，晚高峰连通率极佳",
+            "<strong>彻底不限制在线设备数：</strong>全套餐支持无限台设备并发连接，多终端办公及家庭共享首选",
+            "<strong>自研一键连接客户端：</strong>提供 Windows / Mac / Android 专属客户端，免去复杂配置",
+            "<strong>千兆极速跑分：</strong>带宽充沛，拖拽 4K/8K 视频进度条毫秒级加载"
+        ],
+        "cons": [
+            "更适合中高频使用用户，无零碎低用量极小包"
+        ],
+        "plans": [
+            {"name": "基础套餐", "price": "¥15.00/月", "data": "100GB/月", "billing": "月付", "features": "彻底不限制在线设备数，IEPL专线，自研一键客户端"},
+            {"name": "进阶套餐", "price": "¥30.00/月", "data": "250GB/月", "billing": "月付", "features": "彻底不限制在线设备数，IEPL专线，自研一键客户端"},
+            {"name": "旗舰套餐", "price": "¥55.00/月", "data": "500GB/月", "billing": "月付", "features": "彻底不限制在线设备数，IEPL专线，自研一键客户端"}
+        ]
+    },
+    "jilianyun-review": {
+        "pros": [
+            "<strong>100% IPLC 物理专线：</strong>2.5Gbps 物理内网信道，敏感时期稳定抗封锁",
+            "<strong>晚高峰 0 丢包保障：</strong>全节点抖动低于 3ms，提供极致出海质量",
+            "<strong>原生 IP 广播：</strong>免去繁琐验证码，完美解锁 ChatGPT 4o 与 Claude 3.5",
+            "<strong>全天候客服支持：</strong>24 小时工单运维与社群实时解答"
+        ],
+        "cons": [
+            "不适合极低预算极度敏感用户"
+        ],
+        "plans": [
+            {"name": "体验版", "price": "¥15.50/月", "data": "100GB/月", "billing": "月付", "features": "IPLC物理专线，全节点1倍率，5台设备并发"},
+            {"name": "标准版", "price": "¥32.00/月", "data": "220GB/月", "billing": "月付", "features": "IPLC物理专线，全节点1倍率，5台设备并发"},
+            {"name": "尊享版", "price": "¥68.00/月", "data": "500GB/月", "billing": "月付", "features": "IPLC物理专线，全节点1倍率，5台设备并发"}
+        ]
+    },
+    "edge-review": {
+        "pros": [
+            "<strong>RAM-only 纯内存架构：</strong>服务器无盘运行，断电即彻底物理销毁数据，零日志留存",
+            "<strong>Anycast 自适应选路：</strong>动态匹配距离最近接入点，大幅降低网络往返延迟",
+            "<strong>Web3 与安全风控优化：</strong>IP 隔离清洗，完美契合加密货币交易与学术研究",
+            "<strong>全平台一键直连：</strong>提供简洁直观的客户端，一键极速连接"
+        ],
+        "cons": [
+            "主打安全防护，娱乐小众节点相比大厂稍少"
+        ],
+        "plans": [
+            {"name": "基础版", "price": "¥20.00/月", "data": "120GB/月", "billing": "月付", "features": "RAM纯内存架构，Anycast选路，3台设备"},
+            {"name": "标准版", "price": "¥38.00/月", "data": "260GB/月", "billing": "月付", "features": "RAM纯内存架构，Anycast选路，3台设备"},
+            {"name": "高级版", "price": "¥75.00/月", "data": "600GB/月", "billing": "月付", "features": "RAM纯内存架构，Anycast选路，3台设备"}
+        ]
+    },
+    "jiuyun-review": {
+        "pros": [
+            "<strong>极致性价比单 G 成本：</strong>招财版低至 6 元/月 150G，聚财版 9 元/月 300G",
+            "<strong>提供不限时防失联包：</strong>鸿运版 99 元 300G 永不过期，极佳的备用保底选择",
+            "<strong>智能 BGP 多线中转：</strong>晚高峰流畅稳定，告别低价梯子卡顿断连噩梦",
+            "<strong>免费提供美区 Apple ID：</strong>后台直接向注册用户提供美区 ID，轻松下载小火箭"
+        ],
+        "cons": [
+            "极低起步价套餐不支持退款试用"
+        ],
+        "plans": [
+            {"name": "招财版", "price": "¥6.00/月", "data": "150GB/月", "billing": "月付", "features": "3台设备同时在线，BGP中转，支持全流媒体解锁"},
+            {"name": "聚财版", "price": "¥9.00/月", "data": "300GB/月", "billing": "月付", "features": "3台设备同时在线，BGP中转，性价比爆款推荐"},
+            {"name": "旺财版", "price": "¥16.00/月", "data": "600GB/月", "billing": "月付", "features": "3台设备同时在线，大流量追剧与大文件下载首选"},
+            {"name": "特惠季付版", "price": "¥18.00/季", "data": "200GB/月", "billing": "季付", "features": "折合¥6/月，每季自动重置流量"},
+            {"name": "特惠年付版", "price": "¥99.00/年", "data": "400GB/月", "billing": "年付", "features": "折合¥8.25/月，全网超值年付省钱方案"},
+            {"name": "鸿运版不限时包", "price": "¥99.00", "data": "300GB", "billing": "一次性", "features": "流量永久不过期，用多少扣多少，第二备用保底神器"}
+        ]
+    },
+    "kexincloud-review": {
+        "pros": [
+            "<strong>品质 BGP 专线中转：</strong>99.9% 在线率保障，智能负载均衡分流",
+            "<strong>全节点原生 IP 解锁：</strong>完美支持 Netflix 4K、Disney+、ChatGPT 4o",
+            "<strong>透明账单无扣费陷阱：</strong>1.0x 统一扣费，账目清晰",
+            "<strong>快速工单售后：</strong>提供高效技术解答与工单处理"
+        ],
+        "cons": [
+            "套餐无极大容量上千 G 规格"
+        ],
+        "plans": [
+            {"name": "基础版", "price": "¥15.00/月", "data": "120GB/月", "billing": "月付", "features": "BGP专线，原生IP，4台设备"},
+            {"name": "标准版", "price": "¥30.00/月", "data": "260GB/月", "billing": "月付", "features": "BGP专线，原生IP，4台设备"}
+        ]
+    },
+    "kuaili-review": {
+        "pros": [
+            "<strong>便宜大碗巨额流量：</strong>15 元享 200G 巨量大包，极高性价比",
+            "<strong>不限制设备连接数：</strong>全节点千兆端口，多设备并发无压力",
+            "<strong>支持一次性不限时包：</strong>提供永不过期流量包，备用安心",
+            "<strong>港台影音番剧解锁：</strong>轻松解锁 B站 港台限制与 Netflix"
+        ],
+        "cons": [
+            "高峰期极度大塞车时个别边缘节点存在小幅延迟波动"
+        ],
+        "plans": [
+            {"name": "大碗套餐", "price": "¥15.00/月", "data": "200GB/月", "billing": "月付", "features": "不限设备数，千兆端口，大流量首选"},
+            {"name": "海量套餐", "price": "¥35.00/月", "data": "500GB/月", "billing": "月付", "features": "不限设备数，千兆端口，大下载首选"}
+        ]
+    },
+    "guangnianti-review": {
+        "pros": [
+            "<strong>物理中继流媒体优化：</strong>专为 Netflix 4K、Disney+、Apple TV 观影优化",
+            "<strong>全节点 1.0x 透明扣费：</strong>无虚高倍率扣费陷阱",
+            "<strong>全平台客户端深度适配：</strong>完美配合 Surge、Clash 规则分流",
+            "<strong>智能 DNS 家宽解锁：</strong>原生 IP 解锁杜比视界"
+        ],
+        "cons": [
+            "主打流媒体，不提供无限设备并发"
+        ],
+        "plans": [
+            {"name": "流媒体基础包", "price": "¥20.00/月", "data": "160GB/月", "billing": "月付", "features": "4K流媒体解锁，物理中继，4台设备"},
+            {"name": "流媒体高级包", "price": "¥40.00/月", "data": "350GB/月", "billing": "月付", "features": "4K流媒体解锁，物理中继，4台设备"}
+        ]
+    },
+    "shunyun-review": {
+        "pros": [
+            "<strong>Anycast 选路网页秒开：</strong>降低 TTFB 首包握手延迟，网页排版瞬间呈现",
+            "<strong>部署 Hysteria2 协议：</strong>针对移动宽带与高丢包环境专门优化",
+            "<strong>千兆大带宽通道：</strong>跑满家用千兆宽带下载",
+            "<strong>高并发稳定性：</strong>多窗口并发请求不阻塞"
+        ],
+        "cons": [
+            "HY2 协议需使用现代客户端（如 Sing-box、Clash Verge Rev）"
+        ],
+        "plans": [
+            {"name": "极速版", "price": "¥18.00/月", "data": "150GB/月", "billing": "月付", "features": "Anycast选路，Hysteria2协议，3台设备"},
+            {"name": "尊享极速版", "price": "¥36.00/月", "data": "320GB/月", "billing": "月付", "features": "Anycast选路，Hysteria2协议，3台设备"}
+        ]
+    },
+    "huanyuyun-review": {
+        "pros": [
+            "<strong>40+ 国家地区覆盖：</strong>包含阿根廷、土耳其、印度等小众节点",
+            "<strong>BGP + IEPL 专线：</strong>双重技术保障，兼具低延迟与高稳定",
+            "<strong>跨区消费订阅神器：</strong>方便 Steam 跨区购买与 Spotify 优惠订阅",
+            "<strong>亚服游戏平稳加速：</strong>韩日 IEPL 低延迟联机"
+        ],
+        "cons": [
+            "小众节点数量多，切换时需留意浏览器 Cookie 缓存"
+        ],
+        "plans": [
+            {"name": "寰宇版", "price": "¥22.00/月", "data": "160GB/月", "billing": "月付", "features": "40+国家节点，BGP+IEPL专线，4台设备"},
+            {"name": "寰宇旗舰版", "price": "¥45.00/月", "data": "380GB/月", "billing": "月付", "features": "40+国家节点，BGP+IEPL专线，4台设备"}
+        ]
+    },
+    "naixi-review": {
+        "pros": [
+            "<strong>顶级 IPLC 专线通道：</strong>极高门槛保证人均带宽极大充裕",
+            "<strong>99.999% 超高 SLA 保障：</strong>敏感时期连通如初，公网断连我独畅",
+            "<strong>VIP 一对一客服：</strong>7x24 小时专家级技术支持",
+            "<strong>物理隔离通道：</strong>支持 4K 直播推流与金融量化交易"
+        ],
+        "cons": [
+            "门槛较高（¥45/月起步），适合高预算极客"
+        ],
+        "plans": [
+            {"name": "专线月付订阅", "price": "¥45.00/月", "data": "200GB/月", "billing": "月付", "features": "顶级IPLC专线，物理隔离，5台设备并发"},
+            {"name": "专线年付订阅", "price": "¥420.00/年", "data": "2400GB/年", "billing": "年付", "features": "顶级IPLC专线，物理隔离，5台设备并发"}
+        ]
+    },
+    "huacloud-review": {
+        "pros": [
+            "<strong>老牌大厂口碑保障：</strong>多年稳定运营，全中转 BGP 线路，防跑路首选",
+            "<strong>完善全平台教程：</strong>控制台提供极其详细的图文与视频指引",
+            "<strong>流媒体与 AI 全解锁：</strong>稳定解锁 Netflix、ChatGPT、Claude",
+            "<strong>强悍风控与运维：</strong>敏感时期节点在线率优异"
+        ],
+        "cons": [
+            "定位品质级中转专线，起步价固定"
+        ],
+        "plans": [
+            {"name": "专线月付", "price": "¥28.00/月", "data": "150GB/月", "billing": "月付", "features": "老牌大厂，全中转BGP，全平台教程适配"},
+            {"name": "专线季付", "price": "¥78.00/季", "data": "500GB/季", "billing": "季付", "features": "老牌大厂，全中转BGP，全平台教程适配"}
+        ]
+    }
+}
+
 science_articles = [
     {'slug': 'pc-vpn-download-guide', 'title': '2026电脑VPN推荐：好用的梯子VPN排行榜与Windows/Mac客户端免费下载指南', 'date': '2026-08-29', 'cat': 'guide', 'views': 3420, 'excerpt': '2026年中国真正好用的电脑VPN与翻墙梯子软件推荐测评。提供Windows/Mac电脑端好用的VPN客户端官方免费下载入口、Clash Verge Rev一键导入教程与专线梯子节点推荐。'},
     {'slug': '2026-august-airport-monthly-report', 'title': '2026年8月机场月报与选购指南：晚高峰专线连通率实测与防跑路避坑建议', 'date': '2026-08-28', 'cat': 'eval', 'views': 3120, 'excerpt': '2026年8月最新机场选购月报，汇总极连云、光年梯、边缘节点、速界等主力专线机场在晚高峰的网络连通率与吞吐量表现，提供防跑路避坑解析。'},
@@ -263,6 +752,7 @@ merged_articles.sort(key=lambda x: x['date'], reverse=True)
 hot_articles = merged_articles[:5]
 
 # 生成左侧边栏 (Left Sidebar) 的共用 HTML
+
 def get_left_sidebar_html(depth=0, toc_links_html="", cta_card_html="", article_tags=None, body_content="", page_name=""):
     prefix = "" if depth == 0 else "../"
     
@@ -1006,6 +1496,180 @@ print("Starting compiling article pages...")
 all_generated_slugs = []
 
 # 首先将 20 篇科普文章的原始内容提取并重新封装
+
+def generate_structured_toc(body_content):
+    body_content = re.sub(r'\s+id="heading-[^"]*"', '', body_content)
+    pattern = re.compile(r'<(h[23])([^>]*)>(.*?)</\1>', re.DOTALL | re.IGNORECASE)
+    matches = list(pattern.finditer(body_content))
+    
+    if not matches:
+        return body_content, ""
+        
+    replacements = []
+    toc_links = []
+    
+    for idx, m in enumerate(matches):
+        tag = m.group(1).lower()
+        attrs = m.group(2)
+        inner = m.group(3)
+        clean_text = re.sub(r'<[^>]+>', '', inner).strip()
+        
+        if not clean_text:
+            continue
+            
+        short_name = re.sub(r'[^\w\u4e00-\u9fa5]', '', clean_text)[:12]
+        h_id = f"heading-{idx+1}-{urllib.parse.quote(short_name or 'item')}"
+        
+        new_tag_str = f'<{tag}{attrs} id="{h_id}">{inner}</{tag}>'
+        replacements.append((m.group(0), new_tag_str))
+        
+        safe_title = clean_text.replace('"', '&quot;')
+        depth_class = "toc-h2" if tag == "h2" else "toc-h3"
+        toc_links.append(f'<a href="#{h_id}" class="toc-link {depth_class}" title="{safe_title}">{clean_text}</a>')
+
+    for old_str, new_str in replacements:
+        body_content = body_content.replace(old_str, new_str, 1)
+
+    toc_final_html = "\n".join(toc_links)
+    return body_content, toc_final_html
+
+def generate_product_review_body(slug, name, link):
+    d = PRODUCT_REVIEWS_DATA.get(slug, PRODUCT_REVIEWS_DATA["yuntu-review"])
+    spec = DETAILED_AIRPORT_SPECS.get(slug, DETAILED_AIRPORT_SPECS["yuntu-review"])
+    
+    # 1. 📊 官方基本信息与核心档案
+    section_specs = f"""
+<h2 style="font-size: 1.25rem; font-weight: 800; color: var(--text-primary); margin-top: 24px; border-bottom: 2px solid var(--accent-primary); padding-bottom: 6px;">📊 {name} 官方基本信息与核心档案</h2>
+<p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 12px;">站长基于 <strong>{name} 官方控制台【商店】页面 100% 真实第一手数据</strong>，为您整理核心规格参数：</p>
+<div class="pricing-table-wrap">
+  <table class="pricing-table">
+    <thead>
+      <tr>
+        <th style="width: 30%;">参数项目</th>
+        <th style="width: 70%;">官方规格 / 第一手权威详情</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="font-weight: 700;">官网最新入口</td>
+        <td><a href="{link}" target="_blank" rel="nofollow" style="color: var(--accent-primary); font-weight: 700; text-decoration: underline;">直达 {name} 官网控制台 ↗</a></td>
+      </tr>
+      <tr>
+        <td style="font-weight: 700;">线路技术与质量保障</td>
+        <td>{spec['sla']}</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 700;">起步价格与流量</td>
+        <td style="font-weight: 700; color: var(--accent-primary);">{spec['price_summary']}</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 700;">扣费倍率规则</td>
+        <td><strong style="color: #10b981;">{spec['multiplier']}</strong></td>
+      </tr>
+      <tr>
+        <td style="font-weight: 700;">同时在线设备限制</td>
+        <td>{spec['devices']}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>"""
+
+    # 2. ⚡ 核心优势
+    pros_items = "".join([f"<li style='margin-bottom: 8px; font-size: 0.92rem; color: var(--text-primary); line-height: 1.6;'>{p}</li>" for p in d.get("pros", [])])
+    
+    pros_cons_html = f"""
+<h2 style="font-size: 1.25rem; font-weight: 800; color: var(--text-primary); margin-top: 32px; border-bottom: 2px solid var(--accent-primary); padding-bottom: 6px;">⚡ {name} 核心优势</h2>
+<div class="pro-card" style="background: var(--bg-secondary); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: var(--radius-md); padding: 18px 22px; margin-top: 16px;">
+  <ul style="padding-left: 18px; margin: 0;">
+    {pros_items}
+  </ul>
+</div>"""
+
+    # 3. 🚀 线路架构与晚高峰实测表现
+    arch_text = spec.get("architecture_desc", "")
+    nodes_text = spec.get("nodes_desc", "")
+    nodes_html = f"""
+<h2 style="font-size: 1.25rem; font-weight: 800; color: var(--text-primary); margin-top: 32px; border-bottom: 2px solid var(--accent-primary); padding-bottom: 6px;">🚀 {name} 线路架构与晚高峰实测表现</h2>
+<div style="margin-top: 16px;">
+  {arch_text}
+  {nodes_text}
+</div>"""
+
+    # 4. 💰 2026最新套餐价格与资费一览
+    table_rows = ""
+    for plan in d.get("plans", []):
+        table_rows += f"""
+      <tr>
+        <td style="font-weight: 700;">{plan['name']}</td>
+        <td style="font-weight: 700; color: var(--accent-primary);">{plan['price']}</td>
+        <td>{plan['data']}</td>
+        <td><span style="background: var(--bg-tertiary); padding: 2px 8px; border-radius: 12px; font-size: 0.8rem;">{plan['billing']}</span></td>
+        <td style="font-size: 0.85rem; color: var(--text-secondary);">{plan['features']}</td>
+        <td><a href="{link}" target="_blank" rel="nofollow" class="pricing-buy-btn" style="display: inline-block; background: var(--accent-primary); color: #fff; font-size: 0.8rem; font-weight: 700; padding: 4px 12px; border-radius: var(--radius-sm); text-decoration: none;">订购 ↗</a></td>
+      </tr>"""
+      
+    pricing_html = f"""
+<h2 style="font-size: 1.25rem; font-weight: 800; color: var(--text-primary); margin-top: 32px; border-bottom: 2px solid var(--accent-primary); padding-bottom: 6px;">💰 {name} 2026最新套餐价格与资费一览</h2>
+<p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 12px;">以下为 <strong>{name}</strong> 官方最新上架的资费套餐明细（支持支付宝/微信快捷支付，即时开通）：</p>
+<div class="pricing-table-wrap">
+  <table class="pricing-table">
+    <thead>
+      <tr>
+        <th>套餐名称</th>
+        <th>价格</th>
+        <th>流量规格</th>
+        <th>付费方式</th>
+        <th>核心特性与设备支持</th>
+        <th>操作</th>
+      </tr>
+    </thead>
+    <tbody>
+      {table_rows}
+    </tbody>
+  </table>
+</div>"""
+
+    # 5. ⚙️ 全平台客户端快速订阅与配置教程
+    tutorial_html = f"""
+<h2 style="font-size: 1.25rem; font-weight: 800; color: var(--text-primary); margin-top: 32px; border-bottom: 2px solid var(--accent-primary); padding-bottom: 6px;">⚙️ {name} 全平台客户端快速订阅与配置教程</h2>
+<p style="font-size: 0.92rem; color: var(--text-primary); line-height: 1.8; margin-bottom: 12px;">使用 <strong>{name}</strong> 进行科学上网极其简单，控制台全面适配了主流出海代理客户端（支持一键导入与订阅链接手动添加）：</p>
+
+<div style="background: var(--bg-tertiary); border-radius: var(--radius-md); padding: 18px 20px; margin-top: 14px;">
+  <h4 style="font-size: 1rem; font-weight: 700; color: var(--text-primary); margin-bottom: 10px;">三步完成极速配置：</h4>
+  <ol style="padding-left: 20px; margin: 0; color: var(--text-primary); font-size: 0.92rem; line-height: 1.8;">
+    <li style="margin-bottom: 8px;"><strong>注册并获取订阅：</strong> 点击直达链接访问 <a href="{link}" target="_blank" rel="nofollow" style="color: var(--accent-primary); font-weight: 700;">{name} 官方控制台</a> 注册账号，在控制台首页找到【快速订阅】区，选择并复制一键订阅链接。</li>
+    <li style="margin-bottom: 8px;"><strong>导入客户端：</strong>
+      <ul style="padding-left: 18px; margin-top: 4px;">
+        <li><strong>Windows / macOS：</strong> 推荐使用 <strong>Clash Verge Rev</strong> 或 <strong>Sing-box</strong>。打开软件 -> 订阅管理 -> 粘贴 {name} 订阅链接 -> 点击【导入并更新】。</li>
+        <li><strong>iOS (iPhone / iPad)：</strong> 使用美区 Apple ID 下载 <strong>Shadowrocket (小火箭)</strong>，打开小火箭 -> 点击右上角加号【+】 -> 类型选择 Subscribe -> 粘贴订阅 URL -> 保存更新。</li>
+        <li><strong>Android (安卓)：</strong> 推荐使用 <strong>Clash Meta for Android</strong> 或 <strong>V2RayNG</strong> -> 粘贴订阅地址并同步。</li>
+      </ul>
+    </li>
+    <li><strong>开启系统代理：</strong> 选中延时最低的节点（如香港或日本专线），将出站模式切换为【Rule / 规则模式】，开启代理开关即可流畅访问外网。</li>
+  </ol>
+</div>"""
+
+    # 6. 🛡️ 选购建议
+    advice_text = spec.get("advice_desc", "")
+    cons_items = "".join([f"<li style='margin-bottom: 8px; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;'>{c}</li>" for c in d.get("cons", [])])
+    
+    advice_html = f"""
+<h2 style="font-size: 1.25rem; font-weight: 800; color: var(--text-primary); margin-top: 32px; border-bottom: 2px solid var(--accent-primary); padding-bottom: 6px;">🛡️ {name} 选购建议</h2>
+<div style="margin-top: 16px;">
+  {advice_text}
+  <div style="margin-top: 20px; padding: 16px 20px; background: var(--bg-tertiary); border-left: 4px solid #f59e0b; border-radius: var(--radius-sm);">
+    <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--text-primary); margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
+      <svg viewBox="0 0 24 24" style="width:18px; height:18px; fill:#f59e0b;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+      选购与使用注意事项
+    </h4>
+    <ul style="padding-left: 18px; margin: 0;">
+      {cons_items}
+    </ul>
+  </div>
+</div>"""
+
+    return section_specs + pros_cons_html + nodes_html + pricing_html + tutorial_html + advice_html
+
 for sa in science_articles:
     slug = sa['slug']
     src_file_path = os.path.join(src_dir, "articles", f"{slug}.html")
@@ -1202,119 +1866,37 @@ print("Science articles compiled successfully.")
 
 # ==========================================================================
 # 2. 编译生成 9 个机场推荐测评页
-# ==========================================================================
-print("Compiling airport review pages...")
 
-# 定义测评页的内容转换与新机场 Naixi / Huacloud 生成
+
+# ==========================================================================
+# 2. 机场测评文章页面 (articles/{slug}.html)
+# ==========================================================================
+print("Generating airport review articles...")
 for ap in airports:
     slug = ap['slug']
     dest_file_path = os.path.join(dest_dir, "articles", f"{slug}.html")
     
-    # 极连云, 边缘, 快狸, 光年梯, 瞬云, 寰宇云, 速界: 从 src_dir 中读入同名文件进行处理
-    # 奶昔 (naixi-review) : 从 wavetrans-review.html 转换而来
-    # 花云 (huacloud-review) : 从 guangshuyun-review.html 转换而来
-    src_slug = slug
-    if slug == 'naixi-review':
-        src_slug = 'globalyun-review'
-    elif slug == 'huacloud-review':
-        src_slug = 'guangshuyun-review'
-        
-    src_file_path = os.path.join(src_dir, "articles", f"{src_slug}.html")
+    desc_val = f"{ap['name']} 官方最新测评：包含节点速度测试、高峰期延迟、套餐价格对比与科学上网客户端配置教程。"
+    kw_val = f"{ap['name']}, 机场推荐, 节点测试, 科学上网, {ap['name']}官网"
+    title_text = ap.get('custom_title', f"{ap['name']} 测评：稳定高速的机场推荐")
     
-    if not os.path.exists(src_file_path):
-        print(f"Warning: Airport source {src_file_path} not found. Skip {slug}.")
-        continue
+    intro_p = f'<p style="font-size: 0.96rem; line-height: 1.8; margin-bottom: 20px; background: var(--bg-tertiary); padding: 14px 18px; border-left: 4px solid var(--accent-primary); border-radius: var(--radius-sm);">{AIRPORT_DATA[slug].get("intro", "")}</p>' if slug in AIRPORT_DATA else ""
+    product_sections_html = generate_product_review_body(slug, ap['name'], ap['link'])
+    body_content = intro_p + "\n" + product_sections_html
         
-    with open(src_file_path, "r", encoding="utf-8") as f:
-        src_html = f.read()
-        
-    # 提取描述和关键字
-    desc_match = re.search(r'<meta\s+name="description"\s+content="([^"]+)"', src_html)
-    desc_val = desc_match.group(1) if desc_match else f"{ap['name']} 机场的专业晚高峰测速、套餐方案与流媒体解锁能力评测。"
+    extracted_tags = ["机场", "专线机场", ap['name']]
+    faq_schema_html = get_faq_and_schema_html(title_text, desc_val, slug, is_review=True, extra_info=ap)
     
-    kw_match = re.search(r'<meta\s+name="keywords"\s+content="([^"]+)"', src_html)
-    kw_val = kw_match.group(1) if kw_match else f"{ap['name']}, 机场推荐, 科学上网, 梯子推荐"
+    full_article_body = body_content + "\n" + faq_schema_html
+    full_article_body, toc_html = generate_structured_toc(full_article_body)
     
-    # 提取正文内容
-    body_wrapper_pos = src_html.find('<div class="article-body-content"')
-    if body_wrapper_pos != -1:
-        start_idx = src_html.find('>', body_wrapper_pos) + 1
-    else:
-        start_idx = src_html.find('<article class="article-content-container">')
-        if start_idx == -1:
-            start_idx = src_html.find('<div class="article-body">')
-        if start_idx == -1:
-            start_idx = src_html.find('<article class="content-feed">')
-
-        if start_idx != -1:
-            header_pos = src_html.find('article-header', start_idx)
-            if header_pos != -1:
-                meta_pos = src_html.find('article-detail-meta', header_pos)
-                if meta_pos != -1:
-                    closing_meta = src_html.find('</div>', meta_pos)
-                    if closing_meta != -1:
-                        closing_header = src_html.find('</div>', closing_meta + 6)
-                        if closing_header != -1:
-                            start_idx = closing_header + 6
-                else:
-                    closing_header = src_html.find('</div>', header_pos)
-                    if closing_header != -1:
-                        start_idx = closing_header + 6
-
-    end_idx = src_html.find('<div class="geo-faq-section"')
-    if end_idx == -1:
-        end_idx = src_html.find('<script type="application/ld+json">')
-    if end_idx == -1:
-        end_idx = src_html.find('<div class="article-copyright-box"')
-    if end_idx == -1:
-        end_idx = src_html.find('<aside class="sidebar">')
-    if end_idx == -1:
-        end_idx = src_html.find('</article>')
-
-    extracted_tags = []
-    if start_idx == -1 or end_idx == -1 or start_idx >= end_idx:
-        print(f"Warning: Could not extract body for {slug}, keeping existing content if any.")
-        continue
-    else:
-        body_content = src_html[start_idx:end_idx].strip()
-        body_content = clean_body_content(body_content)
-        body_content, extracted_tags = extract_article_tags(body_content)
-        
-    # 对 Naixi 和 Huacloud 的正文内容做二次替换
-    if slug == 'naixi-review':
-        body_content = body_content.replace("全球云", "奶昔")
-        body_content = body_content.replace("globalyun", "naixi")
-        body_content = body_content.replace("BGP智能优化", "顶级IPLC专线")
-        body_content = body_content.replace("BGP 智能优化", "顶级IPLC专线")
-        body_content = body_content.replace("一次性付费", "顶级IPLC专线年付")
-    elif slug == 'huacloud-review':
-        body_content = body_content.replace("光速云", "花云")
-        body_content = body_content.replace("guangshuyun", "huacloud")
-        body_content = body_content.replace("Guangshuyun", "Huacloud")
-        body_content = body_content.replace("全球IPLC专线", "老牌BGP中继与专线")
-        
-    # 生成 TOC (大纲目录)
-    toc_links = []
-    headings = re.findall(r'<h[23][^>]*>(.*?)</h[23]>', body_content)
-    for h in headings:
-        h_clean = re.sub(r'<[^>]+>', '', h).strip()
-        h_id = 'heading-' + urllib.parse.quote(h_clean[:10])
-        body_content = body_content.replace(f">{h}<", f' id="{h_id}">{h}<', 1)
-        is_h3 = "depth-3" if "h3" in body_content[body_content.find(h)-10 : body_content.find(h)] else ""
-        toc_links.append(f'<a href="#{h_id}" class="toc-link {is_h3}">{h_clean}</a>')
-        
-    toc_html = "\n".join(toc_links)
-    
-        # 构造放在分类目录与热门标签之间的 CTA 订阅卡片
     article_cta_html = f"""
         <div class="sidebar-card embedded-cta-card" style="border: 1.5px solid #f59e0b; background: var(--bg-secondary); padding: 20px; border-radius: var(--radius-md);">
-          <h4 style="font-size: 1.05rem; font-weight: 800; color: var(--text-primary); margin-bottom: 8px;">获取 {ap['name']} 官网最新订阅</h4>
+          <h4 style="font-size: 1.05rem; font-weight: 800; color: var(--text-primary); margin-bottom: 8px;">获取 {ap['name']} 最新订阅</h4>
           <p style="font-size: 0.83rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 16px;">一键同步订阅，晚高峰物理专线不限速，畅快享受跨境办公与流媒体。</p>
-          <a href="{ap['link']}" target="_blank" style="display: block; width: 100%; text-align: center; background-color: #f59e0b; color: #1e293b; font-weight: 700; padding: 10px 0; border-radius: var(--radius-sm); text-decoration: none;">直达 {ap['name']} 官网 ↗</a>
+          <a href="{ap['link']}" target="_blank" style="display: block; width: 100%; text-align: center; background-color: #f59e0b; color: #1e293b; font-weight: 700; padding: 10px 0; border-radius: var(--radius-sm); text-decoration: none;">直达 {ap['name']} 官网注册</a>
         </div>"""
-    title_text = ap.get('custom_title', f"{ap['name']} 机场评测：稳定高速的官网订阅与测速推荐")
-    
-    # 组装 HTML
+        
     new_html = f"""<!DOCTYPE html>
 <html lang="zh-CN" data-theme="light">
 <head>
@@ -1324,7 +1906,7 @@ for ap in airports:
   
   <!-- SEO Meta Tags -->
   <meta name="description" content="{desc_val}">
-  <meta name="keywords" content="{kw_val}, vpn推荐, 机场官网, vpnstuijian.net">
+  <meta name="keywords" content="{kw_val}, vpn推荐, 机场推荐, vpnstuijian.net">
   <meta name="robots" content="index, follow">
   
   <!-- GEO Tags -->
@@ -1344,41 +1926,33 @@ for ap in airports:
     <div class="breadcrumbs">
       <a href="../index.html">首页</a>
       <svg viewBox="0 0 24 24" style="width:12px; height:12px; fill:currentColor;"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
-      <a href="../index.html?category=airport">机场推荐</a>
+      <a href="../index.html?category=airport">机场测评</a>
       <svg viewBox="0 0 24 24" style="width:12px; height:12px; fill:currentColor;"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
       <span>正文</span>
     </div>
     
     <div class="main-layout article-page-layout">
       <!-- Left Column: Sidebar -->
-      {get_left_sidebar_html(depth=1, toc_links_html=toc_html, cta_card_html=article_cta_html, article_tags=extracted_tags, body_content=body_content, page_name=slug)}
+      {get_left_sidebar_html(depth=1, toc_links_html=toc_html, cta_card_html=article_cta_html, article_tags=extracted_tags, body_content=full_article_body, page_name=slug)}
       
       <!-- Middle Column: Article Body -->
       <article class="article-content-container">
         <div class="article-header">
           <h1 class="article-title-large">{title_text}</h1>
           <div class="article-detail-meta">
-            <span>📅 更新日期: 2026-07-24</span>
-            <span>👁 阅读量: 2500+ 次</span>
-            <span>🏷 归类: 机场推荐</span>
+            <span class="meta-item"><svg viewBox="0 0 24 24" style="width:14px; height:14px; fill:currentColor; margin-right:4px;"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>更新日期: 2026-07-24</span>
+            <span class="meta-item"><svg viewBox="0 0 24 24" style="width:14px; height:14px; fill:currentColor; margin-right:4px;"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>阅读量: 2500+ 次</span>
+            <span class="meta-item"><svg viewBox="0 0 24 24" style="width:14px; height:14px; fill:currentColor; margin-right:4px;"><path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.89 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/></svg>归类: 机场推荐</span>
           </div>
         </div>
         
-        {get_ai_summary_html(title_text, desc_val, is_review=True, extra_info=ap)}
-        
-        {body_content}
-        
-        {get_faq_and_schema_html(title_text, desc_val, slug, is_review=True, extra_info=ap)}
-        
-        <!-- 文章版权与免责声明卡片 -->
-        <div class="article-copyright-box" style="margin-top: 24px; padding: 16px 20px; background-color: var(--bg-tertiary); border: 1px dashed var(--border-color); border-radius: var(--radius-md); font-size: 0.82rem; color: var(--text-secondary); line-height: 1.6;">
-          <p style="margin-bottom: 6px;"><strong>📌 版权声明：</strong> 本文由 <a href="../index.html" style="color: var(--accent-primary); font-weight: 600;">vpn推荐</a> 整理与发布，遵循 CC BY-NC 4.0 许可协议，转载请注明原文链接。</p>
-          <p style="margin-bottom: 6px;"><strong>⚖️ 免责声明：</strong> 本站评测与科普内容仅供网络技术交流、学术科研与跨境办公使用，请遵守当地法律法规。</p>
-          <p style="margin: 0;"><strong>⏱ 节点提示：</strong> 测速数据与优惠方案同步于 2026 最新官方节点状态，晚高峰连通性请以实测为准。</p>
+        <div class="article-body">
+          {full_article_body}
         </div>
-        
-        {get_prev_next_nav_html(slug)}
       </article>
+      
+      <!-- Right Column: Sidebar -->
+      {get_right_sidebar_html(depth=1, toc_links_html=toc_html)}
     </div>
   </main>
   
@@ -1387,24 +1961,10 @@ for ap in airports:
 </html>
 """
     new_html = replace_site_wide_terms(new_html, is_subpage=True)
-    
-    # 强制将购买和套餐表里的链接更新为当前 links 配对链接
-    for name_key, url_val in links.items():
-        if name_key in ap['name'] or ap['name'] in name_key:
-            new_html = re.sub(r'href="https?://(?!github\.com)[^"]+"', f'href="{url_val}"', new_html)
-            
     with open(dest_file_path, "w", encoding="utf-8") as f:
         f.write(new_html)
-    all_generated_slugs.append(slug)
+    print(f"Generated airport review: {slug}.html")
 
-print("Airport reviews compiled successfully.")
-
-# ==========================================================================
-# 3. 编译生成 parent pages (index.html, about.html, vpn-guide.html, archives.html)
-# ==========================================================================
-print("Compiling parent pages...")
-
-# A. 生成 index.html (主页)
 def write_index():
     # 构造 9 大推荐机场卡片
     airport_cards_html = ""

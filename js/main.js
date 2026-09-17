@@ -422,40 +422,70 @@ function initAccordion() {
    ========================================================================== */
 function initScrollSpy() {
   const tocLinks = document.querySelectorAll('.toc-link');
-  const headings = document.querySelectorAll('.article-body h2, .article-body h3');
+  const headings = document.querySelectorAll('.article-content-container h2, .article-content-container h3, .article-body h2, .article-body h3');
   
-  if (tocLinks.length === 0 || headings.length === 0) return;
+  if (tocLinks.length === 0) return;
   
+  // 为全站所有大纲链接绑定平滑精准跳转事件
+  tocLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      const targetId = link.getAttribute('href');
+      if (targetId && targetId.startsWith('#')) {
+        const targetElem = document.getElementById(targetId.substring(1));
+        if (targetElem) {
+          e.preventDefault();
+          const headerOffset = 80;
+          const elementPosition = targetElem.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      }
+    });
+  });
+
+  if (headings.length === 0) return;
+
   const options = {
     root: null,
-    rootMargin: '0px 0px -60% 0px', // 当标题滚动到屏幕中上部时激活
+    rootMargin: '0px 0px -60% 0px',
     threshold: 0.1
   };
   
   let activeId = '';
   
   const observer = new IntersectionObserver(entries => {
-    // 找出当前在视口内的标题
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         activeId = entry.target.id;
       }
     });
     
-    // 如果有活跃标题，则高亮目录中对应的链接
     if (activeId) {
       tocLinks.forEach(link => {
         link.classList.remove('active');
         const href = link.getAttribute('href');
         if (href === `#${activeId}`) {
           link.classList.add('active');
+          const parentItem = link.closest('.toc-item.has-children');
+          if (parentItem) {
+            parentItem.classList.add('active-parent');
+          }
+        }
+      });
+
+      document.querySelectorAll('.toc-item.has-children').forEach(item => {
+        const hasActiveChild = item.querySelector('.toc-link.active');
+        if (!hasActiveChild) {
+          item.classList.remove('active-parent');
         }
       });
     }
   }, options);
   
   headings.forEach(heading => {
-    // 为没有 ID 的标题自动分配拼音/拼字 ID 供锚点跳转
     if (!heading.id) {
       heading.id = 'heading-' + encodeURIComponent(heading.textContent.trim().substring(0, 10));
     }

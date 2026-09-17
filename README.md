@@ -3,7 +3,7 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/yuntizhinan/vpnstuijian?style=flat-square&color=brightgreen)](https://github.com/yuntizhinan/vpnstuijian)
 [![GitHub stars](https://img.shields.io/github/stars/yuntizhinan/vpnstuijian?style=social)](https://github.com/yuntizhinan/vpnstuijian/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/yuntizhinan/vpnstuijian?style=social)](https://github.com/yuntizhinan/vpnstuijian/network/members)
-[![Included Providers](https://img.shields.io/badge/Included-8%20Providers-007ec6?style=flat-square)](https://vpnstuijian.net)
+[![Included Providers](https://img.shields.io/badge/Included-9%20Providers-007ec6?style=flat-square)](https://vpnstuijian.net)
 [![Visitors](https://visitor-badge.laobi.icu/badge?page_id=yuntizhinan.vpnstuijian&left_color=gray&right_color=007ec6)](https://github.com/yuntizhinan/vpnstuijian)
 [![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-555555?style=flat-square)](LICENSE)
 
@@ -41,6 +41,7 @@
 | :--- | :--- | :--- | :--- | :--- | :---: |
 | 💼 **跨境商务 / 游戏加速** | 旗舰专线 | ¥20 ~ ¥60+ / 月 | IPLC/IEPL 纯内网专线，不过公网墙，超低抖动与零丢包 | 极连云、速界、可信云 | [点击直达](#高端-iepl--旗舰专线专区) |
 | 🛡️ **AI交互 / 跨境电商** | 隐私与原生IP | ¥15 ~ ¥50 / 月 | 只读内存无日志保护，原生 IP 解锁 ChatGPT/奈飞 | 边缘、云图 | [点击直达](#隐私与原生住宅-ip-专区) |
+| 💰 **平价首选 / 学生党推荐** | 极致性价比 | ¥6 ~ ¥16 / 月 | 月付6元起超低门槛，VLESS 协议与不限时包方案 | 九云 | [点击直达](#隐私与原生住宅-ip-专区) |
 | 🎬 **4K刷剧 / 日常主力** | 性价比主力 | ¥7.4 ~ ¥30 / 月 | 晚高峰抗拥堵，全解锁 YouTube 4K / Netflix / Disney+ | 瞬云、光年梯 | [点击直达](#4k刷剧--日常主力推荐) |
 | 📦 **轻度使用 / 容灾防失联** | 性价比备用 | ¥15 / 月起 | 设备连接数不限，老牌稳定 Anycast，超低资费防失联 | 快狸 | [点击直达](#轻度使用--容灾备用专区) |
 
@@ -55,6 +56,7 @@
 | **速界** | 端到端 IEPL 专线 | 不限制在线设备数、自研一键客户端 | ⭐⭐⭐⭐⭐ | [点击直达](https://lqy001.speedworldaff.com/#/?code=C2v7kRVl) |
 | **边缘 (EdgeNova)** | 内存无日志专线 | 只读内存服务器、零日志隐私、自研客户端 | ⭐⭐⭐⭐⭐ | [点击直达](https://zoio.edgenovaaff.cc/#/?code=Y65i2kCU) |
 | **云图** | 金融级专线 | 全节点 1 倍率无陷阱、24H 高速、原生 IP 全解锁 | ⭐⭐⭐⭐⭐ | [点击直达](https://vip.ytjcok.org/#/register?code=nDsDjrfI) |
+| **九云** | 极致性价比 | 月付 6 元起超低门槛、VLESS 协议与不限时包 | ⭐⭐⭐⭐⭐ | [点击直达](https://九云.com) |
 | **可信云** | 全 IEPL 物理专线 | 60+ 顶级专线节点、不限设备、三年付 7 折 | ⭐⭐⭐⭐⭐ | [点击直达](https://asfasf.kexintztz2.sbs/#/?code=BStg7pM7) |
 | **瞬云** | 高吞吐 Anycast | Anycast 智能选路、千兆大带宽、三年付 75 折 | ⭐⭐⭐⭐ | [点击直达](https://ccc.jichang.best/#/register?code=ClNa0zPm) |
 | **光年梯** | 高连通流媒体 | 稳定中继物理线路、年付折合每月低至 ¥7.4 起 | ⭐⭐⭐⭐ | [点击直达](https://19629.gntaff.com/#/?code=AixFrykO) |
@@ -124,7 +126,21 @@
 
 ---
 
-### 5. 云图
+### 5. 九云
+🔗 **官网入口**：[https://九云.com](https://九云.com)
+
+| 项目 | 说明 |
+| :--- | :--- |
+| **线路定位** | 极致性价比 |
+| **核心特性** | • 月付 6 元起超低试错门槛<br>• VLESS 现代协议与海外 Relay 动态中转<br>• 提供 99 元 300G 不限时流量包 |
+| **适用场景** | 预算有限的学生党、平价翻墙、不限时包防失联 |
+| **推荐指数** | ⭐⭐⭐⭐⭐ |
+
+**核心标签**：`极致性价比` `月付6元起` `VLESS协议` `不限时流量包`
+
+---
+
+### 6. 云图
 🔗 **官网入口**：[https://vip.ytjcok.org/#/register?code=nDsDjrfI](https://vip.ytjcok.org/#/register?code=nDsDjrfI)
 
 | 项目 | 说明 |
@@ -141,7 +157,7 @@
 <a id="4k刷剧--日常主力推荐" name="4k刷剧--日常主力推荐"></a><a id="-4k刷剧--日常主力推荐" name="-4k刷剧--日常主力推荐"></a>
 ## ⚖️ 4K刷剧 / 日常主力推荐
 
-### 6. 瞬云
+### 7. 瞬云
 🔗 **官网入口**：[https://ccc.jichang.best/#/register?code=ClNa0zPm](https://ccc.jichang.best/#/register?code=ClNa0zPm)
 
 | 项目 | 说明 |
@@ -155,7 +171,7 @@
 
 ---
 
-### 7. 光年梯
+### 8. 光年梯
 🔗 **官网入口**：[https://19629.gntaff.com/#/?code=AixFrykO](https://19629.gntaff.com/#/?code=AixFrykO)
 
 | 项目 | 说明 |
@@ -172,7 +188,7 @@
 <a id="轻度使用--容灾备用专区" name="轻度使用--容灾备用专区"></a><a id="-轻度使用--容灾备用专区" name="-轻度使用--容灾备用专区"></a>
 ## 📦 轻度使用 / 容灾备用专区
 
-### 8. 快狸
+### 9. 快狸
 🔗 **官网入口**：[https://196295.kuailiaff.com/#/?code=tmUe2z1n](https://196295.kuailiaff.com/#/?code=tmUe2z1n)
 
 | 项目 | 说明 |
@@ -183,6 +199,7 @@
 | **推荐指数** | ⭐⭐⭐⭐ |
 
 **核心标签**：`性价比备用` `Anycast` `不限设备` `¥15/月起`
+
 
 ---
 

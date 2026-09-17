@@ -1194,56 +1194,75 @@ button {
 /* ==========================================================================
    文章详情页特殊元素 (TOC 目录, 正文排版)
    ========================================================================== */
-/* 浮动/固定目录栏 */
+/* 浮动/固定目录栏 - 完全匹配参考图 1 典雅排版 */
 .toc-card {
-  max-height: calc(100vh - var(--header-height) - 60px);
+  max-height: calc(100vh - var(--header-height) - 40px);
   overflow-y: auto;
+  position: relative;
 }
 
 .toc-title {
   font-size: 0.95rem;
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 12px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
   color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed var(--border-color);
 }
 
 .toc-list {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
   font-size: 0.85rem;
   border-left: 2px solid var(--border-color);
+  padding-left: 0;
+  margin-left: 4px;
 }
 
 .toc-link {
-  padding-left: 12px;
-  color: var(--text-secondary);
   display: block;
-  transition: all var(--transition-fast);
+  padding: 4px 8px 4px 14px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  line-height: 1.5;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  border-left: 3px solid transparent;
+  margin-left: -2px;
+  transition: all var(--transition-fast);
+  cursor: pointer;
 }
 
-.toc-link:hover, .toc-link.active {
-  color: var(--accent-primary);
+.toc-link.toc-h2 {
   font-weight: 600;
+  color: var(--text-primary);
+  font-size: 0.86rem;
+}
+
+.toc-link.toc-h3 {
+  font-weight: 400;
+  color: var(--text-secondary);
+  padding-left: 26px;
+  font-size: 0.81rem;
+}
+
+.toc-link:hover {
+  color: var(--accent-primary);
+  background-color: var(--bg-tertiary);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
 }
 
 .toc-link.active {
-  border-left: 2px solid var(--accent-primary);
-  margin-left: -2px;
-  padding-left: 12px;
-}
-
-.toc-link.depth-3 {
-  padding-left: 24px;
-}
-
-.toc-link.depth-3.active {
-  padding-left: 24px;
+  color: #10b981;
+  font-weight: 700;
+  border-left-color: #10b981;
+  background-color: rgba(16, 185, 129, 0.08);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
 }
 
 /* ==========================================================================
@@ -3125,4 +3144,142 @@ button {
     gap: 8px;
     margin-left: auto;
   }
+}
+
+
+/* ==========================================================================
+   产品化评测页 Pros & Cons 与 价格表格 视效增强
+   ========================================================================== */
+.pros-cons-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .pros-cons-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pro-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-left: 4px solid #10b981;
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+  box-shadow: var(--shadow-sm);
+}
+
+.con-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-left: 4px solid #f43f5e;
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+  box-shadow: var(--shadow-sm);
+}
+
+.pro-card-title {
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.con-card-title {
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pro-con-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+.pro-con-list li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+}
+
+.pro-card .pro-con-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #10b981;
+  font-weight: bold;
+}
+
+.con-card .pro-con-list li::before {
+  content: "✕";
+  position: absolute;
+  left: 0;
+  color: #f43f5e;
+  font-weight: bold;
+}
+
+.pricing-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  margin: 20px 0;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  background: var(--bg-secondary);
+  box-shadow: var(--shadow-sm);
+}
+
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  text-align: left;
+}
+
+.pricing-table th {
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+  font-weight: 700;
+  padding: 12px 14px;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.pricing-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-secondary);
+}
+
+.pricing-table tr:last-child td {
+  border-bottom: none;
+}
+
+.pricing-buy-btn {
+  display: inline-block;
+  padding: 6px 14px;
+  background: var(--accent-primary);
+  color: #ffffff !important;
+  font-size: 0.82rem;
+  font-weight: 700;
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.pricing-buy-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
 }
