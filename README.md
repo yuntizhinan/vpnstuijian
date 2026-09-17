@@ -68,7 +68,7 @@
 ## 👑 高端 IEPL / 旗舰专线专区
 
 ### 1. 极连云
-🔗 **官网入口**：[https://19629.jlyvipaff.com/#/?code=zMHMPYDj](https://19629.jlyvipaff.com/#/?code=zMHMPYDj)
+🔗 **官网入口**：[点击直达](https://19629.jlyvipaff.com/#/?code=zMHMPYDj)
 
 | 项目 | 说明 |
 | :--- | :--- |
@@ -82,7 +82,7 @@
 ---
 
 ### 2. 速界
-🔗 **官网入口**：[https://lqy001.speedworldaff.com/#/?code=C2v7kRVl](https://lqy001.speedworldaff.com/#/?code=C2v7kRVl)
+🔗 **官网入口**：[点击直达](https://lqy001.speedworldaff.com/#/?code=C2v7kRVl)
 
 | 项目 | 说明 |
 | :--- | :--- |
@@ -96,7 +96,7 @@
 ---
 
 ### 3. 可信云
-🔗 **官网入口**：[https://asfasf.kexintztz2.sbs/#/?code=BStg7pM7](https://asfasf.kexintztz2.sbs/#/?code=BStg7pM7)
+🔗 **官网入口**：[点击直达](https://asfasf.kexintztz2.sbs/#/?code=BStg7pM7)
 
 | 项目 | 说明 |
 | :--- | :--- |
@@ -113,7 +113,7 @@
 ## 🛡️ 隐私与原生住宅 IP 专区
 
 ### 4. 边缘 (EdgeNova)
-🔗 **官网入口**：[https://zoio.edgenovaaff.cc/#/?code=Y65i2kCU](https://zoio.edgenovaaff.cc/#/?code=Y65i2kCU)
+🔗 **官网入口**：[点击直达](https://zoio.edgenovaaff.cc/#/?code=Y65i2kCU)
 
 | 项目 | 说明 |
 | :--- | :--- |
@@ -127,7 +127,7 @@
 ---
 
 ### 5. 九云
-🔗 **官网入口**：[https://888.jiuyundl.com/#/register?code=Mh1h2rKe](https://888.jiuyundl.com/#/register?code=Mh1h2rKe)
+🔗 **官网入口**：[点击直达](https://888.jiuyundl.com/#/register?code=Mh1h2rKe)
 
 | 项目 | 说明 |
 | :--- | :--- |
@@ -141,7 +141,7 @@
 ---
 
 ### 6. 云图
-🔗 **官网入口**：[https://vip.ytjcok.org/#/register?code=nDsDjrfI](https://vip.ytjcok.org/#/register?code=nDsDjrfI)
+🔗 **官网入口**：[点击直达](https://vip.ytjcok.org/#/register?code=nDsDjrfI)
 
 | 项目 | 说明 |
 | :--- | :--- |
@@ -158,7 +158,7 @@
 ## ⚖️ 4K刷剧 / 日常主力推荐
 
 ### 7. 瞬云
-🔗 **官网入口**：[https://ccc.jichang.best/#/register?code=ClNa0zPm](https://ccc.jichang.best/#/register?code=ClNa0zPm)
+🔗 **官网入口**：[点击直达](https://ccc.jichang.best/#/register?code=ClNa0zPm)
 
 | 项目 | 说明 |
 | :--- | :--- |
@@ -172,7 +172,7 @@
 ---
 
 ### 8. 光年梯
-🔗 **官网入口**：[https://19629.gntaff.com/#/?code=AixFrykO](https://19629.gntaff.com/#/?code=AixFrykO)
+🔗 **官网入口**：[点击直达](https://19629.gntaff.com/#/?code=AixFrykO)
 
 | 项目 | 说明 |
 | :--- | :--- |
@@ -189,7 +189,7 @@
 ## 📦 轻度使用 / 容灾备用专区
 
 ### 9. 快狸
-🔗 **官网入口**：[https://196295.kuailiaff.com/#/?code=tmUe2z1n](https://196295.kuailiaff.com/#/?code=tmUe2z1n)
+🔗 **官网入口**：[点击直达](https://196295.kuailiaff.com/#/?code=tmUe2z1n)
 
 | 项目 | 说明 |
 | :--- | :--- |
