@@ -24,7 +24,7 @@ links = {
     '寰宇云': 'https://vip3.huanyuyunbest.com/#/register?code=K6h5VWw2',
     '云图': 'https://vip.ytjcok.org/#/register?code=nDsDjrfI',
     '可信云': 'https://asfasf.kexintztz2.sbs/#/?code=BStg7pM7',
-    '九云': 'https://九云.com',
+    '九云': 'https://888.jiuyundl.com/#/register?code=Mh1h2rKe',
     '奶昔': '#', # 奶昔和花云用内部跳转或演示链接
     '花云': '#'
 }

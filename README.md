@@ -56,7 +56,7 @@
 | **速界** | 端到端 IEPL 专线 | 不限制在线设备数、自研一键客户端 | ⭐⭐⭐⭐⭐ | [点击直达](https://lqy001.speedworldaff.com/#/?code=C2v7kRVl) |
 | **边缘 (EdgeNova)** | 内存无日志专线 | 只读内存服务器、零日志隐私、自研客户端 | ⭐⭐⭐⭐⭐ | [点击直达](https://zoio.edgenovaaff.cc/#/?code=Y65i2kCU) |
 | **云图** | 金融级专线 | 全节点 1 倍率无陷阱、24H 高速、原生 IP 全解锁 | ⭐⭐⭐⭐⭐ | [点击直达](https://vip.ytjcok.org/#/register?code=nDsDjrfI) |
-| **九云** | 极致性价比 | 月付 6 元起超低门槛、VLESS 协议与不限时包 | ⭐⭐⭐⭐⭐ | [点击直达](https://九云.com) |
+| **九云** | 极致性价比 | 月付 6 元起超低门槛、VLESS 协议与不限时包 | ⭐⭐⭐⭐⭐ | [点击直达](https://888.jiuyundl.com/#/register?code=Mh1h2rKe) |
 | **可信云** | 全 IEPL 物理专线 | 60+ 顶级专线节点、不限设备、三年付 7 折 | ⭐⭐⭐⭐⭐ | [点击直达](https://asfasf.kexintztz2.sbs/#/?code=BStg7pM7) |
 | **瞬云** | 高吞吐 Anycast | Anycast 智能选路、千兆大带宽、三年付 75 折 | ⭐⭐⭐⭐ | [点击直达](https://ccc.jichang.best/#/register?code=ClNa0zPm) |
 | **光年梯** | 高连通流媒体 | 稳定中继物理线路、年付折合每月低至 ¥7.4 起 | ⭐⭐⭐⭐ | [点击直达](https://19629.gntaff.com/#/?code=AixFrykO) |
@@ -127,7 +127,7 @@
 ---
 
 ### 5. 九云
-🔗 **官网入口**：[https://九云.com](https://九云.com)
+🔗 **官网入口**：[https://888.jiuyundl.com/#/register?code=Mh1h2rKe](https://888.jiuyundl.com/#/register?code=Mh1h2rKe)
 
 | 项目 | 说明 |
 | :--- | :--- |
