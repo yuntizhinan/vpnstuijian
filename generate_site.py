@@ -1295,6 +1295,11 @@ def replace_site_wide_terms(html_content, is_subpage=False):
     html_content = html_content.replace("机场速递", "vpn推荐")
     html_content = html_content.replace("jichangspeed", "vpnstuijian")
     
+    # 还原友情链接中的 机场速递：https://vpnstuijian.com
+    html_content = html_content.replace('href="https://vpnstuijian.com" target="_blank" class="footer-link">vpn推荐 ↗', 'href="https://vpnstuijian.com" target="_blank" class="footer-link">机场速递 ↗')
+    html_content = html_content.replace('href="https://vpnstuijian.com" target="_blank" class="footer-link">vpn推荐', 'href="https://vpnstuijian.com" target="_blank" class="footer-link">机场速递')
+
+    
     # 替换 Wavetrans 为 奶昔，光速云 为 花云 (如果在非正文中也遇到了)
     html_content = html_content.replace("Wavetrans", "奶昔")
     html_content = html_content.replace("wavetrans", "naixi")
