@@ -24,8 +24,17 @@ links = {
     '寰宇云': 'https://vip3.huanyuyunbest.com/#/register?code=K6h5VWw2',
     '云图': 'https://vip.ytjcok.org/#/register?code=nDsDjrfI',
     '可信云': 'https://asfasf.kexintztz2.sbs/#/?code=BStg7pM7',
-    '九云': 'https://888.jiuyundl.com/#/register?code=Mh1h2rKe',
-    '奶昔': '#', # 奶昔和花云用内部跳转或演示链接
+    '九云': 'https://psy.jiuyyq.com',
+    'AndyCloud': 'https://sss.andycloud.cc/#/register?code=Lt8sNQhp',
+    '杏花云': 'https://xh.xinghuajichang.com/#/register?code=MAQinulV',
+    '极速cloud': 'https://191.101.132.80/#/register?code=34PQsffu',
+    '宝云': 'https://888by.baoyundl.com/#/register?code=VMqggJLQ',
+    '锦云': 'https://jybdw1.wanhlj.com:8888/#/register?code=Z3YGlkQd',
+    '山水云': 'https://ss2.byvvcsx.com/#/register?code=aXQ0KAgL',
+    '熊猫cloud': 'https://cl888.cailudl.com:9999/#/register?code=T6mYp433',
+    '秒秒云': 'https://dl2.mmy8.com/#/register?code=0E4JekTH',
+    '鲤云': 'https://ly888.liydl.com:8888/#/register?code=smhtKH7Q',
+    '奶昔': '#',
     '花云': '#'
 }
 
@@ -43,7 +52,7 @@ airports = [
         'chart': [98, 99, 98, 99, 99, 99, 100],
         'speed': '380 Mbps',
         'latency': '26ms',
-        'logo': 'https://i.ibb.co/KjF9cLRT/yuntulogo.png'
+        'logo': 'images/yuntulogo.png'
     },
     {
         'name': '速界',
@@ -56,7 +65,7 @@ airports = [
         'chart': [98, 99, 97, 99, 98, 99, 100],
         'speed': '320 Mbps',
         'latency': '24ms',
-        'logo': 'https://i.ibb.co/tpkZpVhs/sujielogo.webp'
+        'logo': 'images/sujielogo.webp'
     },
     {
         'name': '极连云',
@@ -69,7 +78,7 @@ airports = [
         'chart': [99, 100, 99, 100, 99, 100, 100],
         'speed': '460 Mbps',
         'latency': '22ms',
-        'logo': 'https://i.ibb.co/TxW2rqGj/jilianyunlogo.webp'
+        'logo': 'images/jilianyunlogo.webp'
     },
     {
         'name': '边缘 (EdgeNova)',
@@ -82,7 +91,7 @@ airports = [
         'chart': [97, 98, 96, 99, 97, 98, 99],
         'speed': '280 Mbps',
         'latency': '35ms',
-        'logo': 'https://i.ibb.co/C5P4QcfT/bianyuanjiedianlogo.webp'
+        'logo': 'images/bianyuanjiedianlogo.webp'
     },
     {
         'name': '九云',
@@ -108,7 +117,124 @@ airports = [
         'chart': [99, 99, 98, 100, 99, 99, 100],
         'speed': '420 Mbps',
         'latency': '23ms',
-        'logo': 'https://i.ibb.co/k6KksRQN/20260723-124327-62e599.webp'
+        'logo': 'images/20260723_124327-62e599.webp'
+    },
+    {
+        'name': 'Andy Cloud',
+        'badge': '全能引擎',
+        'is_recommended': True,
+        'slug': 'andycloud-review',
+        'custom_title': 'AndyCloud 机场测评：海外中转 + 专线双引擎驱动的全能机场实测',
+        'link': links['AndyCloud'],
+        'desc': ['5元/100G低门槛试水', '实测121.86Mbps百兆吞吐', '提供100元1TB买断包'],
+        'chart': [96, 97, 96, 98, 97, 98, 98],
+        'speed': '121 Mbps',
+        'latency': '410ms',
+        'logo': 'images/andycloudlogo.jpg'
+    },
+    {
+        'name': '杏花云',
+        'badge': '优雅稳定',
+        'is_recommended': True,
+        'slug': 'xinghuacloud-review',
+        'custom_title': '杏花云机场测评：优雅稳定老牌团队打造的 4K 极速机场方案',
+        'link': links['杏花云'],
+        'desc': ['月付3元/200G极致门槛', '20元买断1000G永久有效', '12元/年无感保活包'],
+        'chart': [96, 97, 96, 98, 97, 98, 98],
+        'speed': '180 Mbps',
+        'latency': '260ms',
+        'logo': 'images/xinghuacloudlogo.jpg'
+    },
+    {
+        'name': '极速Cloud',
+        'badge': '极致速度',
+        'is_recommended': True,
+        'slug': 'jisucloud-review',
+        'custom_title': '极速cloud 机场测评：极致速度与超低延迟的全能翻墙加速器评测',
+        'link': links['极速cloud'],
+        'desc': ['高突发下行支持2Gbps', '10倍率扣费机制透明拆解', '¥8.9体验包折合10G'],
+        'chart': [96, 97, 96, 98, 97, 98, 98],
+        'speed': '350 Mbps',
+        'latency': '180ms',
+        'logo': 'images/jisucloudlogo.jpg'
+    },
+    {
+        'name': '宝云',
+        'badge': '宝藏专线',
+        'is_recommended': True,
+        'slug': 'baoyun-review',
+        'custom_title': '宝云机场测评：宝藏高性价比 IPLC/IEPL 专线节点全解析',
+        'link': links['宝云'],
+        'desc': ['月付4元起 / 不限时买断', '全线 VLESS 协议轻量协同', '支持 AI 生产力与主流流媒体'],
+        'chart': [96, 97, 96, 98, 97, 98, 98],
+        'speed': '220 Mbps',
+        'latency': '35ms',
+        'logo': 'images/baoyunlogo.jpg'
+    },
+    {
+        'name': '锦云',
+        'badge': '稳定高速',
+        'is_recommended': True,
+        'slug': 'jinyun-review',
+        'custom_title': '锦云机场测评：稳定高速 BGP 优化中转线路与低延迟游戏加速体验',
+        'link': links['锦云'],
+        'desc': ['体验版 6元/月超低起步', '覆盖 ChatGPT / 流媒体解锁', '支持买断包与多档位灵活选购'],
+        'chart': [96, 97, 96, 98, 97, 98, 98],
+        'speed': '290 Mbps',
+        'latency': '32ms',
+        'logo': 'images/jinyunlogo.jpg'
+    },
+    {
+        'name': '山水云',
+        'badge': '多入口BGP',
+        'is_recommended': True,
+        'slug': 'shanshuiyun-review',
+        'custom_title': '山水云机场测评：多入口 BGP 中转与跨境高并发节点选购完全指南',
+        'link': links['山水云'],
+        'desc': ['琴套餐 12元/100G起', '中转与直连复合调配', '支持 99元不限时买断包'],
+        'chart': [96, 97, 96, 98, 97, 98, 98],
+        'speed': '260 Mbps',
+        'latency': '30ms',
+        'logo': 'images/shanshuiyunlogo.jpg'
+    },
+    {
+        'name': '熊猫Cloud',
+        'badge': '硬核专线',
+        'is_recommended': True,
+        'slug': 'xiongmaocloud-review',
+        'custom_title': '熊猫cloud 机场测评：萌宠品牌背后的硬核专线与全平流媒体解锁',
+        'link': links['熊猫cloud'],
+        'desc': ['入门档 6元/300G起步', '百兆持续下行吞吐', '前身财路云更名演进'],
+        'chart': [96, 97, 96, 98, 97, 98, 98],
+        'speed': '112 Mbps',
+        'latency': '330ms',
+        'logo': 'images/xiongmaocloudlogo.jpg'
+    },
+    {
+        'name': '秒秒云',
+        'badge': '秒开4K',
+        'is_recommended': True,
+        'slug': 'miaomiaoyun-review',
+        'custom_title': '秒秒云机场测评：秒开 4K 无压力的极致体验与平民高性价比套餐方案',
+        'link': links['秒秒云'],
+        'desc': ['探花 9元/128G起步', '全平台通用订阅标准', '约4年滚动运营底色'],
+        'chart': [96, 97, 96, 98, 97, 98, 98],
+        'speed': '240 Mbps',
+        'latency': '35ms',
+        'logo': 'images/miaomiaoyunlogo.jpg'
+    },
+    {
+        'name': '鲤云',
+        'badge': '原生解锁',
+        'is_recommended': True,
+        'slug': 'liyun-review',
+        'custom_title': '鲤云机场测评：原生 IP 高效解锁流媒体与全终端极速订阅指南',
+        'link': links['鲤云'],
+        'desc': ['小鲤套餐 5元/100G起步', '8折优惠码 liyun888', '全线 VLESS 轻量协议'],
+        'chart': [96, 97, 96, 98, 97, 98, 98],
+        'speed': '130 Mbps',
+        'latency': '38ms',
+        'logo': 'images/liyunlogo.jpg'
     },
     {
         'name': '快狸',
@@ -121,7 +247,7 @@ airports = [
         'chart': [96, 97, 96, 98, 97, 99, 98],
         'speed': '180 Mbps',
         'latency': '32ms',
-        'logo': 'https://i.ibb.co/1f4FvF92/kuaililogo.webp'
+        'logo': 'images/kuaililogo.webp'
     },
     {
         'name': '光年梯',
@@ -134,7 +260,7 @@ airports = [
         'chart': [96, 98, 97, 99, 98, 99, 98],
         'speed': '240 Mbps',
         'latency': '25ms',
-        'logo': 'https://i.ibb.co/mCYxy3yM/guanniantilogo.webp'
+        'logo': 'images/guanniantilogo.webp'
     },
     {
         'name': '瞬云',
@@ -147,7 +273,7 @@ airports = [
         'chart': [98, 99, 97, 99, 98, 99, 100],
         'speed': '415 Mbps',
         'latency': '28ms',
-        'logo': 'https://i.ibb.co/jkR2rZRw/shunyunlogo.webp'
+        'logo': 'images/shunyunlogo.webp'
     },
     {
         'name': '寰宇云',
@@ -158,40 +284,138 @@ airports = [
         'link': links['寰宇云'],
         'desc': ['住宅广播原生IP', '完美解锁ChatGPT/奈飞', '设备连接锁完全放开'],
         'chart': [96, 97, 97, 98, 98, 99, 99],
-        'speed': '220 Mbps',
+        'speed': '290 Mbps',
         'latency': '30ms',
-        'logo': 'https://i.ibb.co/jZ9ZVgJ7/huanyuyunlogo.webp'
+        'logo': 'images/huanyuyunlogo.webp'
     },
     {
         'name': '奶昔',
-        'badge': '豪华顶级专线',
-        'is_recommended': True,
+        'badge': '顶级IPLC专线',
+        'is_recommended': False,
         'slug': 'naixi-review',
-        'custom_title': '奶昔 (NaiXi) 机场评测：豪华骨干IPLC专线与18ms极低延迟天花板',
-        'link': '#',
-        'desc': ['一线骨干顶级IPLC', '极致抗封锁与丢包', '超大并发流媒体解锁'],
+        'link': links['奶昔'],
+        'desc': ['顶级物理IPLC专线', '99.999% SLA保活承诺', '极低延迟极致稳定'],
         'chart': [100, 100, 100, 100, 100, 100, 100],
-        'speed': '520 Mbps',
-        'latency': '18ms',
-        'logo': 'https://i.ibb.co/609wzM0L/naixilogo.jpg'
+        'speed': '500 Mbps',
+        'latency': '15ms',
+        'logo': 'images/naixilogo.jpg'
     },
     {
         'name': '花云',
         'badge': '老牌中继专线',
         'is_recommended': False,
         'slug': 'huacloud-review',
-        'link': '#',
+        'link': links['花云'],
         'desc': ['BGP多入口负载均衡', '全IEPL中转专线', '流媒体智能解锁分流'],
         'chart': [97, 98, 97, 99, 98, 99, 98],
         'speed': '380 Mbps',
         'latency': '26ms',
-        'logo': 'https://i.ibb.co/N2YrnGjH/huayunlogo.png'
+        'logo': 'images/huayunlogo.png'
     }
 ]
 
 # 20篇科普文章列表
 
 AIRPORT_DATA = {
+    "andycloud-review": {
+        "name": "Andy Cloud",
+        "full_name": "Andy Cloud",
+        "link": "https://sss.andycloud.cc/#/register?code=Lt8sNQhp",
+        "rating": "★★★★★ (双引擎分流 · 100%可用率 · 5元100G起步)",
+        "line_core": "主打海外中转与专线双引擎驱动架构，百兆下行吞吐，GateRank 连续观察期 100% 可用率",
+        "price_range": "基础入门档 ¥5/月(100GB) | 标准主力档 ¥10/月(300GB) | 大容量进阶档 ¥15/月(500GB) | 海量极客档 ¥25/月(1000GB) | 一次性买断包 ¥100(1000GB永久)",
+        "suitable": "预算敏感型学生与开发者、多媒体与海量素材下载用户、长效低频冷备需求者",
+        "advice": "建议优先选购 5 元/月包含 100GB 的最低月付档位验证本地宽带相性；偶发性出海者可直接入手 100 元一次性买断包作为防失联冷备资产。",
+        "intro": "Andy Cloud 专注于大容量流量包与极低单价的务实路线。5 元/月起步提供 100GB 流量，实测下行突破 120Mbps，GateRank 监测可用率达 100%，是高性价比出海与防断联冷备的理性之选。"
+    },
+    "xinghuacloud-review": {
+        "name": "杏花云",
+        "full_name": "杏花云",
+        "link": "https://xh.xinghuajichang.com/#/register?code=MAQinulV",
+        "rating": "★★★★★ (优雅稳定 · 3元起步 · 20元1000G买断)",
+        "line_core": "老牌技术团队运营，主打优雅轻量与高可用性，提供 20 元买断 1000G 冗余包与 12 元年付保活包",
+        "price_range": "基础月付 ¥3/月(200GB) | 主力月付 ¥6/月(500GB) | 海量月付 ¥10/月(1000GB) | 轻量年付A ¥12/年(50GB) | 轻量年付B ¥24/年(100GB) | 一次性买断包 ¥20(1000GB永久)",
+        "suitable": "预算有限的学生党与科研群体、多媒体大文件下载者、双持兜底防失联冷备用户",
+        "advice": "建议先登录控制台购买 3 元/月 200GB 基础月付档验证本地宽带相性；对于低频出海或偶发性查资料者，加购 20 元 1000G 一次性买断包作为常备冷备资产是最具性价比的搭配。",
+        "intro": "杏花云选择了一条彻底打破传统定价区间的极简路线。直接将月付门槛拉低至 3 元（含 200GB 流量），并提供 20 元买断 1000G 永久有效买断包及 12 元年付保活包，是以极小代价撬动海量带宽的平价实用型网络中继代表。"
+    },
+    "jisucloud-review": {
+        "name": "极速Cloud",
+        "full_name": "极速Cloud",
+        "link": "https://191.101.132.80/#/register?code=34PQsffu",
+        "rating": "★★★★☆ (极致速度 · 常用节点高突发 · 8.9元体验包)",
+        "line_core": "常用地区节点支持数百Mbps至2Gbps高突发下行，极低延迟与全能加速体验",
+        "price_range": "新人体验套餐 ¥8.90/月(折合10GB) | 月付-1000G ¥30/月(折合100GB) | 月付-1500G ¥45/月(折合150GB) | 月付-2000G ¥60/月(折合200GB) | 限时季付-1000G ¥90/季(折合100G/月) | 365天/不限时包 ¥88~329",
+        "suitable": "看重百兆/千兆高突发带宽、懂得VLESS协议与客户端分流排障的实用型玩家",
+        "advice": "建议先购买 ¥8.90 新人体验套餐（折合10G可用流量）在本地宽带下验证晚高峰性能；在客户端启用 fallback/url-test 自动故障转移避开 0bps 节点；AI 访问用户需配置防 WebRTC 泄露。",
+        "intro": "极速Cloud在参数吞吐与计费机制上特点鲜明。常用节点具备数百Mbps至2Gbps高突发下行，流畅支持YouTube 4K与AI交互。30元折合100GB真实可用流量，在中继市场中性价比清晰直观。"
+    },
+    "baoyun-review": {
+        "name": "宝云",
+        "full_name": "宝云",
+        "link": "https://888by.baoyundl.com/#/register?code=VMqggJLQ",
+        "rating": "★★★★★ (宝藏高性价比专线 · 4元起体验)",
+        "line_core": "全节点采用 IPLC/IEPL 内网专线过境，避开晚高峰拥堵，全原生 IP 解锁 Netflix/ChatGPT",
+        "price_range": "起步价 ¥4.00/月 (含 100GB 流量)，亦提供 200GB 永不过期不限时买断包",
+        "suitable": "极低预算学生党、轻度 AI 图文交互、多端通用订阅及冷备兜底用户",
+        "advice": "宝云把入门资费压至月付 4 元，依托底层 VLESS 协议在低带宽下展现出优异握手效率。建议优先购买 4 元月付档验明本地网络相性。",
+        "intro": "宝云机场主打宝藏高性价比专线服务，全节点采用 IPLC/IEPL 内网专线过境。月付仅需 4 元起，完美兼容 Clash、Shadowrocket 等主流客户端。"
+    },
+    "jinyun-review": {
+        "name": "锦云",
+        "full_name": "锦云",
+        "link": "https://jybdw1.wanhlj.com:8888/#/register?code=Z3YGlkQd",
+        "rating": "★★★★★ (BGP 优化中转 · 6元起体验版)",
+        "line_core": "多入口 BGP 中转网络，极佳的丢包率控制与全天候高可用连通架构",
+        "price_range": "体验版 ¥6.00/月 (含 100GB 流量)，提供 99 元买断流量包",
+        "suitable": "入门试错出海者、追求多档位灵活选购的极客与轻度视频追剧党",
+        "advice": "锦云提供从 6 元体验月付到不限时流量包的全维度选择，原生 IP 解锁表现优异。建议新手首选 6 元月付套餐入门试水。",
+        "intro": "锦云机场专注于提供极致稳定的 BGP 多入口优化中转网络，具备极高的丢包率控制与优异的网络容灾架构。"
+    },
+    "shanshuiyun-review": {
+        "name": "山水云",
+        "full_name": "山水云",
+        "link": "https://ss2.byvvcsx.com/#/register?code=aXQ0KAgL",
+        "rating": "★★★★★ (多入口 BGP 中转 · 12元起琴套餐)",
+        "line_core": "华东、华南、华北多入口 BGP 中转集群，克服跨网互联延迟劣势",
+        "price_range": "琴套餐 ¥12.00/月 (100GB)，亦提供 99 元 100GB 不限时包",
+        "suitable": "拒绝高价虚假宣传的主力用户、寻求多入口平稳线路的极客与冷备保底党",
+        "advice": "山水云具备三网多入口 BGP 智能路由，保障晚高峰抗封锁。建议首选 12 元/月【琴套餐】试水验证。",
+        "intro": "山水云机场具备完善的多入口 BGP 中转集群，有效克服不同运营商跨网互联延迟劣势。琴套餐 12 元/月提供全原生 IP 解锁。"
+    },
+    "xiongmaocloud-review": {
+        "name": "熊猫Cloud",
+        "full_name": "熊猫Cloud",
+        "link": "https://cl888.cailudl.com:9999/#/register?code=T6mYp433",
+        "rating": "★★★★★ (硬核 IPLC 专线 · 6元起300G大包)",
+        "line_core": "萌系品牌外表，底层采用硬核 IPLC 专线与高端落地机房，66 元不限时包",
+        "price_range": "入门月付 ¥6~7/月(300G) | 进阶月付 ¥10/月(600G) | 高负荷月付 ¥15/月(1200G) | 季付 ¥24/季(500G/月) | 试用包 ¥8(20G) | 不限时包 ¥66(600G)",
+        "suitable": "习惯开源第三方客户端的技术流、预算敏感的学生党、YouTube 4K 追剧党及防单点故障冷备极客",
+        "advice": "熊猫Cloud全面支持标准通用订阅，无需绑定定制客户端。建议先购买 8 元试用包或 6 元/月入门档验证本地宽带相性。",
+        "intro": "熊猫cloud 采用硬核 IPLC 专线 + 独立二次开发客户端，做到开箱即用，免去繁琐配置。提供 6 元/月 300G 大额流量包与 66 元不限时流量包。"
+    },
+    "miaomiaoyun-review": {
+        "name": "秒秒云",
+        "full_name": "秒秒云",
+        "link": "https://dl2.mmy8.com/#/register?code=0E4JekTH",
+        "rating": "★★★★★ (千独享中转 · 秒开 4K 极速)",
+        "line_core": "千兆独享中转带宽，毫秒级响应速度，支持微信/支付宝快捷结算",
+        "price_range": "探花 ¥9~14/月(128G) | 榜眼 ¥15/月(256G) | 状元 ¥29/月(512G) | 季付 ¥18/季(64G/月) | 年付 ¥88/年(100G) | 不限时包 ¥59(100G)",
+        "suitable": "追求极简试错的入门者、低频偶发出海查资料人员、需要支付宝/微信便捷支付及双持兜底的极客用户",
+        "advice": "秒秒云主打千兆独享管道与极致加载速度，建议先选购 9 元/月【探花套餐】试水验证本地网络兼容性。",
+        "intro": "秒秒云机场顾名思义以“秒开”为核心优势，采用千兆独享中转带宽，毫秒级响应速度，拖拽 4K 视频毫无卡顿。"
+    },
+    "liyun-review": {
+        "name": "鲤云",
+        "full_name": "鲤云",
+        "link": "https://ly888.liydl.com:8888/#/register?code=smhtKH7Q",
+        "rating": "★★★★★ (原生 IP 解锁 · 5元起小鲤套餐)",
+        "line_core": "优质原生落地 IP，全节点完美解锁 Netflix, Disney+, ChatGPT 4o，8 折优惠码 liyun888",
+        "price_range": "小鲤套餐 ¥5.00/月 (100GB)，提供 59 元 200GB 不限时包",
+        "suitable": "预算有限学生党、初入职场出海新手、追求原生 IP 流媒体解锁的用户",
+        "advice": "结账时输入专属 8 折优惠码【liyun888】可进一步摊薄开销。全线 VLESS 协议低握手延迟。",
+        "intro": "鲤云机场以优秀的原生落地 IP 资源和强劲的流媒体解锁能力著称，全节点完美解锁 Netflix, Disney+, ChatGPT 4o 等应用。"
+    },
     "yuntu-review": {
         "name": "云图",
         "full_name": "云图",
@@ -875,12 +1099,12 @@ def get_left_sidebar_html(depth=0, toc_links_html="", cta_card_html="", article_
 
     # 机场推荐 List (主页放 6 个，文章页精简放 2 个精选卡片，确保左右对齐)
     all_promos = [
-        {'name': '极连云', 'desc': '全程 IPLC 物理专线 · 晚高峰零丢包保障', 'slug': 'jilianyun-review', 'logo': 'https://i.ibb.co/TxW2rqGj/jilianyunlogo.webp', 'style': 'linear-gradient(135deg, #a299ca 0%, #6366f1 100%)', 'btn_class': 'promo-btn-white'},
-        {'name': '速界', 'desc': '中转专线 · 不限制设备数 · 一键连接', 'slug': 'sujie-review', 'logo': 'https://i.ibb.co/tpkZpVhs/sujielogo.webp', 'style': 'linear-gradient(135deg, #38bdf8 0%, #0284c7 100%)', 'btn_class': 'promo-btn-white'},
-        {'name': '边缘节点', 'desc': '只读内存服务器 · 零日志绝对安全', 'slug': 'edge-review', 'logo': 'https://i.ibb.co/C5P4QcfT/bianyuanjiedianlogo.webp', 'style': 'linear-gradient(135deg, #7ccaae 0%, #059669 100%)', 'btn_class': 'promo-btn-white'},
-        {'name': '光年梯', 'desc': '物理中继线路 · 高清流媒体智能解锁', 'slug': 'guangnianti-review', 'logo': 'https://i.ibb.co/mCYxy3yM/guanniantilogo.webp', 'style': 'linear-gradient(135deg, #ffb69b 0%, #ea580c 100%)', 'btn_class': 'promo-btn-white'},
-        {'name': '快狸', 'desc': '设备数不限 · ¥15/月起高性价比备用', 'slug': 'kuaili-review', 'logo': 'https://i.ibb.co/1f4FvF92/kuaililogo.webp', 'style': 'linear-gradient(135deg, #ecec84 0%, #eab308 100%)', 'btn_class': 'promo-btn-black'},
-        {'name': '瞬云', 'desc': 'Anycast 智能选路 · 千兆大带宽端口', 'slug': 'shunyun-review', 'logo': 'https://i.ibb.co/jkR2rZRw/shunyunlogo.webp', 'style': 'linear-gradient(135deg, #fb7185 0%, #e11d48 100%)', 'btn_class': 'promo-btn-white'}
+        {'name': '极连云', 'desc': '全程 IPLC 物理专线 · 晚高峰零丢包保障', 'slug': 'jilianyun-review', 'logo': 'images/jilianyunlogo.webp', 'style': 'linear-gradient(135deg, #a299ca 0%, #6366f1 100%)', 'btn_class': 'promo-btn-white'},
+        {'name': '速界', 'desc': '中转专线 · 不限制设备数 · 一键连接', 'slug': 'sujie-review', 'logo': 'images/sujielogo.webp', 'style': 'linear-gradient(135deg, #38bdf8 0%, #0284c7 100%)', 'btn_class': 'promo-btn-white'},
+        {'name': '边缘节点', 'desc': '只读内存服务器 · 零日志绝对安全', 'slug': 'edge-review', 'logo': 'images/bianyuanjiedianlogo.webp', 'style': 'linear-gradient(135deg, #7ccaae 0%, #059669 100%)', 'btn_class': 'promo-btn-white'},
+        {'name': '光年梯', 'desc': '物理中继线路 · 高清流媒体智能解锁', 'slug': 'guangnianti-review', 'logo': 'images/guanniantilogo.webp', 'style': 'linear-gradient(135deg, #ffb69b 0%, #ea580c 100%)', 'btn_class': 'promo-btn-white'},
+        {'name': '快狸', 'desc': '设备数不限 · ¥15/月起高性价比备用', 'slug': 'kuaili-review', 'logo': 'images/kuaililogo.webp', 'style': 'linear-gradient(135deg, #ecec84 0%, #eab308 100%)', 'btn_class': 'promo-btn-black'},
+        {'name': '瞬云', 'desc': 'Anycast 智能选路 · 千兆大带宽端口', 'slug': 'shunyun-review', 'logo': 'images/shunyunlogo.webp', 'style': 'linear-gradient(135deg, #fb7185 0%, #e11d48 100%)', 'btn_class': 'promo-btn-white'}
     ]
     
     if depth == 1 and body_content:
