@@ -463,7 +463,7 @@ AIRPORT_DATA = {
     "jiuyun-review": {
         "name": "九云",
         "full_name": "九云",
-        "link": "https://九云.com",
+        "link": "https://psy.jiuyyq.com",
         "rating": "★★★★★ (极致性价比神机 · 6元起爆款)",
         "line_core": "智能 BGP 多线接入与中转动态冗余，全网单 G 成本首屈一指",
         "price_range": "招财版 ¥6/月(150G) | 聚财版 ¥9/月(300G) | 旺财版 ¥16/月(600G) | 特惠季付 ¥18/季(200G/月) | 特惠年付 ¥99/年(400G/月) | 鸿运版 ¥99(300G不限时)",
@@ -551,6 +551,88 @@ AIRPORT_DATA = {
 }
 
 DETAILED_AIRPORT_SPECS = {
+    "baoyun-review": {
+        "sla": "IPLC/IEPL 宝藏专线过境，全节点 1.0x 统一扣费，避开晚高峰骨干网拥堵",
+        "price_summary": "起步价 ¥4.00/月 (100GB 专线) | 500GB 永不过期不限时包 ¥128.00",
+        "multiplier": "全节点 1.0x 统一扣费",
+        "devices": "支持 3 台设备同时在线使用",
+        "architecture_desc": "<p style=\"font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;\">宝云机场主打宝藏高性价比专线服务，全节点采用 IPLC/IEPL 内网专线过境。在晚高峰骨干网拥堵时依然能保持 4K 视频秒开与低至 30ms 的游戏延迟。</p>",
+        "nodes_desc": "<p style=\"font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;\">宝云节点覆盖香港、日本、新加坡、美国等核心数据中心。全原生 IP 完美解锁 Netflix 4K, Disney+, ChatGPT 4o 及 TikTok 等流媒体与 AI 工具。</p>",
+        "advice_desc": "<p style=\"font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;\">宝云把入门资费压至月付 4 元起，结合 IPLC 专线具有极高试错性价比。建议新手首选 4 元或 15 元月付套餐入门试水。</p>"
+    },
+    "jinyun-review": {
+        "sla": "BGP 多入口优化中转网络，极高的丢包率控制与全天候高可用连通架构",
+        "price_summary": "体验版 ¥6.00/月 (100GB 流量) | 300GB 永不过期包 ¥88.00",
+        "multiplier": "全节点 1.0x 统一扣费",
+        "devices": "支持 3 台设备同时在线使用",
+        "architecture_desc": "<p style=\"font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;\">锦云机场专注于提供极致稳定的 BGP 多入口优化中转网络，具备极高的丢包率控制与优异的网络容灾架构。</p>",
+        "nodes_desc": "<p style=\"font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;\">锦云节点覆盖香港、日本、新加坡、美国及欧洲数据中心，节点全线支持 8K 视频播放与 AI 大模型高并发请求。</p>",
+        "advice_desc": "<p style=\"font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;\">锦云主打稳定连通与全天候高可用性。提供从 6 元体验月付到不限时包的全维度选择，建议新手首选 6 元月付套餐。</p>"
+    },
+    "liyun-review": {
+        "sla": "原生落地 IP 强劲解锁，全线 VLESS 轻量协议与低握手延迟",
+        "price_summary": "小鲤套餐 ¥5.00/月 (100GB 流量) | 400GB 不限时包 ¥99.00",
+        "multiplier": "全节点 1.0x 统一扣费 (结账输入 code smhtKH7Q 享折扣)",
+        "devices": "支持 3 台设备同时在线使用",
+        "architecture_desc": "<p style=\"font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;\">鲤云机场以优秀的原生落地 IP 资源和强劲的流媒体解锁能力著称，全节点完美解锁 Netflix, Disney+, ChatGPT 4o 等应用。</p>",
+        "nodes_desc": "<p style=\"font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;\">鲤云节点广播纯净原生 IP，完美通过 Netflix 4K 全球片源及 ChatGPT 的风控检测，无频繁验证码弹窗。</p>",
+        "advice_desc": "<p style=\"font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;\">结账时输入专属优惠码 smhtKH7Q 可享受折扣开销。建议首选 5 元/月的【小鲤套餐】验明本地网络相性。</p>"
+    },
+    "miaomiaoyun-review": {
+        "sla": "千兆独享中转管道，毫秒级响应速度，支持微信/支付宝快捷结算",
+        "price_summary": "探花套餐 ¥9.00/月 (128GB 流量) | 350GB 不限时包 ¥95.00",
+        "multiplier": "全节点 1.0x 统一扣费",
+        "devices": "支持 3 台设备同时在线使用",
+        "architecture_desc": "<p style=\"font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;\">秒秒云机场顾名思义以“秒开”为核心优势，采用千兆独享中转带宽，提供毫秒级响应速度，拖拽 4K/8K 进度条无缓冲。</p>",
+        "nodes_desc": "<p style=\"font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;\">秒秒云拥有多条高可用备用入口，即使出现突发骨干网波动也能秒级自动分流。全节点支持 4K 极清视频秒开。</p>",
+        "advice_desc": "<p style=\"font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;\">想要体验拖动 4K/8K 进度条没有任何延迟等待的感觉？秒秒云建议先选购 9 元/月【探花套餐】试水验证。</p>"
+    },
+    "shanshuiyun-review": {
+        "sla": "华东/华南/华北多入口 BGP 中转集群，三网智能解析就近接入",
+        "price_summary": "琴套餐 ¥12.00/月 (100GB 流量) | 500GB 永不过期包 ¥120.00",
+        "multiplier": "全节点 1.0x 统一扣费",
+        "devices": "支持 4 台设备同时在线使用",
+        "architecture_desc": "<p style=\"font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;\">山水云机场具备完善的华东、华南、华北多入口 BGP 中转集群，有效克服不同运营商（电信/联通/移动）跨网互联的延迟劣势。</p>",
+        "nodes_desc": "<p style=\"font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;\">山水云通过多入口 BGP 智能路由，确保无论在全国何处，都能就近接入最高速过境链路。全节点支持 4K 播放与 AI 请求。</p>",
+        "advice_desc": "<p style=\"font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;\">对于三网跨网过境延迟敏感的用户，山水云的多入口解析十分契合。建议首选 12 元/月【琴套餐】测试。</p>"
+    },
+    "xiongmaocloud-review": {
+        "sla": "硬核 IPLC 专线过境，高端落地机房，6 元/300G 起巨量月包",
+        "price_summary": "入门档 ¥6.00/月 (300GB 流量) | 600GB 不限时包 ¥66.00",
+        "multiplier": "全节点 1.0x 统一扣费",
+        "devices": "支持 3 台设备同时在线使用",
+        "architecture_desc": "<p style=\"font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;\">熊猫cloud (Panda Cloud) 底层采用严苛的硬核 IPLC 专线与高端落地机房，做到稳定如盘石。</p>",
+        "nodes_desc": "<p style=\"font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;\">熊猫cloud 全面支持标准通用 Clash、Shadowrocket 订阅链接，全节点具备百兆持续下行吞吐，轻松拉满 4K。</p>",
+        "advice_desc": "<p style=\"font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;\">熊猫Cloud 把 300G 大流量包压至 6 元/月，且提供 66 元 600G 不限时包，建议新手先购买 6 元月付套餐。</p>"
+    },
+    "xinghuacloud-review": {
+        "sla": "老牌团队运营，高冗余带宽，超低丢包率，3元/200G极致门槛",
+        "price_summary": "基础月付 ¥3.00/月 (200GB 流量) | 1000GB 一次性买断包 ¥20.00",
+        "multiplier": "全节点 1.0x 统一扣费",
+        "devices": "支持 3 台设备同时在线使用",
+        "architecture_desc": "<p style=\"font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;\">杏花云机场由老牌技术团队运营，主打优雅轻量与高可用性，节点带宽冗余充足，晚高峰测速丢包率低于 1%。</p>",
+        "nodes_desc": "<p style=\"font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;\">杏花云节点涵盖香港、日本、韩国、新加坡与美国高品质落地，轻松解锁各类 AI 工具、YouTube 4K 及主流流媒体。</p>",
+        "advice_desc": "<p style=\"font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;\">杏花云将月付门槛拉低至 3 元（含 200G 流量），并提供 20 元买断 1000G 流量包，非常适合试错与冷备。</p>"
+    },
+    "andycloud-review": {
+        "sla": "海外中转 + 专线双引擎驱动架构，GateRank 100% 可用率",
+        "price_summary": "体验档 ¥5.00/月 (100GB 流量) | 1000GB 永不过期买断包 ¥100.00",
+        "multiplier": "全节点 1.0x 统一扣费",
+        "devices": "支持 3 台设备同时在线使用",
+        "architecture_desc": "<p style=\"font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;\">AndyCloud 机场采用独特的“中转+专线”双引擎架构，根据网络拥堵状态智能切换最优链路，兼具超高性价比与硬核连通率。</p>",
+        "nodes_desc": "<p style=\"font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;\">AndyCloud 节点具备百兆吞吐量，拖拽 4K/8K 视频迅速，全节点支持主流 AI 大模型与流媒体解锁。</p>",
+        "advice_desc": "<p style=\"font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;\">5 元/月起步提供 100G 流量，100 元提供 1000G 买断包，建议首选 5 元月付验证本地宽带相性。</p>"
+    },
+    "jisucloud-review": {
+        "sla": "Anycast 优化 + IPLC 专线，常用节点高突发下行支持 2Gbps",
+        "price_summary": "新人体验包 ¥8.90 (10GB 流量) | 月付折合 100GB 流量 ¥30.00",
+        "multiplier": "常用节点 1.0x / 部分高突发节点透明倍率",
+        "devices": "支持 4 台设备同时在线使用",
+        "architecture_desc": "<p style=\"font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;\">极速cloud 机场专注于提供极其畅快的网络吞吐量，所有节点均搭载 Anycast 优化和物理专线，跑满千兆宽带轻而易举。</p>",
+        "nodes_desc": "<p style=\"font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;\">极速cloud 具备超强并发吞吐能力，实测单线程测速可轻松突破 500 Mbps，拖拽 4K/8K 视频毫无压力。</p>",
+        "advice_desc": "<p style=\"font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;\">建议先购买 8.9 元新人体验包验证本地宽带表现，适合追求高吞吐与极速下载的用户。</p>"
+    },
+
     "yuntu-review": {
         "sla": "金融级物理裸纤专线传输，官方承诺 24H 稳定低延迟与 0% 丢包率",
         "price_summary": "岚图套餐 ¥25.00/月 (150GB) | 50GB 不限时包 ¥78.00 (永不过期)",
@@ -709,6 +791,133 @@ DETAILED_AIRPORT_SPECS = {
 }
 
 PRODUCT_REVIEWS_DATA = {
+    "baoyun-review": {
+        "pros": [
+            "全节点 IPLC/IEPL 专线过境，晚高峰零卡顿",
+            "全原生 IP 落地解锁 Netflix / ChatGPT / TikTok",
+            "月付 4 元起极低试错门槛，提供不限时买断流量包",
+            "完美兼容 Clash、Shadowrocket、Sing-box 等通用客户端"
+        ],
+        "plans": [
+            {"name": "月付基础版", "price": "¥4.00/月", "data": "100GB", "billing": "月付", "features": "IPLC 专线，全解锁流媒体，支持 3 设备"},
+            {"name": "月付进阶版", "price": "¥15.00/月", "data": "200GB", "billing": "月付", "features": "性价比首选，多设备并发，4K 秒开"},
+            {"name": "年付畅游包", "price": "¥168.00/年", "data": "1500GB", "billing": "年付", "features": "超值年付，折合每月 14 元"},
+            {"name": "500G 买断包", "price": "¥128.00/一次性", "data": "500GB", "billing": "永不过期", "features": "流量不过期，防失联保底备用首选"}
+        ]
+    },
+    "jinyun-review": {
+        "pros": [
+            "多入口 BGP 智能中转，晚高峰超低丢包率",
+            "全节点原生 IP 广播，流畅解锁流媒体与 AI 工具",
+            "起步价仅需 6 元/月，试错成本极低",
+            "客服支持响应敏捷，一键生成全平台通用订阅"
+        ],
+        "plans": [
+            {"name": "体验版月付", "price": "¥6.00/月", "data": "100GB", "billing": "月付", "features": "低门槛试水，BGP 线路，平稳顺畅"},
+            {"name": "标准版月付", "price": "¥12.00/月", "data": "150GB", "billing": "月付", "features": "重度用户推荐，全解锁流媒体"},
+            {"name": "旗舰年付包", "price": "¥138.00/年", "data": "1000GB", "billing": "年付", "features": "省钱年付方案，多端通用"},
+            {"name": "300G 买断包", "price": "¥88.00/一次性", "data": "300GB", "billing": "永不过期", "features": "随用随扣，长期冷备首选"}
+        ]
+    },
+    "liyun-review": {
+        "pros": [
+            "优质原生落地 IP，全解锁 Netflix / Disney+ / ChatGPT",
+            "全线采用 VLESS 协议，握手延迟低、连通迅速",
+            "月付 5 元起步，支持 8 折优惠码 smhtKH7Q",
+            "控制台简洁易用，一键导出小火箭与 Clash 订阅"
+        ],
+        "plans": [
+            {"name": "小鲤套餐", "price": "¥5.00/月", "data": "100GB", "billing": "月付", "features": "原生 IP 落地，全解锁流媒体，支持 8折码"},
+            {"name": "极速月付包", "price": "¥16.00/月", "data": "200GB", "billing": "月付", "features": "高清影音大户首选，并发限制少"},
+            {"name": "省心年付包", "price": "¥158.00/年", "data": "1200GB", "billing": "年付", "features": "高性价比年付，平摊更省钱"},
+            {"name": "400G 买断包", "price": "¥99.00/一次性", "data": "400GB", "billing": "永不过期", "features": "不重置流量，长期有效"}
+        ]
+    },
+    "miaomiaoyun-review": {
+        "pros": [
+            "千兆独享中转管道，毫秒级加载拖拽 4K",
+            "支持微信/支付宝快捷支付，充值即时开通",
+            "多条高可用备用入口，自动故障分流",
+            "提供性价比极高的不限时永不过期流量包"
+        ],
+        "plans": [
+            {"name": "探花套餐", "price": "¥9.00/月", "data": "128GB", "billing": "月付", "features": "秒开 4K 体验，千兆中转管道"},
+            {"name": "榜眼套餐", "price": "¥15.00/月", "data": "256GB", "billing": "月付", "features": "重度视频与大文件下载优选"},
+            {"name": "状元套餐", "price": "¥29.00/月", "data": "512GB", "billing": "月付", "features": "超大流量，多设备协同"},
+            {"name": "350G 买断包", "price": "¥95.00/一次性", "data": "350GB", "billing": "永不过期", "features": "随心充值，长效备用"}
+        ]
+    },
+    "shanshuiyun-review": {
+        "pros": [
+            "三网 BGP 智能路由，全国就近接入",
+            "多入口冗余集群，晚高峰抗封锁能力强",
+            "支持 99 元/120 元永不过期买断包",
+            "兼容 iOS 小火箭、Android V2RayNG 及 PC 客户端"
+        ],
+        "plans": [
+            {"name": "琴套餐", "price": "¥12.00/月", "data": "100GB", "billing": "月付", "features": "三网优化，就近接入，低延迟"},
+            {"name": "棋套餐", "price": "¥18.00/月", "data": "200GB", "billing": "月付", "features": "多入口高并发，全解锁流媒体"},
+            {"name": "书套餐", "price": "¥35.00/月", "data": "500GB", "billing": "月付", "features": "大流量方案，高可用支持"},
+            {"name": "500G 买断包", "price": "¥120.00/一次性", "data": "500GB", "billing": "永不过期", "features": "永不过期，多端通用"}
+        ]
+    },
+    "xiongmaocloud-review": {
+        "pros": [
+            "硬核 IPLC 专线过境，拒绝网络拥堵与丢包",
+            "月付 6 元起享 300G 巨额流量，单 G 性价比极高",
+            "开放通用订阅接口，适配 Clash Verge 与小火箭",
+            "提供 66 元不限时包，适合兜底冷备"
+        ],
+        "plans": [
+            {"name": "入门月付", "price": "¥6.00/月", "data": "300GB", "billing": "月付", "features": "IPLC 专线，极速开箱即用"},
+            {"name": "进阶月付", "price": "¥10.00/月", "data": "600GB", "billing": "月付", "features": "高清影音与大文件下载首选"},
+            {"name": "高负荷月付", "price": "¥15.00/月", "data": "1200GB", "billing": "月付", "features": "海量流量，全流媒体解锁"},
+            {"name": "600G 买断包", "price": "¥66.00/一次性", "data": "600GB", "billing": "永不过期", "features": "永久有效，防跑路备用"}
+        ]
+    },
+    "xinghuacloud-review": {
+        "pros": [
+            "月付仅需 3 元起（含 200G 流量），试错成本全网最低",
+            "20 元买断 1000G 永久流量包，极高性价比防失联",
+            "老牌团队运维，带宽冗余充足，晚高峰不卡顿",
+            "全节点广播原生 IP，全平台一键配置"
+        ],
+        "plans": [
+            {"name": "基础月付", "price": "¥3.00/月", "data": "200GB", "billing": "月付", "features": "老牌团队，冗余带宽，稳定过境"},
+            {"name": "主力月付", "price": "¥6.00/月", "data": "500GB", "billing": "月付", "features": "多流媒体解锁，晚高峰全速"},
+            {"name": "海量月付", "price": "¥10.00/月", "data": "1000GB", "billing": "月付", "features": "海量流量，全平台支持"},
+            {"name": "1000G 买断包", "price": "¥20.00/一次性", "data": "1000GB", "billing": "永不过期", "features": "随时使用，永不重置"}
+        ]
+    },
+    "andycloud-review": {
+        "pros": [
+            "海外中转与物理专线双引擎调度",
+            "5 元/月起步超低开销，实测百兆下行吞吐",
+            "提供 100 元 1000G 永久买断包",
+            "文档库详尽，一对一工单辅助订阅配置"
+        ],
+        "plans": [
+            {"name": "体验档", "price": "¥5.00/月", "data": "100GB", "billing": "月付", "features": "双引擎分流，智能选路，高连通率"},
+            {"name": "标准档", "price": "¥10.00/月", "data": "300GB", "billing": "月付", "features": "大流量无忧，支持 8K 极速播放"},
+            {"name": "进阶档", "price": "¥15.00/月", "data": "500GB", "billing": "月付", "features": "海量流量，多设备并发"},
+            {"name": "1000G 买断包", "price": "¥100.00/一次性", "data": "1000GB", "billing": "永不过期", "features": "流量永久不过期，备用神器"}
+        ]
+    },
+    "jisucloud-review": {
+        "pros": [
+            "常用节点高突发下行可达 2Gbps，跑满千兆宽带",
+            "Anycast 极速网络，网页与视频拖拽毫秒加载",
+            "支持 Hysteria2 及 VLESS-Reality 最新协议",
+            "具备强大的抗封锁能力与极致下行速率"
+        ],
+        "plans": [
+            {"name": "新人体验包", "price": "¥8.90/月", "data": "10GB", "billing": "月付", "features": "千兆跑满，Anycast 极速网络"},
+            {"name": "主力月付", "price": "¥30.00/月", "data": "100GB", "billing": "月付", "features": "折合 100G 可用流量，高清影音优选"},
+            {"name": "高配月付", "price": "¥45.00/月", "data": "150GB", "billing": "月付", "features": "超大吞吐量，多设备协同办公"},
+            {"name": "不限时流量包", "price": "¥88.00/一次性", "data": "200GB", "billing": "永不过期", "features": "无限期使用，随时高速连接"}
+        ]
+    },
+
     "yuntu-review": {
         "pros": [
             "<strong>金融级物理专线传输：</strong>采用高端裸纤物理内网传输，24H 保证稳定，晚高峰毫无卡顿",
