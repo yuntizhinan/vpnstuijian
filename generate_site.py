@@ -1343,7 +1343,7 @@ def get_left_sidebar_html(depth=0, toc_links_html="", cta_card_html="", article_
                 <span class="promo-card-btn">立即评测</span>
               </div>
               <div class="promo-card-right">
-                <img src="{p['logo']}" alt="{p['name']}" class="promo-card-logo">
+                <img src="{img_prefix}{p['logo'].replace('images/', '')}" alt="{p['name']}" class="promo-card-logo">
               </div>
             </a>"""
             
