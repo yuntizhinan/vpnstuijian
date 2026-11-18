@@ -34,6 +34,13 @@ links = {
     '熊猫cloud': 'https://cl888.cailudl.com:9999/#/register?code=T6mYp433',
     '秒秒云': 'https://dl2.mmy8.com/#/register?code=0E4JekTH',
     '鲤云': 'https://ly888.liydl.com:8888/#/register?code=smhtKH7Q',
+    '鲲鹏加速': 'https://kunpengjiasu.com/#/register?code=rpuitcjc',
+    '榴莲云': 'http://853vip01.liulianyunaff.com/#/?code=RM8ZQC6i',
+    '大佬云': 'https://liu01.dalaoyunaff.com/#/?code=P8KlGHa6',
+    '闪电鼠': 'https://eothvip01.shandianshuaff.com/#/?code=YwnQXVv8',
+    '环球梯': 'https://123pps01.huanqiutiaff.com/#/?code=FXwud2Gg',
+    '神行加速': 'https://fugui0077.shenxingaff.com/#/?code=9Al3jhhl',
+    '云界线': 'https://youxia01.yunjiexianaff.com/#/?code=FwZZ4ato',
     '奶昔': '#',
     '花云': '#'
 }
@@ -311,6 +318,104 @@ airports = [
         'speed': '380 Mbps',
         'latency': '26ms',
         'logo': 'images/huayunlogo.png'
+    },
+    {
+        'name': '鲲鹏加速',
+        'badge': '低价专线入门',
+        'is_recommended': True,
+        'slug': 'kunpeng-review',
+        'custom_title': '鲲鹏加速机场测评：6.8元入门、60+节点与IPLC/IEPL线路选购指南',
+        'link': links['鲲鹏加速'],
+        'desc': ['月付6.8元/100G低门槛', '覆盖26个国家与地区', 'IPLC/IEPL专线与SSR兼容'],
+        'chart': [94, 96, 95, 97, 95, 96, 97],
+        'speed': '200 Mbps',
+        'latency': '42ms',
+        'logo': 'images/kunpengjiasu-logo.webp',
+        'date': '2026-10-30'
+    },
+    {
+        'name': '榴莲云',
+        'badge': '大流量不限设备',
+        'is_recommended': True,
+        'slug': 'liulianyun-review',
+        'custom_title': '榴莲云机场测评：10元200GB、不限设备与大流量套餐解析',
+        'link': links['榴莲云'],
+        'desc': ['10元/月含200GB流量', '20元500GB与30元1TB', '优惠码 ll88'],
+        'chart': [95, 96, 96, 97, 96, 97, 97],
+        'speed': '240 Mbps',
+        'latency': '38ms',
+        'logo': 'images/liulianyun-logo.webp',
+        'date': '2026-10-30'
+    },
+    {
+        'name': '大佬云',
+        'badge': '80+节点IEPL',
+        'is_recommended': True,
+        'slug': 'dalaoyun-review',
+        'custom_title': '大佬云机场测评：80+节点、IEPL专线与20设备并发体验',
+        'link': links['大佬云'],
+        'desc': ['80+节点覆盖20余地区', 'IEPL专线与全平台订阅', '优惠码 dly888'],
+        'chart': [96, 97, 96, 98, 97, 97, 98],
+        'speed': '280 Mbps',
+        'latency': '35ms',
+        'logo': 'images/dalaoyun-logo.webp',
+        'date': '2026-10-30'
+    },
+    {
+        'name': '闪电鼠',
+        'badge': 'VLESS不限设备',
+        'is_recommended': True,
+        'slug': 'shandianshu-review',
+        'custom_title': '闪电鼠机场测评：9.9元100GB、VLESS协议与不限设备方案',
+        'link': links['闪电鼠'],
+        'desc': ['9.9元/月含100GB', 'VLESS协议与不限设备', '优惠码 sd88'],
+        'chart': [95, 96, 95, 97, 96, 97, 97],
+        'speed': '230 Mbps',
+        'latency': '40ms',
+        'logo': 'images/shandianshu-logo.webp',
+        'date': '2026-10-30'
+    },
+    {
+        'name': '环球梯',
+        'badge': 'IEPL海量流量',
+        'is_recommended': True,
+        'slug': 'huanqiuti-review',
+        'custom_title': '环球梯机场测评：10元200GB、IEPL专线与1.3TB大流量套餐',
+        'link': links['环球梯'],
+        'desc': ['10元200GB低价月付', 'IEPL专线支持6台设备', '优惠码 HQ66'],
+        'chart': [96, 97, 96, 98, 97, 98, 98],
+        'speed': '300 Mbps',
+        'latency': '34ms',
+        'logo': 'images/huanqiuti-logo.webp',
+        'date': '2026-10-30'
+    },
+    {
+        'name': '神行加速',
+        'badge': '8.5元200GB',
+        'is_recommended': True,
+        'slug': 'shenxing-review',
+        'custom_title': '神行加速机场测评：8.5元200GB与多档大流量套餐实用分析',
+        'link': links['神行加速'],
+        'desc': ['8.5元/月含200GB', '20元500GB与30元1TB', '优惠码 sx0077'],
+        'chart': [95, 96, 96, 97, 96, 97, 97],
+        'speed': '250 Mbps',
+        'latency': '39ms',
+        'logo': 'images/shenxingjiasu-logo.webp',
+        'date': '2026-10-30'
+    },
+    {
+        'name': '云界线',
+        'badge': '3.9元150GB',
+        'is_recommended': True,
+        'slug': 'yunjiexian-review',
+        'custom_title': '云界线机场测评：3.9元150GB、BGP线路与不限设备套餐指南',
+        'link': links['云界线'],
+        'desc': ['3.9元/月含150GB', 'BGP智能路由与8国节点', '优惠码 yjx888'],
+        'chart': [95, 96, 95, 97, 96, 97, 97],
+        'speed': '220 Mbps',
+        'latency': '41ms',
+        'logo': 'images/yunjiexian-logo.webp',
+        'date': '2026-10-30'
     }
 ]
 
@@ -547,6 +652,83 @@ AIRPORT_DATA = {
         "suitable": "看重老牌口碑、看重售后保障与新手教程完善度的新手用户",
         "advice": "花云运营多年，风控保障健全，跑路风险极低。控制台提供全行业最详尽的教程，上手毫无门槛。",
         "intro": "花云机场作为老牌口碑大厂，全中转 BGP 线路配合极全的新手教程，是新手入坑防踩坑的靠谱选择。"
+    },
+    "kunpeng-review": {
+        "name": "鲲鹏加速",
+        "full_name": "鲲鹏加速",
+        "link": "https://kunpengjiasu.com/#/register?code=rpuitcjc",
+        "rating": "★★★★☆ (6.8元低门槛 · 60+节点 · IPLC/IEPL线路)",
+        "line_core": "主打低价入门与广覆盖，公开资料显示提供 IPLC/IEPL 线路、SSR 兼容订阅及 26 个国家与地区节点",
+        "price_range": "轻量 100G ¥6.80/月 | 基础 200G ¥13.80/月 | 标准 500G ¥28.80/月 | 季付 100G/月 ¥70.80/季",
+        "suitable": "预算有限的学生、轻度查资料用户、需要冷备线路以及偏好 SSR 兼容客户端的用户",
+        "advice": "鲲鹏加速的优势是试错门槛低、节点覆盖面较广。建议先从 6.8 元月付开始，重点测试本地宽带晚高峰表现，再决定是否升级流量档。",
+        "intro": "鲲鹏加速把入门价压到 6.8 元/月，并以 60+ 节点和 26 个国家与地区覆盖形成差异化。它更适合追求低成本试用、需要常用地区之外备用节点，或仍希望兼容 SSR 订阅的用户。"
+    },
+    "liulianyun-review": {
+        "name": "榴莲云",
+        "full_name": "榴莲云",
+        "link": "http://853vip01.liulianyunaff.com/#/?code=RM8ZQC6i",
+        "rating": "★★★★☆ (10元200GB · 不限设备 · 大流量月付)",
+        "line_core": "以直连线路和大流量低价套餐为主，节点集中在香港、日本、新加坡、美国等常用地区",
+        "price_range": "¥10/月 200GB | ¥20/月 500GB | ¥30/月 1000GB，结账可尝试优惠码 ll88",
+        "suitable": "视频用户、宿舍或家庭多设备共享、预算有限且希望流量宽裕的入门用户",
+        "advice": "榴莲云的核心价值是同价位流量多且不限制设备数量，但直连线路更依赖用户本地运营商质量。建议先月付，不要一开始长周期购买。",
+        "intro": "榴莲云走的是简单直接的大流量路线：10 元即可获得 200GB 月流量，20 元与 30 元档分别提升到 500GB 和 1TB，并允许多设备共享。对追剧、资料下载和家庭多终端用户较友好。"
+    },
+    "dalaoyun-review": {
+        "name": "大佬云",
+        "full_name": "大佬云",
+        "link": "https://liu01.dalaoyunaff.com/#/?code=P8KlGHa6",
+        "rating": "★★★★☆ (IEPL专线 · 80+节点 · 20设备并发)",
+        "line_core": "80+ 节点覆盖 20 余个国家和地区，主打 IEPL 专线、1 倍率与全平台通用订阅",
+        "price_range": "¥19.90/月 100GB | ¥36.90/月 200GB | ¥69.90/月 500GB | ¥99.90/月 1000GB",
+        "suitable": "多地区节点需求者、跨境办公团队、20 台以内多设备用户及重视专线稳定性的用户",
+        "advice": "大佬云的定价不属于极低价档，卖点在节点数量、专线与设备额度。建议优先购买 100GB 月付档，并在结账页核对优惠码 dly888 是否生效。",
+        "intro": "大佬云更偏向覆盖广、设备多、线路规格完整的综合型机场。公开评测资料显示其拥有 80+ 节点、覆盖 20 余地区，并提供 IEPL 专线和最多 20 台设备并发，适合多场景切换。"
+    },
+    "shandianshu-review": {
+        "name": "闪电鼠",
+        "full_name": "闪电鼠",
+        "link": "https://eothvip01.shandianshuaff.com/#/?code=YwnQXVv8",
+        "rating": "★★★★☆ (VLESS协议 · 9.9元100GB · 不限设备)",
+        "line_core": "VLESS 协议配合香港、日本、新加坡、美国等常用节点，套餐不限制连接设备数",
+        "price_range": "¥9.90/月 100GB | ¥15.80/月 200GB | ¥25.80/月 350GB，优惠码 sd88",
+        "suitable": "希望多终端共享、预算适中、主要使用常用亚洲与美国节点的个人或家庭用户",
+        "advice": "闪电鼠套餐结构清晰，不限设备是明显优势；购买前应确认客户端是否支持 VLESS，并先用最低月付档测试本地网络相性。",
+        "intro": "闪电鼠以醒目的品牌形象和 VLESS 订阅为核心，9.9 元/月 100GB 的起步档适合轻中度使用。不限设备让手机、电脑和平板共享更方便，适合不想反复管理设备授权的用户。"
+    },
+    "huanqiuti-review": {
+        "name": "环球梯",
+        "full_name": "环球梯",
+        "link": "https://123pps01.huanqiutiaff.com/#/?code=FXwud2Gg",
+        "rating": "★★★★☆ (IEPL专线 · 10元200GB · 最高1.3TB)",
+        "line_core": "IEPL 专线连接常用地区节点，月付流量从 200GB 到 1300GB，支持最多 6 台设备",
+        "price_range": "¥10/月 200GB | ¥20/月 600GB | ¥30/月 1300GB，优惠码 HQ66",
+        "suitable": "4K 影音、大文件下载、家庭多设备以及需要低单 GB 成本的高流量用户",
+        "advice": "环球梯更适合真正能消耗大流量的用户。若月用量低于 200GB，10 元档已足够；升级前先核对节点倍率与结算页显示。",
+        "intro": "环球梯的吸引力在于大流量与 IEPL 线路组合：10 元 200GB、20 元 600GB、30 元 1300GB，档位之间升级幅度明显。对于持续观看高清视频和下载大文件的用户，单位流量成本具有竞争力。"
+    },
+    "shenxing-review": {
+        "name": "神行加速",
+        "full_name": "神行加速",
+        "link": "https://fugui0077.shenxingaff.com/#/?code=9Al3jhhl",
+        "rating": "★★★★☆ (8.5元200GB · 最高1TB · 平价大流量)",
+        "line_core": "平价直连线路覆盖香港、日本、新加坡、美国等常用地区，套餐容量从 200GB 到 1TB",
+        "price_range": "¥8.50/月 200GB | ¥20/月 500GB | ¥30/月 1000GB，优惠码 sx0077",
+        "suitable": "学生党、追剧用户、轻度下载用户以及希望用较低预算获得大流量的用户",
+        "advice": "神行加速价格很低，适合先用最低档试水。直连线路受本地宽带与时段影响较明显，应重点测试晚高峰，不建议未经测试直接长付。",
+        "intro": "神行加速定位非常明确：用低价提供较大流量。8.5 元即可获得 200GB，20 元和 30 元档扩展到 500GB 与 1TB，适合作为日常影音或第二备用线路。"
+    },
+    "yunjiexian-review": {
+        "name": "云界线",
+        "full_name": "云界线",
+        "link": "https://youxia01.yunjiexianaff.com/#/?code=FwZZ4ato",
+        "rating": "★★★★☆ (3.9元150GB · BGP智能路由 · 不限设备)",
+        "line_core": "BGP 智能路由覆盖 8 个国家和地区，支持 VLESS、Trojan 等协议并不限制设备数量",
+        "price_range": "体验 ¥1.50/24小时 150GB | ¥3.90/月 150GB | ¥11.90/月 1200GB | ¥35.90/月 5000GB",
+        "suitable": "极低预算入门用户、多设备家庭、短时体验者与需要超大流量档位的用户",
+        "advice": "云界线提供 24 小时体验档，最适合先测试再购买。月付价格虽低，但仍应核对节点倍率、协议兼容性和优惠码 yjx888 的实际结算结果。",
+        "intro": "云界线以极低门槛和跨度很大的套餐矩阵吸引用户：1.5 元可体验 24 小时，3.9 元月付 150GB，高档位则直接提升到 1200GB 与 5000GB。BGP 智能路由和不限设备适合多终端使用。"
     }
 }
 
@@ -787,6 +969,90 @@ DETAILED_AIRPORT_SPECS = {
 <p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">节点解锁稳定，流畅支持 Netflix、ChatGPT、Claude 及 Disney+。</p>""",
         "advice_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">看重老牌口碑、看重售后保障与教程完善度的新手用户强烈推荐首选花云。</p>
 <p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 0;">配合花云官方教程一步步操作，新手可在 3 分钟内轻松上手科学上网。</p>"""
+    },
+    "kunpeng-review": {
+        "sla": "公开资料显示采用 IPLC/IEPL 线路，提供 60+ 节点并兼容 SSR 订阅",
+        "price_summary": "轻量套餐 ¥6.80/月 (100GB) | 标准套餐 ¥28.80/月 (500GB)",
+        "multiplier": "不同节点倍率以控制台实时标注为准",
+        "devices": "设备数量与同时在线限制以套餐详情页为准",
+        "architecture_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">鲲鹏加速的产品思路是用低月付门槛换取更广的试用人群。6.8 元 100GB、13.8 元 200GB、28.8 元 500GB 的月付阶梯简单直观，适合先从小套餐验证线路，再按照实际用量升级。公开资料提到其使用 IPLC/IEPL 线路，并保留 SSR 兼容能力，对仍在使用旧版路由插件或习惯 SSR 客户端的用户更友好。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">线路宣传和套餐参数不能替代本地实测。不同地区、电信运营商、宽带类型与晚高峰时段可能带来明显差异，因此本文更建议把鲲鹏定位成低成本入门或备用方案，而不是仅凭“专线”标签直接长付。</p>""",
+        "nodes_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">其节点数量超过 60 个，覆盖约 26 个国家与地区，除香港、日本、新加坡和美国等常用区域外，也有一定的小众地区可选。节点多的价值不只是切换国家，还在于同一区域出现拥堵时可以更换入口，降低单节点故障对日常使用的影响。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">实际选择时可先测试距离较近的香港、日本、新加坡节点，再按流媒体或地区服务需求切换远端节点。若使用路由器或老客户端，导入订阅后应确认协议是否被完整识别。</p>""",
+        "advice_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">轻度浏览、AI 对话和偶尔查资料可先选 6.8 元 100GB；经常看高清视频可考虑 13.8 元或 28.8 元档。注册链接已包含邀请码 rpuitcjc，当前未提供额外通用优惠码。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 0;">建议坚持月付优先，并在购买当天测试晚高峰延迟、视频拖动、订阅更新和工单响应。套餐与节点会调整，最终以控制台结算页为准。</p>"""
+    },
+    "liulianyun-review": {
+        "sla": "直连线路覆盖常用地区，主打低价大流量并不限制连接设备数",
+        "price_summary": "¥10/月 200GB | ¥20/月 500GB | ¥30/月 1000GB",
+        "multiplier": "节点倍率以控制台实时标注为准；结账可尝试优惠码 ll88",
+        "devices": "公开资料显示不限制连接设备数量",
+        "architecture_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">榴莲云没有把卖点放在复杂的线路术语上，而是用 10 元 200GB、20 元 500GB、30 元 1TB 的大流量套餐吸引用户。对于手机、电脑、平板同时使用的家庭或宿舍环境，不限制设备数量比单纯增加几十 GB 流量更实用，也减少了设备频繁顶下线的问题。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">需要注意的是，公开资料将其归为直连线路。直连产品通常价格更低，但表现更受本地运营商、地区和网络时段影响。高峰期的波动不能只看节点延迟数字判断，应通过连续播放、网页首开和订阅刷新综合观察。</p>""",
+        "nodes_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">节点集中在香港、日本、新加坡、美国等主流地区，覆盖日常网页、AI 工具和常见流媒体需求。常用区域集中也意味着选择简单，新手不必面对过多冷门节点，但跨区业务或小众国家 IP 需求者需要先查看控制台是否有目标地区。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">建议优先测试离自己物理距离较近的亚洲节点，并在客户端开启自动测速或故障转移。大文件下载前应确认节点倍率，避免高倍率节点快速消耗套餐。</p>""",
+        "advice_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">轻中度用户从 10 元 200GB 开始最稳妥；多人共享、4K 观影较多可考虑 20 元 500GB；1TB 档只适合月流量确实较大的用户。结账时输入优惠码 <strong>ll88</strong>，以支付页显示的实际优惠为准。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 0;">不建议因为单 GB 价格低就直接购买长周期套餐。先月付测试本地宽带相性，并准备另一家不同线路结构的备用订阅，会比只依赖一家更可靠。</p>"""
+    },
+    "dalaoyun-review": {
+        "sla": "公开评测资料显示采用 IEPL 专线，80+ 节点覆盖 20 余个国家与地区",
+        "price_summary": "¥19.90/月 100GB | ¥36.90/月 200GB | ¥69.90/月 500GB | ¥99.90/月 1000GB",
+        "multiplier": "公开资料称全节点 1 倍率；购买时仍应核对控制台",
+        "devices": "最多支持 20 台设备同时在线",
+        "architecture_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">大佬云的定位比低价直连机场更偏向综合型服务：IEPL 专线、80+ 节点、20 台设备并发和全平台订阅共同构成卖点。对于同时使用手机、电脑、平板、电视盒与软路由的家庭，设备额度留有明显余量；对小型跨境团队，也能减少重复购买多个账号的成本。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">19.9 元 100GB 的起步价不算最低，但如果专线表现、节点覆盖和设备并发都能被充分利用，整体价值会比只比较单 GB 价格更合理。其套餐从 100GB 延伸到 1TB，适合按实际强度逐级选择。</p>""",
+        "nodes_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">公开资料列出的覆盖区域超过 20 个国家和地区，既有香港、日本、新加坡、美国等常用节点，也包含更多跨区选择。节点规模较大，适合需要多地区 IP、跨境网站测试或不同内容库切换的用户。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">节点数量并不等于每个节点都适合本地网络。首次使用应按地区分组测试，并保留两到三个稳定节点作为常用项；电视与软路由用户还应确认订阅格式和规则分流兼容性。</p>""",
+        "advice_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">个人用户建议从 19.9 元 100GB 月付档开始；多人共享或视频需求大，再升级到 200GB 或 500GB。结账可输入优惠码 <strong>dly888</strong>，是否可用及优惠幅度请以支付页实时结果为准。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 0;">对稳定性有要求时，重点观察晚高峰连续使用而非一次测速峰值。若用于工作，仍应配置独立备用线路，避免单一服务故障影响业务。</p>"""
+    },
+    "shandianshu-review": {
+        "sla": "VLESS 协议覆盖常用地区节点，套餐主打不限设备与清晰月付档位",
+        "price_summary": "¥9.90/月 100GB | ¥15.80/月 200GB | ¥25.80/月 350GB",
+        "multiplier": "节点倍率以控制台为准；优惠码 sd88",
+        "devices": "公开资料显示不限制连接设备数量",
+        "architecture_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">闪电鼠采用 VLESS 订阅作为主要技术标签，套餐从 9.9 元 100GB 到 25.8 元 350GB，价格和流量跨度适中。VLESS 本身开销较轻，适配 Clash Meta、Sing-box、V2RayNG 等新一代客户端，但老旧客户端可能无法完整识别，购买前需要确认软件兼容性。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">不限设备是闪电鼠较有辨识度的优势。家庭多终端、宿舍共享或软路由环境不必反复解绑设备，但同时在线越多，套餐流量消耗也越快，建议在客户端设置国内直连规则。</p>""",
+        "nodes_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">公开资料列出香港、日本、新加坡、美国等常用地区，能覆盖大多数网页、影音和 AI 工具需求。节点范围不追求过度分散，更适合只需要主流地区、希望选择简单的用户。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">使用时可把香港或日本作为网页和 AI 的低延迟首选，美国节点用于地区内容，新加坡则作为移动网络或东南亚服务的补充。具体解锁状态会随 IP 资源变化。</p>""",
+        "advice_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">轻度用户优先 9.9 元档，日常追剧选择 15.8 元 200GB 更从容，350GB 档适合多设备持续使用。结账输入优惠码 <strong>sd88</strong>，实际优惠以订单页为准。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 0;">建议先确认客户端支持 VLESS，再购买最低月付测试。若某个节点突然异常，先更新订阅并切换同地区节点，不要长期依赖单一入口。</p>"""
+    },
+    "huanqiuti-review": {
+        "sla": "IEPL 专线连接主流地区节点，主打 200GB 至 1300GB 的大流量月付套餐",
+        "price_summary": "¥10/月 200GB | ¥20/月 600GB | ¥30/月 1300GB",
+        "multiplier": "倍率以控制台实时标注为准；优惠码 HQ66",
+        "devices": "最多支持 6 台设备同时在线",
+        "architecture_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">环球梯把 IEPL 专线和大流量低价结合在一起，10 元 200GB 已覆盖多数个人用户，20 元 600GB 与 30 元 1300GB 则明显面向重度影音、素材下载和多设备家庭。三个档位的单 GB 成本随套餐升级快速下降，但只有真正用得完流量时才划算。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">最多 6 台设备的限制对普通家庭基本够用。若部署在软路由上，应确认后台按终端还是按入口统计设备，并避免频繁更换客户端指纹触发设备上限。</p>""",
+        "nodes_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">节点以香港、日本、新加坡、美国等常见区域为主，适合 4K 影音、远程办公和 AI 工具访问。IEPL 标签意味着产品更强调高峰期的线路质量，但不同入口的实际体验仍取决于本地宽带和运营商路由。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">建议分别测试低延迟亚洲节点和美国远端节点，观察连续播放与下载稳定性。解锁流媒体时不要只看测速结果，还要实际打开目标平台确认地区和清晰度。</p>""",
+        "advice_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">大多数用户从 10 元 200GB 入门即可。只有月用量稳定超过 300GB，才建议购买 600GB 或 1300GB 档。结账输入优惠码 <strong>HQ66</strong>，以支付页面是否成功减免为准。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 0;">大流量套餐容易让人忽略服务风险，仍建议月付优先。重要工作场景准备不同供应商的备用线路，比盲目囤积长期套餐更稳妥。</p>"""
+    },
+    "shenxing-review": {
+        "sla": "平价直连线路覆盖常用地区，套餐从 200GB 延伸到 1000GB",
+        "price_summary": "¥8.50/月 200GB | ¥20/月 500GB | ¥30/月 1000GB",
+        "multiplier": "节点倍率以控制台为准；优惠码 sx0077",
+        "devices": "同时在线设备限制以套餐详情页为准",
+        "architecture_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">神行加速的定价在这批产品中非常激进：8.5 元提供 200GB，20 元 500GB，30 元 1TB。它更像面向学生、追剧用户与下载需求的平价工具，用户用较小预算就能获得充足月流量，不必为偶尔的大文件传输反复加购。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">公开资料将其归为直连线路。直连的好处是成本低、套餐大，代价是对本地运营商路由和网络时段更敏感。因此合理预期应是“高性价比日用”，而不是把低价套餐等同于高端专线。</p>""",
+        "nodes_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">常用节点覆盖香港、日本、新加坡、美国等地区，足够支撑网页、影音、社交平台与常见 AI 服务。对于没有冷门国家 IP 需求的用户，这种集中配置反而便于选择。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">在移动网络和晚高峰环境下，应多测试几个入口，并开启客户端自动测速。若出现延迟正常但网页打不开，先更新订阅、切换节点并检查 DNS，而不是立即判断服务失效。</p>""",
+        "advice_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">个人用户建议从 8.5 元 200GB 开始；多人共享或重度视频可选 500GB；1TB 档更适合稳定的大流量需求。结账使用优惠码 <strong>sx0077</strong>，最终价格以订单页为准。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 0;">低价服务更应坚持先测试后续费。确认高峰期、订阅更新和常用节点都满足需求后，再决定是否持续使用。</p>"""
+    },
+    "yunjiexian-review": {
+        "sla": "BGP 智能路由覆盖 8 个国家和地区，支持 VLESS、Trojan 等协议",
+        "price_summary": "¥1.50/24小时 150GB | ¥3.90/月 150GB | ¥11.90/月 1200GB | ¥35.90/月 5000GB",
+        "multiplier": "节点倍率以控制台为准；优惠码 yjx888",
+        "devices": "公开资料显示不限制设备数量",
+        "architecture_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">云界线最突出的特点是试错成本极低且套餐跨度大。1.5 元可以买到 24 小时 150GB 体验，3.9 元月付同样提供 150GB，高档位则直接提升到 1200GB 和 5000GB。用户可以先做短时测试，再决定是否转为日常或大流量方案。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">线路侧采用 BGP 智能路由，并支持 VLESS、Trojan 等协议。BGP 的意义在于根据接入网络选择相对合适的路径，但它并不保证所有地区和时段表现完全一致，仍需要结合本地电信、联通或移动网络验证。</p>""",
+        "nodes_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">节点覆盖约 8 个国家和地区，以香港、日本、新加坡、美国等主流区域为核心。对于常规网页、视频和 AI 工具足够使用；若有土耳其、阿根廷等小众 IP 需求，应先查看实时节点列表。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">不限设备适合家庭多终端和软路由，但 150GB 入门档在多人共享时可能消耗较快。建议开启规则分流，避免系统更新、国内视频和网盘同步误走代理。</p>""",
+        "advice_desc": """<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 14px;">首次使用优先购买 1.5 元体验档，在一天内测试高峰期、订阅更新、常用平台与多个节点。通过后再选择 3.9 元月付或更大流量套餐。结账输入优惠码 <strong>yjx888</strong>，实际减免以支付页为准。</p>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 0;">超大流量不等于必须购买，按真实月用量选择更理性。重要使用场景仍建议保留第二家不同线路结构的备用服务。</p>"""
     }
 }
 
@@ -1108,6 +1374,196 @@ PRODUCT_REVIEWS_DATA = {
             {"name": "专线月付", "price": "¥28.00/月", "data": "150GB/月", "billing": "月付", "features": "老牌大厂，全中转BGP，全平台教程适配"},
             {"name": "专线季付", "price": "¥78.00/季", "data": "500GB/季", "billing": "季付", "features": "老牌大厂，全中转BGP，全平台教程适配"}
         ]
+    },
+    "kunpeng-review": {
+        "pros": [
+            "月付 6.8 元起，适合低预算用户先月付试水",
+            "60+ 节点覆盖约 26 个国家与地区，地区选择较丰富",
+            "公开资料显示提供 IPLC/IEPL 线路并兼容 SSR 订阅",
+            "套餐从 100GB 到 500GB，轻度与中重度用量均可覆盖"
+        ],
+        "cons": [
+            "当前未提供额外通用优惠码，注册链接已包含邀请码",
+            "具体节点倍率和设备限制需在购买页再次确认"
+        ],
+        "plans": [
+            {"name": "轻量套餐", "price": "¥6.80/月", "data": "100GB/月", "billing": "月付", "features": "低门槛体验，适合网页、AI 与轻度影音"},
+            {"name": "基础套餐", "price": "¥13.80/月", "data": "200GB/月", "billing": "月付", "features": "日常主力使用，常用地区节点"},
+            {"name": "标准套餐", "price": "¥28.80/月", "data": "500GB/月", "billing": "月付", "features": "大流量影音与多终端使用"},
+            {"name": "季付套餐", "price": "¥70.80/季", "data": "100GB/月", "billing": "季付", "features": "每月重置流量，购买前先完成月付测试"}
+        ]
+    },
+    "liulianyun-review": {
+        "pros": [
+            "10 元提供 200GB，低价大流量定位清晰",
+            "20 元 500GB、30 元 1TB，重度影音用户选择空间大",
+            "公开资料显示不限制设备数量，适合家庭多终端共享",
+            "香港、日本、新加坡、美国等常用地区节点齐全"
+        ],
+        "cons": [
+            "直连线路表现更依赖本地运营商与网络时段",
+            "优惠码是否有效及折扣幅度以结算页为准"
+        ],
+        "plans": [
+            {"name": "200G 月付", "price": "¥10.00/月", "data": "200GB/月", "billing": "月付", "features": "不限设备，低成本入门；优惠码 ll88"},
+            {"name": "500G 月付", "price": "¥20.00/月", "data": "500GB/月", "billing": "月付", "features": "多设备与高清视频主力档"},
+            {"name": "1TB 月付", "price": "¥30.00/月", "data": "1000GB/月", "billing": "月付", "features": "重度下载与家庭共享大流量档"}
+        ]
+    },
+    "dalaoyun-review": {
+        "pros": [
+            "80+ 节点覆盖 20 余个国家和地区，适合跨区使用",
+            "公开评测资料显示采用 IEPL 专线并提供全平台订阅",
+            "最多 20 台设备并发，家庭或小团队设备额度充足",
+            "套餐从 100GB 到 1TB，可按使用强度逐级选择"
+        ],
+        "cons": [
+            "起步价高于超低价直连产品，更适合看重线路与覆盖的用户",
+            "优惠码 dly888 的可用状态需以支付页为准"
+        ],
+        "plans": [
+            {"name": "入门套餐", "price": "¥19.90/月", "data": "100GB/月", "billing": "月付", "features": "IEPL线路，20设备，优惠码 dly888"},
+            {"name": "标准套餐", "price": "¥36.90/月", "data": "200GB/月", "billing": "月付", "features": "多地区节点与日常影音"},
+            {"name": "大流量套餐", "price": "¥69.90/月", "data": "500GB/月", "billing": "月付", "features": "家庭共享与跨境办公"},
+            {"name": "旗舰套餐", "price": "¥99.90/月", "data": "1000GB/月", "billing": "月付", "features": "高用量与多设备团队场景"}
+        ]
+    },
+    "shandianshu-review": {
+        "pros": [
+            "VLESS 协议开销较轻，适配主流新客户端",
+            "9.9 元 100GB 起步，套餐结构简单易选",
+            "公开资料显示不限制连接设备数量",
+            "覆盖香港、日本、新加坡、美国等常用节点"
+        ],
+        "cons": [
+            "老旧客户端可能无法完整支持 VLESS，需要先确认兼容性",
+            "地区覆盖偏常用区域，小众国家需求需先查看节点列表"
+        ],
+        "plans": [
+            {"name": "轻量月付", "price": "¥9.90/月", "data": "100GB/月", "billing": "月付", "features": "VLESS订阅，不限设备；优惠码 sd88"},
+            {"name": "标准月付", "price": "¥15.80/月", "data": "200GB/月", "billing": "月付", "features": "日常影音与多终端使用"},
+            {"name": "进阶月付", "price": "¥25.80/月", "data": "350GB/月", "billing": "月付", "features": "家庭共享与较高流量需求"}
+        ]
+    },
+    "huanqiuti-review": {
+        "pros": [
+            "10 元 200GB 起步，20 元与 30 元档流量升级幅度大",
+            "公开资料显示采用 IEPL 专线连接常用地区",
+            "最高 1300GB 月流量，适合高清视频和大文件下载",
+            "支持最多 6 台设备，覆盖普通家庭多终端需求"
+        ],
+        "cons": [
+            "超大流量档只适合真实高用量用户，避免为用不完的额度付费",
+            "节点倍率与优惠码减免需在控制台核对"
+        ],
+        "plans": [
+            {"name": "200G 月付", "price": "¥10.00/月", "data": "200GB/月", "billing": "月付", "features": "IEPL线路，6台设备；优惠码 HQ66"},
+            {"name": "600G 月付", "price": "¥20.00/月", "data": "600GB/月", "billing": "月付", "features": "4K影音与多设备共享"},
+            {"name": "1300G 月付", "price": "¥30.00/月", "data": "1300GB/月", "billing": "月付", "features": "重度下载与超大流量场景"}
+        ]
+    },
+    "shenxing-review": {
+        "pros": [
+            "8.5 元即含 200GB，入门档单位流量成本低",
+            "20 元 500GB、30 元 1TB，适合持续影音与下载",
+            "香港、日本、新加坡、美国等常用地区覆盖完整",
+            "套餐档位少而清晰，新手选择成本低"
+        ],
+        "cons": [
+            "直连线路对本地运营商与晚高峰时段更敏感",
+            "设备限制、倍率与优惠码实际结果需在结算页确认"
+        ],
+        "plans": [
+            {"name": "200G 月付", "price": "¥8.50/月", "data": "200GB/月", "billing": "月付", "features": "低价入门，优惠码 sx0077"},
+            {"name": "500G 月付", "price": "¥20.00/月", "data": "500GB/月", "billing": "月付", "features": "日常追剧与多终端使用"},
+            {"name": "1TB 月付", "price": "¥30.00/月", "data": "1000GB/月", "billing": "月付", "features": "重度影音和大文件下载"}
+        ]
+    },
+    "yunjiexian-review": {
+        "pros": [
+            "1.5 元 24 小时体验档，验证本地网络成本极低",
+            "3.9 元月付 150GB，入门价格突出",
+            "BGP 智能路由并支持 VLESS、Trojan 等协议",
+            "不限设备，最高提供 5000GB 超大流量档"
+        ],
+        "cons": [
+            "节点主要覆盖 8 个国家和地区，小众区域选择有限",
+            "超大流量档购买前应确认实际用量和节点倍率"
+        ],
+        "plans": [
+            {"name": "24小时体验", "price": "¥1.50", "data": "150GB/24小时", "billing": "一次性", "features": "短时测试BGP线路和客户端兼容性"},
+            {"name": "基础月付", "price": "¥3.90/月", "data": "150GB/月", "billing": "月付", "features": "不限设备；优惠码 yjx888"},
+            {"name": "大流量月付", "price": "¥11.90/月", "data": "1200GB/月", "billing": "月付", "features": "家庭多终端与重度影音"},
+            {"name": "超大流量月付", "price": "¥35.90/月", "data": "5000GB/月", "billing": "月付", "features": "仅适合确有超高流量需求的用户"}
+        ]
+    }
+}
+
+NEW_AIRPORT_SLUGS = {
+    "kunpeng-review", "liulianyun-review", "dalaoyun-review",
+    "shandianshu-review", "huanqiuti-review", "shenxing-review",
+    "yunjiexian-review"
+}
+
+# 基于站长提供的热门搜索词，为新增测评页配置差异化长尾标题与搜索意图内容。
+# 避免所有品牌机械套用同一个标题，同时覆盖“机场怎么样、套餐价格、官网入口、
+# 优惠码、Clash 订阅、机场节点推荐”等高意图查询。
+REVIEW_SEO_DATA = {
+    "kunpeng-review": {
+        "title": "鲲鹏加速机场怎么样？2026测评：6.8元套餐、节点推荐与官网入口",
+        "description": "鲲鹏加速机场怎么样？本文整理鲲鹏加速官网入口、6.8元起套餐价格、60+机场节点、IPLC/IEPL线路、SSR与Clash订阅兼容性及选购建议。",
+        "keywords": ["鲲鹏加速机场怎么样", "鲲鹏加速机场官网", "鲲鹏加速机场节点", "鲲鹏加速机场订阅", "性价比机场", "机场推荐Clash"],
+        "coupon": "注册链接已自带邀请码 rpuitcjc，暂无额外通用优惠码",
+        "node_advice": "先测试香港、日本、新加坡等近距离机场节点，再按流媒体地区切换美国或其他远端节点。晚高峰如果波动，应先更新订阅并在同地区节点之间切换。",
+        "summary": "从性价比机场的角度看，鲲鹏加速的优势是 6.8 元月付门槛、60+ 节点和较广地区覆盖。它适合轻度网页、AI 工具与备用线路用户；准备长期使用前，建议先验证本地宽带的晚高峰表现和客户端协议兼容性。"
+    },
+    "liulianyun-review": {
+        "title": "榴莲云机场怎么样？2026测评：10元200GB、优惠码ll88与Clash订阅",
+        "description": "榴莲云机场怎么样？本文提供榴莲云官网入口、优惠码ll88、10元200GB套餐、机场节点推荐、不限设备说明及Clash和小火箭订阅建议。",
+        "keywords": ["榴莲云机场怎么样", "榴莲云机场官网", "榴莲云优惠码ll88", "榴莲云Clash订阅", "便宜机场", "性价比高机场"],
+        "coupon": "优惠码 ll88，实际减免金额和适用套餐以结算页面为准",
+        "node_advice": "优先测试香港、日本、新加坡节点，通常更适合网页与日常视频；需要美区内容时再切换美国节点。直连线路在不同运营商下差异较大，应在晚高峰连续测试。",
+        "summary": "榴莲云是一家偏大流量、低月付的便宜机场，10 元提供 200GB，并公开强调不限连接设备。它适合家庭多终端和影音用户，但直连线路更依赖本地网络，建议先月付测试后再决定是否升级。"
+    },
+    "dalaoyun-review": {
+        "title": "大佬云机场怎么样？2026测评：IEPL节点、套餐价格与优惠码dly888",
+        "description": "大佬云机场怎么样？本文整理大佬云官网入口、优惠码dly888、IEPL专线、80+机场节点、20设备并发、套餐价格及Clash订阅教程。",
+        "keywords": ["大佬云机场怎么样", "大佬云机场官网", "大佬云优惠码dly888", "大佬云机场节点", "IEPL机场推荐", "机场测评"],
+        "coupon": "优惠码 dly888，是否有效及优惠幅度请以支付页面实时结果为准",
+        "node_advice": "节点较多时不要只看最低延迟，建议按地区建立香港、日本、新加坡、美国等常用分组，各保留两到三个稳定节点，并观察晚高峰连续使用表现。",
+        "summary": "大佬云更适合关注 IEPL 线路、节点覆盖和多设备并发的用户。80+ 节点与最多 20 台设备是其主要差异点，价格高于超低价直连产品，但对家庭共享、小团队和跨区需求更友好。"
+    },
+    "shandianshu-review": {
+        "title": "闪电鼠机场怎么样？2026测评：VLESS节点、9.9元套餐与优惠码sd88",
+        "description": "闪电鼠机场怎么样？本文整理闪电鼠官网入口、优惠码sd88、9.9元100GB套餐、VLESS机场节点、不限设备与Clash、V2RayNG订阅方法。",
+        "keywords": ["闪电鼠机场怎么样", "闪电鼠机场官网", "闪电鼠优惠码sd88", "闪电鼠VLESS节点", "机场推荐Clash", "机场节点推荐"],
+        "coupon": "优惠码 sd88，优惠是否生效以订单结算页为准",
+        "node_advice": "香港或日本节点适合低延迟网页与AI工具，美国节点适合地区内容，新加坡可作为移动网络补充。遇到异常先确认客户端支持VLESS并更新机场订阅。",
+        "summary": "闪电鼠定位为 VLESS 协议、不限设备的平价机场，9.9 元 100GB 适合轻中度使用。购买前要确认客户端支持 VLESS；多设备共享时还应开启规则分流，避免国内流量和系统更新消耗套餐。"
+    },
+    "huanqiuti-review": {
+        "title": "环球梯机场怎么样？2026测评：IEPL节点、10元200GB与优惠码HQ66",
+        "description": "环球梯机场怎么样？本文提供环球梯官网入口、优惠码HQ66、10元200GB至1300GB套餐、IEPL机场节点、6设备限制及Clash订阅建议。",
+        "keywords": ["环球梯机场怎么样", "环球梯机场官网", "环球梯优惠码HQ66", "环球梯IEPL节点", "性价比机场推荐", "机场订阅"],
+        "coupon": "优惠码 HQ66，适用范围和最终优惠价格以付款页面为准",
+        "node_advice": "先用香港、日本或新加坡节点测试连续播放和网页首开，再按需要选择美国节点。大流量下载前应确认节点倍率，避免高倍率线路快速消耗套餐。",
+        "summary": "环球梯把 IEPL 线路与大流量套餐结合，10 元 200GB 已覆盖多数用户，600GB 和 1300GB 档更适合重度影音或下载。它属于流量单价较低的性价比机场，但不应只因流量大就直接长付。"
+    },
+    "shenxing-review": {
+        "title": "神行加速机场怎么样？2026测评：8.5元200GB、节点推荐与优惠码sx0077",
+        "description": "神行加速机场怎么样？本文整理神行加速官网入口、优惠码sx0077、8.5元200GB套餐、常用机场节点、直连线路及Clash订阅注意事项。",
+        "keywords": ["神行加速机场怎么样", "神行加速机场官网", "神行加速优惠码sx0077", "神行加速机场节点", "便宜机场推荐", "vpn机场"],
+        "coupon": "按站长提供的信息使用优惠码 sx0077，建议在付款前确认代码和折扣是否生效",
+        "node_advice": "香港、日本、新加坡通常适合日常访问，美国节点适合地区内容。直连机场受本地运营商影响明显，建议分别在白天和晚高峰测试多个节点。",
+        "summary": "神行加速主打低价大流量，8.5 元即可获得 200GB，适合作为日常影音或备用机场。由于采用平价直连路线，真实体验会受地区和运营商影响，建议从最低月付档开始测试。"
+    },
+    "yunjiexian-review": {
+        "title": "云界线机场怎么样？2026测评：3.9元套餐、BGP节点与优惠码yjx888",
+        "description": "云界线机场怎么样？本文提供云界线官网入口、优惠码yjx888、3.9元150GB套餐、BGP机场节点、不限设备以及VLESS、Trojan和Clash订阅建议。",
+        "keywords": ["云界线机场怎么样", "云界线机场官网", "云界线优惠码yjx888", "云界线BGP节点", "高性价比机场", "Clash机场订阅"],
+        "coupon": "优惠码 yjx888，实际优惠和适用套餐以结算页显示为准",
+        "node_advice": "建议先购买24小时体验档，测试香港、日本、新加坡和美国节点。BGP会自动优化入口，但仍需观察本地三网在晚高峰的延迟、丢包和订阅更新情况。",
+        "summary": "云界线的优势是 1.5 元短时体验、3.9 元月付和不限设备，属于试错成本很低的高性价比机场。BGP 路由与多协议适合多终端使用，但超大流量档应根据真实用量选择。"
     }
 }
 
@@ -1157,15 +1613,17 @@ merged_articles = []
 for ap in airports:
     # 模拟机场测评的日期、描述等
     # 奶昔和花云需要有各自的元信息
-    date_val = '2026-07-18' if ap['slug'] == 'jilianyun-review' else '2026-07-03'
+    date_val = ap.get('date', '2026-07-18' if ap['slug'] == 'jilianyun-review' else '2026-07-03')
     views_val = 2180 if ap['slug'] == 'jilianyun-review' else 1950
     merged_articles.append({
         'slug': ap['slug'],
-        'title': ap['name'] + ' 机场评测：高稳定性与极速专线节点官网订阅推荐',
+        'title': REVIEW_SEO_DATA.get(ap['slug'], {}).get(
+            'title', ap.get('custom_title', ap['name'] + ' 机场评测：高稳定性与极速专线节点官网订阅推荐')
+        ),
         'date': date_val,
         'cat': 'airport',
         'views': views_val,
-        'excerpt': f"详细对 {ap['name']} 机场进行多节点速度实测、晚高峰延迟丢包连通监控及套餐资费比对..."
+        'excerpt': AIRPORT_DATA.get(ap['slug'], {}).get('intro', f"详细介绍 {ap['name']} 的线路、套餐、客户端兼容性与选购注意事项。")
     })
 
 for sa in science_articles:
@@ -1816,9 +2274,42 @@ def get_ai_summary_html(title, excerpt, is_review=False, extra_info=None):
           <p style="margin: 0; text-align: justify;">{summary_text}</p>
         </div>"""
 
-def get_faq_and_schema_html(title, excerpt, slug, is_review=False, extra_info=None):
+def build_brand_review_faqs(slug, name):
+    """为重点测评页构建品牌化长尾 FAQ，答案只使用已录入的产品资料。"""
+    seo = REVIEW_SEO_DATA.get(slug)
+    data = AIRPORT_DATA.get(slug, {})
+    if not seo or not data:
+        return None
+
+    return [
+        {
+            "q": f"{name}机场怎么样？是不是好用的性价比机场？",
+            "a": f"从线路、价格和适用场景综合看，{name}的定位是：{data.get('line_core', '提供多地区机场节点与订阅服务')}。更适合{data.get('suitable', '希望先月付测试的用户')}。是否适合作为主力机场，仍应结合本地运营商和晚高峰实测判断。"
+        },
+        {
+            "q": f"{name}机场套餐价格多少？哪个套餐性价比更高？",
+            "a": f"目前整理到的套餐范围为：{data.get('price_range', '请以控制台实时价格为准')}。一般建议从最低月付或体验套餐开始，确认常用机场节点、流量倍率和设备限制符合需求后，再升级大流量套餐。"
+        },
+        {
+            "q": f"{name}机场官网入口和最新优惠码是什么？",
+            "a": f"可通过本文的“直达{name}官网”按钮进入注册页面，避免搜索到仿冒入口。{seo.get('coupon', '当前没有统一公开优惠码')}。机场价格和优惠活动可能调整，最终以订单结算页为准。"
+        },
+        {
+            "q": f"{name}机场支持Clash、Shadowrocket和V2RayNG订阅吗？",
+            "a": f"机场订阅通常可导入 Clash Verge、Shadowrocket（小火箭）、V2RayNG 或 Sing-box，但不同套餐与协议支持可能不同。购买后应优先使用控制台的一键导入功能；若导入失败，先更新客户端内核并确认订阅协议是否兼容。"
+        },
+        {
+            "q": f"{name}机场节点推荐怎么选？晚高峰卡顿怎么办？",
+            "a": seo.get('node_advice', '优先选择距离较近的香港、日本或新加坡节点，并在晚高峰测试延迟、丢包和连续播放表现。出现卡顿时先更新订阅，再切换同地区备用节点。')
+        }
+    ]
+
+
+def get_faq_and_schema_html(title, excerpt, slug, is_review=False, extra_info=None, faq_items=None):
     """生成自然语言 FAQ 模块 HTML，并自动构造 Schema.org JSON-LD 结构化数据"""
-    if is_review and extra_info:
+    if faq_items:
+        faqs = faq_items
+    elif is_review and extra_info:
         name = extra_info.get('name', '')
         link = extra_info.get('link', '#')
         faqs = [
@@ -1907,12 +2398,13 @@ def get_faq_and_schema_html(title, excerpt, slug, is_review=False, extra_info=No
           <p style="font-size: 0.86rem; color: var(--text-secondary); margin: 0; line-height: 1.5; padding-left: 28px; text-align: justify;">{f['a']}</p>
         </div>"""
 
+    faq_heading = f"{extra_info.get('name', '')} 机场常见问题 FAQ" if is_review and extra_info else "常见问题 FAQ"
     faq_card_html = f"""
         <!-- GEO 优化: FAQ 常见问题板块 -->
         <div class="geo-faq-section" style="margin-top: 32px; padding: 24px; background-color: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
           <h3 style="font-size: 1.1rem; font-weight: 800; color: var(--text-primary); margin: 0 0 18px 0; display: flex; align-items: center; gap: 8px; border-bottom: 2px solid var(--accent-primary); padding-bottom: 10px;">
             <svg viewBox="0 0 24 24" style="width: 20px; height: 20px; fill: var(--accent-primary);"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 16h-2v-2h2v2zm1.07-7.75l-.9.92C12.45 11.9 12 12.5 12 14h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/></svg>
-            <span>❓ 常见问题 FAQ</span>
+            <span>❓ {faq_heading}</span>
           </h3>
           {faq_list_html}
         </div>
@@ -2106,6 +2598,8 @@ def generate_product_review_body(slug, name, link):
   </div>
 </div>"""
 
+    if slug in NEW_AIRPORT_SLUGS:
+        return section_specs + pros_cons_html + nodes_html + pricing_html + advice_html
     return section_specs + pros_cons_html + nodes_html + pricing_html + tutorial_html + advice_html
 
 for sa in science_articles:
@@ -2313,17 +2807,33 @@ print("Generating airport review articles...")
 for ap in airports:
     slug = ap['slug']
     dest_file_path = os.path.join(dest_dir, "articles", f"{slug}.html")
-    
-    desc_val = f"{ap['name']} 官方最新测评：包含节点速度测试、高峰期延迟、套餐价格对比与科学上网客户端配置教程。"
-    kw_val = f"{ap['name']}, 机场推荐, 节点测试, 科学上网, {ap['name']}官网"
-    title_text = ap.get('custom_title', f"{ap['name']} 测评：稳定高速的机场推荐")
+    seo_data = REVIEW_SEO_DATA.get(slug, {})
+
+    desc_val = seo_data.get(
+        'description',
+        f"{ap['name']} 官方最新测评：包含节点速度测试、高峰期延迟、套餐价格对比与科学上网客户端配置教程。"
+    )
+    kw_val = ", ".join(seo_data.get('keywords', [
+        ap['name'], f"{ap['name']}机场怎么样", f"{ap['name']}机场官网",
+        "机场推荐", "机场节点", "机场订阅", "Clash机场"
+    ]))
+    title_text = seo_data.get('title', ap.get('custom_title', f"{ap['name']} 测评：稳定高速的机场推荐"))
     
     intro_p = f'<p style="font-size: 0.96rem; line-height: 1.8; margin-bottom: 20px; background: var(--bg-tertiary); padding: 14px 18px; border-left: 4px solid var(--accent-primary); border-radius: var(--radius-sm);">{AIRPORT_DATA[slug].get("intro", "")}</p>' if slug in AIRPORT_DATA else ""
+    seo_summary_html = ""
+    if seo_data.get('summary'):
+        seo_summary_html = f"""
+<h2 style="font-size: 1.25rem; font-weight: 800; color: var(--text-primary); margin-top: 24px; border-bottom: 2px solid var(--accent-primary); padding-bottom: 6px;">先看结论：{ap['name']}机场值得买吗？</h2>
+<p style="font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 16px;">{seo_data['summary']}</p>"""
+
     product_sections_html = generate_product_review_body(slug, ap['name'], ap['link'])
-    body_content = intro_p + "\n" + product_sections_html
+    body_content = intro_p + "\n" + seo_summary_html + "\n" + product_sections_html
         
-    extracted_tags = ["机场", "专线机场", ap['name']]
-    faq_schema_html = get_faq_and_schema_html(title_text, desc_val, slug, is_review=True, extra_info=ap)
+    extracted_tags = ["机场推荐", "机场测评", "机场节点", ap['name']]
+    brand_faqs = build_brand_review_faqs(slug, ap['name'])
+    faq_schema_html = get_faq_and_schema_html(
+        title_text, desc_val, slug, is_review=True, extra_info=ap, faq_items=brand_faqs
+    )
     
     full_article_body = body_content + "\n" + faq_schema_html
     full_article_body, toc_html = generate_structured_toc(full_article_body)
@@ -2378,7 +2888,7 @@ for ap in airports:
         <div class="article-header">
           <h1 class="article-title-large">{title_text}</h1>
           <div class="article-detail-meta">
-            <span class="meta-item"><svg viewBox="0 0 24 24" style="width:14px; height:14px; fill:currentColor; margin-right:4px;"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>更新日期: 2026-07-24</span>
+            <span class="meta-item"><svg viewBox="0 0 24 24" style="width:14px; height:14px; fill:currentColor; margin-right:4px;"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>更新日期: {ap.get('date', '2026-07-24')}</span>
             <span class="meta-item"><svg viewBox="0 0 24 24" style="width:14px; height:14px; fill:currentColor; margin-right:4px;"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>阅读量: 2500+ 次</span>
             <span class="meta-item"><svg viewBox="0 0 24 24" style="width:14px; height:14px; fill:currentColor; margin-right:4px;"><path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.89 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/></svg>归类: 机场推荐</span>
           </div>
@@ -2401,6 +2911,7 @@ for ap in airports:
     new_html = replace_site_wide_terms(new_html, is_subpage=True)
     with open(dest_file_path, "w", encoding="utf-8") as f:
         f.write(new_html)
+    all_generated_slugs.append(slug)
     print(f"Generated airport review: {slug}.html")
 
 def write_index():
@@ -2496,8 +3007,8 @@ def write_index():
   <title>vpn推荐 - 2026年最新稳定高速且便宜高性价比科学上网专线中继机场推荐测评博客</title>
   
   <!-- SEO Meta Tags -->
-  <meta name="description" content="vpn推荐 专注于2026年最新稳定、安全、高速、便宜高性价比专线中转机场推荐评测。提供极连云、速界、边缘、快狸、光年梯、瞬云、寰宇云、奶昔、花云等主力加速官网订阅入口及客户端避坑指南。">
-  <meta name="keywords" content="vpn推荐, 机场推荐, 科学上网, 极连云, 速界, 边缘, 快狸, 梯子推荐, vpnstuijian.net">
+  <meta name="description" content="vpn推荐 专注于2026年最新稳定、安全、高速、便宜高性价比专线中转机场推荐评测。提供鲲鹏加速、榴莲云、大佬云、闪电鼠、环球梯、神行加速、云界线等机场官网入口、优惠码与客户端避坑指南。">
+  <meta name="keywords" content="vpn推荐, 机场推荐, 鲲鹏加速, 榴莲云, 大佬云, 闪电鼠, 环球梯, 神行加速, 云界线, vpnstuijian.net">
   <meta name="robots" content="index, follow">
   
   <!-- GEO Tags -->
@@ -2954,7 +3465,7 @@ sitemap_urls = ""
 for slug in all_generated_slugs:
     sitemap_urls += f"""  <url>
     <loc>https://vpnstuijian.net/articles/{slug}.html</loc>
-    <lastmod>2026-07-24</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>\n"""
@@ -2963,25 +3474,25 @@ sitemap_xml = f"""<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://vpnstuijian.net/index.html</loc>
-    <lastmod>2026-07-24</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://vpnstuijian.net/vpn-guide.html</loc>
-    <lastmod>2026-07-24</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://vpnstuijian.net/about.html</loc>
-    <lastmod>2026-07-24</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://vpnstuijian.net/archives.html</loc>
-    <lastmod>2026-07-24</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

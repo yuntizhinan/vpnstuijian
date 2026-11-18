@@ -3,4 +3,7 @@ images/articles/_bg_cache/
 .DS_Store
 Thumbs.db
 scratch/
+__pycache__/
+*.pyc
+preview_airport_data/
 
